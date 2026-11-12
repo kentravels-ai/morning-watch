@@ -23,6 +23,10 @@ HF_IDS = ["alerts", "utilities", "roads", "health", "supplies"]
 HF_STATUS = {"clear", "watch", "action"}
 LEVELS = ["pacifica", "california", "usa", "west", "asia", "world"]
 SUPPLY_KEYS = {"3d", "3w", "3m", "1y"}
+CONFIDENCE = {"confirmed", "likely", "unconfirmed"}
+TOPICS = {"conflict", "terrorism", "cyber", "infrastructure", "environment", "economy", "energy",
+          "supply", "health", "political", "information", "public-safety"}
+STATUS_KEYS = ["local", "regional", "world"]
 
 errors = []
 
@@ -52,6 +56,14 @@ def check_item(it, path, ids):
     ids.add(it.get("id"))
     if it.get("tag") not in TAGS:
         err(path, f"tag must be one of {sorted(TAGS)}")
+    if it.get("confidence") not in CONFIDENCE:
+        err(path, f"confidence must be one of {sorted(CONFIDENCE)}")
+    if it.get("topic") not in TOPICS:
+        err(path, f"topic must be one of {sorted(TOPICS)}")
+    if not it.get("sources"):
+        err(path, "needs at least one source with a link")
+    elif not any(str(x.get("url", "")).startswith(("http://", "https://")) for x in it["sources"] if isinstance(x, dict)):
+        err(path, "at least one source needs a url")
     if it.get("tag") == "ACTION" and not it.get("action"):
         err(path, "ACTION items need an 'action' (what to do)")
     if "severity" in it and it["severity"] not in SEVS:
@@ -96,6 +108,30 @@ def validate(b):
     for k in ("headline", "bluf"):
         if not ov.get(k):
             err(f"overall.{k}", "required")
+    st = b.get("status", {})
+    for k in STATUS_KEYS:
+        v = st.get(k) if isinstance(st, dict) else None
+        if not isinstance(v, dict) or v.get("level") not in OVERALL or not v.get("note"):
+            err(f"status.{k}", f"needs {{level: one of {sorted(OVERALL)}, note}}")
+    cu = b.get("coming_up", [])
+    if not isinstance(cu, list):
+        err("coming_up", "must be a list")
+    else:
+        if len(cu) > 10:
+            err("coming_up", "keep it to 10 or fewer")
+        for i, c in enumerate(cu):
+            path = f"coming_up[{i}]"
+            if not isinstance(c, dict) or not c.get("title") or not c.get("when"):
+                err(path, "needs when and title")
+                continue
+            if "date" in c:
+                try:
+                    date.fromisoformat(c["date"])
+                except (TypeError, ValueError):
+                    err(path + ".date", "must be YYYY-MM-DD")
+            if c.get("level") not in LEVELS:
+                err(path + ".level", f"must be one of {LEVELS}")
+            check_sources(c.get("sources", []), path + ".sources")
     ids = set()
     hf = b.get("home_front", [])
     got = [s.get("id") for s in hf]

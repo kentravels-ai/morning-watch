@@ -11,10 +11,11 @@ import math
 import re
 import sys
 import time
+import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
 from concurrent.futures import ThreadPoolExecutor
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 HOME = (37.6138, -122.4869)          # Pacifica, CA 94044
@@ -216,6 +217,47 @@ def cisa_kev():
     return out[:25]
 
 
+def fema_ipaws():
+    """Public emergency alerts (Wireless Emergency Alerts, EAS, NWS via IPAWS) whose
+    area covers home, from FEMA's OpenFEMA archive, last 7 days. County evacuation
+    or shelter-in-place orders sent through IPAWS show up here."""
+    since = (datetime.now(timezone.utc) - timedelta(days=7)).strftime("%Y-%m-%dT%H:%M:%S.000Z")
+    q = {"$filter": f"sent ge '{since}' and geo.intersects(searchGeometry, geography'POINT({HOME[1]} {HOME[0]})')",
+         "$top": "50", "$orderby": "sent desc", "$select": "sent,status,msgType,info"}
+    d = get_json("https://www.fema.gov/api/open/v1/IpawsArchivedAlerts?" + urllib.parse.urlencode(q))
+    out = []
+    for r in d.get("IpawsArchivedAlerts", []):
+        if r.get("status") != "Actual":
+            continue
+        for inf in (r.get("info") or [])[:1]:
+            out.append({"sent": r.get("sent"), "msgType": r.get("msgType"), "event": inf.get("event"),
+                        "sender": inf.get("senderName"), "severity": inf.get("severity"),
+                        "urgency": inf.get("urgency"), "expires": inf.get("expires"),
+                        "headline": inf.get("headline"),
+                        "description": strip(inf.get("description"), 500),
+                        "instruction": strip(inf.get("instruction"), 400),
+                        "area": "; ".join(a.get("areaDesc", "") for a in inf.get("area") or [])[:200]})
+    return out
+
+
+def markets():
+    """Daily closes and changes for a few stress gauges (unofficial Yahoo chart API)."""
+    syms = {"S&P 500": "^GSPC", "VIX (fear gauge)": "^VIX", "WTI crude": "CL=F", "Brent crude": "BZ=F",
+            "Gold": "GC=F", "US 10-yr yield": "^TNX", "US dollar index": "DX-Y.NYB"}
+    out = {}
+    for name, sym in syms.items():
+        try:
+            d = get_json(f"https://query1.finance.yahoo.com/v8/finance/chart/{urllib.parse.quote(sym)}?range=1mo&interval=1d")
+            res = d["chart"]["result"][0]
+            closes = [c for c in res["indicators"]["quote"][0]["close"] if c is not None]
+            last = closes[-1]
+            pct = lambda n: round((last / closes[-1 - n] - 1) * 100, 2) if len(closes) > n else None
+            out[name] = {"last": round(last, 2), "chg_1d_pct": pct(1), "chg_5d_pct": pct(5), "chg_1mo_pct": pct(len(closes) - 1)}
+        except Exception as e:  # noqa: BLE001
+            out[name] = {"error": str(e)[:120]}
+    return out
+
+
 RSS_FEEDS = {
     # global disasters with coordinates and alert levels
     "gdacs": "https://www.gdacs.org/xml/rss.xml",
@@ -251,6 +293,8 @@ SOURCES = {
     "caltrans_closures_pacifica_area": caltrans_d4_closures,
     "space_weather": space_weather,
     "cisa_known_exploited_recent": cisa_kev,
+    "fema_ipaws_alerts_home": fema_ipaws,
+    "markets": markets,
 }
 for _k, _u in RSS_FEEDS.items():
     SOURCES[_k] = (lambda u: (lambda: rss(u)))(_u)

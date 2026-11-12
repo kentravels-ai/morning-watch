@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Morning Watch Kit</title>
+<meta name="description" content="Pacifica emergency resources, routes out and readiness checklists.">
+<meta name="theme-color" content="#07090c">
+<style>
+:root{--bg:#07090c;--panel:#0d1117;--panel2:#11161e;--line:#1f2630;--ink:#d3d9e0;--dim:#7d8792;--faint:#4a535e;
+  --crit:#ff3b3b;--watch:#ffd23f;--hazard:#3fb8ff;--low:#5fd18a;
+  --mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace;--sans:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--ink)}
+body{font:15px/1.55 var(--sans);padding:0 0 40px;overflow-x:hidden}
+a{color:#8cc8ff}
+.wrap{max-width:860px;margin:0 auto;padding:0 16px}
+header{position:sticky;top:0;z-index:5;background:rgba(7,9,12,.92);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
+.top{display:flex;align-items:center;gap:10px;padding:10px 16px;font:12px var(--mono);letter-spacing:.12em;text-transform:uppercase}
+.top b{color:#fff;letter-spacing:.2em;white-space:nowrap}.top .sp{flex:1}.top span{color:var(--dim)}
+.iconbtn{background:none;border:1px solid var(--line);color:var(--dim);border-radius:6px;padding:4px 8px;font:12px var(--mono);cursor:pointer;text-decoration:none}
+h1{font-size:19px;color:#fff;margin:18px 0 4px}
+.lead{color:var(--dim);margin:0 0 6px}
+h2{font:600 12px var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--dim);margin:26px 0 8px;display:flex;align-items:center;gap:8px}
+h2 .rule{flex:1;height:1px;background:var(--line)}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:8px}
+.row{padding:11px 14px;border-top:1px solid var(--line)}
+.row:first-child{border-top:0}
+.row b{color:#fff}
+.row .d{color:var(--dim);font-size:14px}
+.urgent{border-color:#5a1d1d;background:linear-gradient(#1a0d0d,#120c0c)}
+.urgent b{color:#ff8a8a}
+.check{display:flex;gap:10px;align-items:flex-start;padding:9px 14px;border-top:1px solid var(--line);cursor:pointer}
+.check:first-of-type{border-top:0}
+.check input{margin-top:4px;accent-color:var(--low);width:17px;height:17px;flex:none}
+.check.done span{color:var(--faint);text-decoration:line-through}
+.prog{font:12px var(--mono);color:var(--dim);padding:8px 14px;border-top:1px solid var(--line);display:flex;justify-content:space-between}
+.prog button{background:none;border:0;color:var(--faint);font:12px var(--mono);cursor:pointer}
+footer{margin-top:30px;font-size:13px;color:var(--dim)}
+</style>
+</head>
+<body>
+<header><div class="top"><b>Morning Watch</b><span>Kit</span><span class="sp"></span><a class="iconbtn" href="./">← Briefing</a></div></header>
+<main class="wrap">
+<h1>Pacifica kit</h1>
+<p class="lead">Links, routes and checklists you'd want on a bad day. Nothing here changes daily. Checklist ticks are saved on this device only.</p>
+
+<h2>In an emergency<span class="rule"></span></h2>
+<div class="card urgent">
+  <div class="row"><b>Call 911</b> for life-threatening emergencies, fire or crime in progress.</div>
+  <div class="row"><b>Strong shaking near the coast?</b> Once the shaking stops, walk inland and uphill right away. Don't wait for an official tsunami alert, because a local tsunami can arrive in minutes.</div>
+  <div class="row"><b>Told to evacuate?</b> Go. Take the go-bag, medications and pets, and follow the routes officials give, which may differ from the usual ones below.</div>
+</div>
+
+<h2>Official alerts &amp; status<span class="rule"></span></h2>
+<div class="card">
+  <div class="row"><a href="https://www.smcalert.info/" target="_blank" rel="noopener"><b>SMC Alert</b></a> <span class="d">: San Mateo County's emergency texts, calls and emails. Sign up every phone in the household.</span></div>
+  <div class="row"><a href="https://protect.genasys.com/" target="_blank" rel="noopener"><b>Genasys Protect</b></a> <span class="d">: look up your evacuation zone by address and see live zone status during incidents. Write your zone name down.</span></div>
+  <div class="row"><a href="https://myshake.berkeley.edu/" target="_blank" rel="noopener"><b>MyShake (California Earthquake Early Warning)</b></a> <span class="d">: seconds of warning before shaking arrives. Install the app and turn on phone emergency alerts.</span></div>
+  <div class="row"><a href="https://www.weather.gov/mtr/" target="_blank" rel="noopener"><b>NWS San Francisco Bay Area</b></a> <span class="d">: warnings, surf and storm forecasts.</span></div>
+  <div class="row"><a href="https://www.smcgov.org/dem" target="_blank" rel="noopener"><b>San Mateo County Dept. of Emergency Management</b></a> <span class="d">: county emergency updates and preparedness guides.</span></div>
+  <div class="row"><a href="https://www.cityofpacifica.org/" target="_blank" rel="noopener"><b>City of Pacifica</b></a> <span class="d">: city notices and closures.</span></div>
+</div>
+
+<h2>Utilities<span class="rule"></span></h2>
+<div class="card">
+  <div class="row"><a href="https://pgealerts.alerts.pge.com/outage-tools/outage-map/" target="_blank" rel="noopener"><b>PG&amp;E outage map</b></a> <span class="d">: outages, restoration estimates and Public Safety Power Shutoffs.</span></div>
+  <div class="row"><a href="https://www.nccwd.com/" target="_blank" rel="noopener"><b>North Coast County Water District</b></a> <span class="d">: water notices for Pacifica.</span></div>
+  <div class="row"><a href="https://www.airnow.gov/?city=Pacifica&amp;state=CA&amp;country=USA" target="_blank" rel="noopener"><b>AirNow, Pacifica</b></a> <span class="d">: air quality and smoke.</span></div>
+</div>
+
+<h2>Routes out of Pacifica<span class="rule"></span></h2>
+<div class="card">
+  <div class="row"><b>North:</b> Hwy 1 to Daly City, then I-280 or Skyline Blvd (SR-35).</div>
+  <div class="row"><b>East:</b> Sharp Park Rd up to Skyline Blvd (SR-35) and I-280.</div>
+  <div class="row"><b>South:</b> Hwy 1 through the Tom Lantos Tunnels to Half Moon Bay, then Hwy 92 east over the hill.</div>
+  <div class="row"><span class="d">Pacifica has few ways out, and slides, fire or a quake can close any of them. Check before you go:</span>
+    <a href="https://quickmap.dot.ca.gov/" target="_blank" rel="noopener">Caltrans QuickMap</a> ·
+    <a href="https://cad.chp.ca.gov/" target="_blank" rel="noopener">CHP incidents</a> ·
+    <a href="https://www.conservation.ca.gov/cgs/tsunami/maps" target="_blank" rel="noopener">Tsunami hazard maps</a> ·
+    <a href="https://www.redcross.org/get-help/disaster-relief-and-recovery-services/find-an-open-shelter.html" target="_blank" rel="noopener">Open Red Cross shelters</a></div>
+</div>
+
+<h2>Go-bag (one per person)<span class="rule"></span></h2>
+<div class="card" data-list="bag">
+  <label class="check"><input type="checkbox" data-k="water"><span>Water: 1 gallon per person per day, 3 days minimum</span></label>
+  <label class="check"><input type="checkbox" data-k="food"><span>Food: 3 days of no-cook food, plus a manual can opener</span></label>
+  <label class="check"><input type="checkbox" data-k="meds"><span>Prescriptions (7 days), glasses, and a written list of medications</span></label>
+  <label class="check"><input type="checkbox" data-k="aid"><span>First-aid kit</span></label>
+  <label class="check"><input type="checkbox" data-k="light"><span>Flashlight or headlamp, plus extra batteries</span></label>
+  <label class="check"><input type="checkbox" data-k="radio"><span>Battery or hand-crank radio (NOAA weather band)</span></label>
+  <label class="check"><input type="checkbox" data-k="power"><span>Phone charging cables and a charged battery pack</span></label>
+  <label class="check"><input type="checkbox" data-k="cash"><span>Cash in small bills</span></label>
+  <label class="check"><input type="checkbox" data-k="docs"><span>Copies of ID, insurance and key documents (paper or a USB stick)</span></label>
+  <label class="check"><input type="checkbox" data-k="clothes"><span>Sturdy shoes, warm layers and rain gear</span></label>
+  <label class="check"><input type="checkbox" data-k="mask"><span>N95 masks (smoke, dust)</span></label>
+  <label class="check"><input type="checkbox" data-k="tools"><span>Whistle, multi-tool, duct tape, work gloves</span></label>
+  <label class="check"><input type="checkbox" data-k="hyg"><span>Wipes, garbage bags, toilet paper, hygiene items</span></label>
+  <label class="check"><input type="checkbox" data-k="maps"><span>Paper map of the Peninsula with your routes marked</span></label>
+  <label class="check"><input type="checkbox" data-k="pets"><span>Pet food, leash or carrier, and vet records (if any)</span></label>
+  <div class="prog"><span class="count"></span><button data-reset>reset</button></div>
+</div>
+
+<h2>Home readiness<span class="rule"></span></h2>
+<div class="card" data-list="home">
+  <label class="check"><input type="checkbox" data-k="gas"><span>Everyone knows where the gas shut-off is, and a wrench is kept beside it</span></label>
+  <label class="check"><input type="checkbox" data-k="watervalve"><span>Everyone knows where the main water shut-off is</span></label>
+  <label class="check"><input type="checkbox" data-k="heater"><span>Water heater strapped to the wall</span></label>
+  <label class="check"><input type="checkbox" data-k="detect"><span>Smoke and CO detectors tested this month</span></label>
+  <label class="check"><input type="checkbox" data-k="ext"><span>Fire extinguisher charged and easy to reach</span></label>
+  <label class="check"><input type="checkbox" data-k="store"><span>2 weeks of water and food stored at home (the county's goal for a big quake)</span></label>
+  <label class="check"><input type="checkbox" data-k="rotate"><span>Stored water and food rotated in the last 6 months</span></label>
+  <label class="check"><input type="checkbox" data-k="car"><span>Car tank kept at least half full</span></label>
+  <div class="prog"><span class="count"></span><button data-reset>reset</button></div>
+</div>
+
+<h2>Family plan<span class="rule"></span></h2>
+<div class="card" data-list="plan">
+  <label class="check"><input type="checkbox" data-k="zone"><span>Evacuation zone looked up on Genasys Protect and written down</span></label>
+  <label class="check"><input type="checkbox" data-k="meet"><span>Two meeting places agreed: one nearby, one outside Pacifica</span></label>
+  <label class="check"><input type="checkbox" data-k="contact"><span>An out-of-area contact everyone checks in with (local lines jam; texts get through more often than calls)</span></label>
+  <label class="check"><input type="checkbox" data-k="numbers"><span>Key phone numbers written on paper, not only stored in phones</span></label>
+  <label class="check"><input type="checkbox" data-k="alerts"><span>Every phone signed up for SMC Alert, with emergency alerts turned on</span></label>
+  <label class="check"><input type="checkbox" data-k="neighbors"><span>Know which neighbors might need help</span></label>
+  <div class="prog"><span class="count"></span><button data-reset>reset</button></div>
+</div>
+
+<footer>Checklists adapted from <a href="https://www.ready.gov/kit" target="_blank" rel="noopener">Ready.gov</a> and San Mateo County guidance. Always follow official instructions during an incident.</footer>
+</main>
+<script>
+"use strict";
+const st = {
+  get(k){ try { return localStorage.getItem("mw:kit:" + k) === "1"; } catch(e){ return false; } },
+  set(k, v){ try { v ? localStorage.setItem("mw:kit:" + k, "1") : localStorage.removeItem("mw:kit:" + k); } catch(e){} }
+};
+document.querySelectorAll("[data-list]").forEach(list => {
+  const name = list.dataset.list, boxes = [...list.querySelectorAll("input[type=checkbox]")];
+  const update = () => {
+    boxes.forEach(b => b.closest(".check").classList.toggle("done", b.checked));
+    list.querySelector(".count").textContent = `${boxes.filter(b => b.checked).length} of ${boxes.length} done`;
+  };
+  boxes.forEach(b => {
+    b.checked = st.get(name + ":" + b.dataset.k);
+    b.addEventListener("change", () => { st.set(name + ":" + b.dataset.k, b.checked); update(); });
+  });
+  list.querySelector("[data-reset]").addEventListener("click", () => { boxes.forEach(b => { b.checked = false; st.set(name + ":" + b.dataset.k, false); }); update(); });
+  update();
+});
+</script>
+</body>
+</html>

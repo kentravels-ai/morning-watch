@@ -94,6 +94,29 @@ h2 .rule{flex:1;height:1px;background:var(--line)}
 .chev{transition:transform .2s;display:inline-block}
 .hf.open .chev{transform:rotate(90deg)}
 
+.lights{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:0 0 14px}
+.light{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:9px 10px;min-width:0}
+.light .lk{font:600 10px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--dim);display:flex;align-items:center;gap:6px}
+.light .lk i{width:9px;height:9px;border-radius:50%;display:inline-block;flex:none}
+.light .lv{font:600 13px var(--mono);letter-spacing:.08em;text-transform:uppercase;margin-top:3px}
+.light .ln2{font-size:12.5px;color:var(--dim);line-height:1.35;margin-top:2px}
+.conf{white-space:nowrap;padding:0 4px;border-radius:3px}
+.conf.confirmed{color:var(--low)}
+.conf.likely{color:var(--watch)}
+.conf.unconfirmed{color:#ff8a8a;border:1px dashed #7a3a3a}
+.topic{text-transform:uppercase;letter-spacing:.08em}
+.chips{display:flex;gap:6px;flex-wrap:wrap;padding:10px 14px;border-bottom:1px solid var(--line)}
+.chip{background:none;border:1px solid var(--line);color:var(--dim);border-radius:999px;padding:3px 10px;font:11px var(--mono);letter-spacing:.06em;text-transform:uppercase;cursor:pointer}
+.chip.on{color:#fff;border-color:#4a5a6e;background:var(--panel2)}
+.chip b{color:var(--faint);font-weight:400;margin-left:4px}
+.coming{list-style:none;margin:0;padding:4px 0}
+.coming li{display:flex;gap:12px;padding:9px 14px;border-top:1px solid var(--line)}
+.coming li:first-child{border-top:0}
+.coming .cw{flex:none;width:118px;font:12px var(--mono);color:var(--watch);padding-top:2px}
+.coming .ct{color:#fff;font-weight:600}
+.coming .cd{color:var(--dim);font-size:14px}
+.coming .cl{font:10px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--faint);margin-left:6px}
+@media (max-width:480px){.coming .cw{width:84px}.light .ln2{display:none}}
 .ladderhead{padding:12px 14px;border-bottom:1px solid var(--line)}
 .ladderhead .ln{font:600 13px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:#fff}
 .ladderhead .ls{color:var(--ink);margin-top:2px}
@@ -124,6 +147,7 @@ dialog .row{display:flex;justify-content:flex-end;gap:8px;margin-top:18px}
 <header><div class="wrap top">
   <b>Morning Watch</b><span class="date" id="hdrDate">—</span><span class="sp"></span>
   <select id="archive" aria-label="Past briefings" style="font:12px var(--mono);padding:3px 6px"></select>
+  <a class="iconbtn" href="resources.html" style="text-decoration:none">Kit</a>
   <button class="iconbtn" id="setBtn" aria-label="Settings">⚙</button>
 </div></header>
 
@@ -163,6 +187,10 @@ const SEV = {critical:"#ff3b3b", elevated:"#ff9f1a", watch:"#ffd23f", hazard:"#3
 const SEV_RANK = {critical:4, elevated:3, watch:2, hazard:2, low:1};
 const TAG_RANK = {ACTION:3, WATCH:2, INFO:1};
 const OVERALL = {steady:"#5fd18a", strained:"#ffd23f", serious:"#ff9f1a", critical:"#ff3b3b"};
+const TOPICS = {conflict:"Conflict", terrorism:"Terrorism", cyber:"Cyber", infrastructure:"Infrastructure",
+  environment:"Environment", economy:"Economy", energy:"Energy", supply:"Supply chain", health:"Health",
+  political:"Political", information:"Information", "public-safety":"Public safety"};
+const CONF = {confirmed:"✓ confirmed", likely:"◐ likely", unconfirmed:"? unconfirmed"};
 const SUPPLY = [["","Not set"],["3d","About 3 days"],["3w","About 3 weeks"],["3m","About 3 months"],["1y","A year or more"]];
 const W = 1080, H = 360;
 const dotStep = () => ((document.getElementById("mapbox") || {}).clientWidth || 1000) < 600 ? 12 : 7;
@@ -171,6 +199,7 @@ const store = {
   get(k, d){ try { const v = localStorage.getItem("mw:"+k); return v === null ? d : v; } catch(e){ return d; } },
   set(k, v){ try { localStorage.setItem("mw:"+k, v); } catch(e){} }
 };
+let topicFilter = store.get("topic", "");
 let brief = null, level = (() => {
   const q = new URLSearchParams(location.search).get("level");
   const v = q !== null ? +q : +store.get("level", 0);
@@ -287,7 +316,8 @@ async function drawMap(){
     svg.append("text").attr("x",hp[0]+9).attr("y",hp[1]+4).attr("fill","#9aa4ae").attr("font-size",12).attr("font-family","ui-monospace,Menlo,Consolas,monospace").text("HOME");
   }
   const zoomBoost = level <= 1 ? 1.25 : 1;
-  const hots = allItems().filter(it => typeof it.lat === "number" && typeof it.lon === "number" && it.severity)
+  const hots = allItems().filter(it => !topicFilter || it._hf || it.topic === topicFilter)
+    .filter(it => typeof it.lat === "number" && typeof it.lon === "number" && it.severity)
     .map(it => ({it, p: proj([it.lon, it.lat])}))
     .filter(h => h.p && h.p[0] > -20 && h.p[0] < W+20 && h.p[1] > -20 && h.p[1] < H+20)
     .sort((a,b) => (SEV_RANK[a.it.severity]||0) - (SEV_RANK[b.it.severity]||0));
@@ -354,7 +384,7 @@ function itemHTML(it){
     ${it.detail ? `<div class="idetail">${esc(it.detail)}</div>` : ""}
     ${it.action && tag !== "INFO" ? `<div class="iact"><b>${tag === "ACTION" ? "DO" : "IF IT WORSENS"}</b>${esc(it.action)}</div>` : ""}
     ${adjusted ? `<div class="supplynote">Adjusted for your supply setting</div>` : ""}
-    ${(it.when || it.where || srcs) ? `<div class="imeta">${it.when ? `<span>⏱ ${esc(it.when)}</span>` : ""}${it.where ? `<span>⌖ ${esc(it.where)}</span>` : ""}${srcs ? `<span>${srcs}</span>` : ""}</div>` : ""}
+    ${(it.confidence || it.topic || it.when || it.where || srcs) ? `<div class="imeta">${it.confidence ? `<span class="conf ${esc(it.confidence)}" title="How well confirmed this is">${esc(CONF[it.confidence] || it.confidence)}</span>` : ""}${it.topic ? `<span class="topic">${esc(TOPICS[it.topic] || it.topic)}</span>` : ""}${it.when ? `<span>⏱ ${esc(it.when)}</span>` : ""}${it.where ? `<span>⌖ ${esc(it.where)}</span>` : ""}${srcs ? `<span>${srcs}</span>` : ""}</div>` : ""}
   </div>`;
 }
 const sortItems = arr => [...arr].sort((a,b) => (TAG_RANK[effTag(b)]-TAG_RANK[effTag(a)]) || ((SEV_RANK[b.severity]||0)-(SEV_RANK[a.severity]||0)));
@@ -362,11 +392,27 @@ const sortItems = arr => [...arr].sort((a,b) => (TAG_RANK[effTag(b)]-TAG_RANK[ef
 function renderLadder(){
   const el = document.getElementById("ladder"); if (!el || !brief) return;
   const L = LEVELS[level], data = (brief.ladder || []).find(l => l.level === L.key) || {items:[]};
-  const items = sortItems(data.items || []);
-  el.innerHTML = `<div class="ladderhead"><div class="ln">${esc(L.name)}</div>${data.summary ? `<div class="ls">${esc(data.summary)}</div>` : ""}</div>
-    ${items.length ? items.map(itemHTML).join("") : `<div class="none-msg">Nothing notable at this level today.</div>`}
-    <div class="swipehint">${level < LEVELS.length-1 ? `Swipe left or press − to zoom out to ${esc(LEVELS[level+1].name)}` : "Swipe right or press + to zoom back in"}</div>`;
+  const all = allItems().filter(it => !it._hf);
+  const counts = {};
+  all.forEach(it => { if (it.topic) counts[it.topic] = (counts[it.topic] || 0) + 1; });
+  if (topicFilter && !counts[topicFilter]) topicFilter = "";
+  const chips = Object.keys(counts).length > 1 ? `<div class="chips">
+      <button class="chip ${topicFilter ? "" : "on"}" data-t="">All</button>
+      ${Object.keys(TOPICS).filter(t => counts[t]).map(t => `<button class="chip ${topicFilter === t ? "on" : ""}" data-t="${t}">${esc(TOPICS[t])}<b>${counts[t]}</b></button>`).join("")}
+    </div>` : "";
+  const items = sortItems((data.items || []).filter(it => !topicFilter || it.topic === topicFilter));
+  const filteredNote = topicFilter ? ` matching “${esc(TOPICS[topicFilter])}”` : "";
+  el.innerHTML = chips + `<div class="ladderhead"><div class="ln">${esc(L.name)}</div>${data.summary ? `<div class="ls">${esc(data.summary)}</div>` : ""}</div>
+    ${items.length ? items.map(itemHTML).join("") : `<div class="none-msg">Nothing notable at this level today${filteredNote}.</div>`}
+    <div class="swipehint">${topicFilter ? `Showing ${esc(TOPICS[topicFilter])} only · ` : ""}${level < LEVELS.length-1 ? `Swipe left or press − to zoom out to ${esc(LEVELS[level+1].name)}` : "Swipe right or press + to zoom back in"}</div>`;
 }
+
+document.addEventListener("click", e => {
+  const c = e.target.closest && e.target.closest(".chip");
+  if (!c) return;
+  topicFilter = c.dataset.t || ""; store.set("topic", topicFilter);
+  renderLadder(); drawMap();
+});
 
 function render(){
   const b = brief, app = document.getElementById("app");
@@ -386,6 +432,10 @@ function render(){
     <div class="stale" id="stale">${viewingArchive ? `Viewing an archived briefing from ${esc(b.date)}.` : `This briefing is ${Math.round(ageH)} hours old — today's update hasn't arrived yet.`}</div>
     <div class="overall"><span class="lvl" style="color:${ovc}">${esc(ov.level || "—")}</span><h1 class="headline">${esc(ov.headline || "")}</h1></div>
     ${ov.bluf ? `<p class="bluf"><b>BLUF</b>${esc(ov.bluf)}</p>` : ""}
+    ${b.status ? `<div class="lights">${[["local","Local"],["regional","CA · US"],["world","World"]].map(([k,lab]) => {
+        const v = b.status[k] || {}, c = OVERALL[v.level] || "#7d8792";
+        return `<div class="light"><div class="lk"><i style="background:${c};box-shadow:0 0 8px ${c}"></i>${lab}</div><div class="lv" style="color:${c}">${esc(v.level || "—")}</div><div class="ln2">${esc(v.note || "")}</div></div>`;
+      }).join("")}</div>` : ""}
 
     <div class="mapbox" id="mapbox">
       <svg id="map" viewBox="0 0 ${W} ${H}" role="img" aria-label="Hotspot map"></svg>
@@ -419,6 +469,14 @@ function render(){
       <div class="card ready"><div class="rt">${esc(ready.task || ready)}</div>${ready.why ? `<div class="rw">${esc(ready.why)}</div>` : ""}
       ${store.get("food","") ? "" : `<div class="rw" style="margin-top:8px">Tip: set your food and water supply in ⚙ for a task that fits you.</div>`}</div>` : ""}
 
+    ${(b.coming_up || []).length ? `<h2>Coming up<span class="rule"></span></h2>
+      <div class="card"><ul class="coming">${b.coming_up.map(c => {
+        const L = LEVELS.find(x => x.key === c.level || (c.level === "local" && x.key === "pacifica"));
+        const src = (c.sources || []).find(x => safeUrl(x.url));
+        return `<li><span class="cw">${esc(c.when)}</span><span><span class="ct">${esc(c.title)}</span>${L ? `<span class="cl">${esc(L.name.split(" ·")[0])}</span>` : ""}
+          ${c.detail ? `<div class="cd">${esc(c.detail)}</div>` : ""}${src ? `<div class="imeta"><a href="${esc(src.url)}" target="_blank" rel="noopener">${esc(src.name)}</a></div>` : ""}</span></li>`;
+      }).join("")}</ul></div>` : ""}
+
     <h2>The ladder<span class="rule"></span></h2>
     <div class="card" id="ladder"></div>
 
@@ -427,7 +485,7 @@ function render(){
     <footer>
       <h2>Sources<span class="rule"></span></h2>
       <div class="srcs">${(b.sources_used || []).map(s => safeUrl(s.url) ? `<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.name)}</a>` : esc(s.name)).join("")}</div>
-      <div class="disclaim">Compiled automatically each morning from public sources by an AI. It can be wrong or late. It is <b>not</b> an emergency alert service. For life-safety alerts sign up for <a href="https://www.smcalert.info/" target="_blank" rel="noopener">SMC Alert</a>, and in an emergency call 911.</div>
+      <div class="disclaim">Compiled automatically each morning from public sources by an AI. It can be wrong or late. It is <b>not</b> an emergency alert service. Local resources and checklists are on the <a href="resources.html">Kit page</a>. For life-safety alerts sign up for <a href="https://www.smcalert.info/" target="_blank" rel="noopener">SMC Alert</a>, and in an emergency call 911.</div>
     </footer>`;
 
   document.getElementById("stale").style.display = (viewingArchive || ageH > 30) ? "block" : "none";
