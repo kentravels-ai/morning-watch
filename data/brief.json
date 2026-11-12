@@ -1,31 +1,34 @@
 {
  "schema": 1,
- "date": "2026-11-11",
- "generated_at": "2026-11-11T16:46:50-08:00",
+ "date": "2026-11-12",
+ "generated_at": "2026-11-12T08:05:00-08:00",
  "overall": {
   "level": "strained",
-  "headline": "Quiet at home apart from big surf this weekend; Iran–Israel tension is the world's main worry.",
-  "bluf": "Pacifica: no outages, closures or official orders, but a High Surf Warning runs Friday evening to Sunday morning, so stay off beaches, rocks and the pier. Rain is likely Thursday night. Abroad: Israel says it is preparing for a possible strike on Iran, and Tehran warns it will retaliate. Ukraine–Russia talks made no breakthrough. Nothing here calls for stocking up."
+  "headline": "Wet, windy Friday and a big-surf weekend at home; Iran–Israel and Ukraine talks remain the world's main worries.",
+  "bluf": "Pacifica: no outages, closures or official emergency orders. NWS now has a High Surf Warning from Friday 6 PM to Sunday 4 AM, a Coastal Flood Advisory Saturday, and a rainy, gusty Friday (about half an inch, gusts to 37 mph, possible thunderstorms). Abroad, US envoys met Putin in Moscow on Ukraine and Israel–Iran tension continues. Nothing here calls for stocking up."
  },
  "changes": [
-  "First edition. There's no earlier briefing to compare against yet; from tomorrow this lists what moved overnight."
+  "High Surf Warning now runs Fri 6 PM to Sun 4 AM, with a Coastal Flood Advisory Saturday (new).",
+  "Friday forecast firmed up: rain (½–¾ in), gusts to 37 mph, possible thunderstorms. Rain now starts early Friday, not Thursday night.",
+  "Sierra Winter Storm Watch is now a Winter Storm Warning (Tahoe from Fri 10 AM; Yosemite/Sequoia from Fri 4 PM).",
+  "US envoys met Putin in Moscow; Nvidia CEO Jensen Huang resigned. Oil is steady and gold fell about 3%."
  ],
  "home_front": [
   {
    "id": "alerts",
    "status": "action",
-   "summary": "High Surf Warning Fri 6 PM – Sun 4 AM; Beach Hazards Statement until then.",
+   "summary": "High Surf Warning Fri 6 PM – Sun 4 AM; Coastal Flood Advisory Sat; rain and wind Fri.",
    "items": [
     {
      "id": "pac-high-surf",
      "tag": "ACTION",
      "severity": "hazard",
      "title": "High Surf Warning for the Pacifica coast this weekend",
-     "detail": "NWS expects the first big winter swell: breakers well above normal and long-period sets that run up the beach without warning. Sneaker waves can sweep people off rocks, jetties and the pier. A Beach Hazards Statement covers today through Friday evening.",
-     "action": "Stay out of the water and off Pacifica Pier, the jetty and the rocks from Friday evening to Sunday. Keep kids and dogs well back from the waterline, and don't watch the waves from the edge of the bluffs.",
+     "detail": "NWS expects a large, long-period swell: breakers well above normal and sets that run up the beach without warning. Sneaker waves can sweep people off rocks, jetties and the pier. A Coastal Flood Advisory covers high tides on Saturday (midnight to 6 PM), with possible minor flooding and some road closures near the shore.",
+     "action": "Stay out of the water and off Pacifica Pier, the jetty and the rocks from Friday evening to Sunday morning. Keep kids and dogs well back from the waterline, never turn your back on the ocean, and avoid bluff edges and low shoreline roads at Saturday's high tides.",
      "when": "Fri 6 PM – Sun 4 AM",
      "where": "SF Peninsula coast incl. Pacifica",
-     "trend": "new",
+     "trend": "rising",
      "lat": 37.633,
      "lon": -122.497,
      "area": 2,
@@ -47,7 +50,7 @@
      "tag": "INFO",
      "severity": "low",
      "title": "No significant earthquakes near home",
-     "detail": "Nothing of magnitude 3 or more within 350 km this week; the largest nearby was M2.6 at The Geysers. No tsunami threat for California.",
+     "detail": "Nothing of magnitude 3 or more within 350 km this week; the largest nearby was M2.7 near Lake Davis, far to the north. The NTWC posted a bulletin for a quake off British Columbia, with no threat to California.",
      "sources": [
       {
        "name": "USGS",
@@ -66,15 +69,15 @@
   {
    "id": "utilities",
    "status": "clear",
-   "summary": "No PG&E outages or water notices reported for Pacifica.",
+   "summary": "No PG&E outages or water notices found; wind and rain Fri could cause scattered outages.",
    "items": [
     {
-     "id": "pac-rain-thu",
-     "tag": "INFO",
-     "severity": "low",
-     "title": "Rain and gusty south wind Thursday night",
-     "detail": "Rain is likely (60%) after 11 PM Thursday, with gusts to about 25 mph. That's enough for scattered tree-on-line outages, but no widespread problems are expected.",
-     "when": "Thu night",
+     "id": "pac-rain-fri",
+     "tag": "WATCH",
+     "severity": "watch",
+     "title": "Rain, gusty wind and possible thunderstorms Friday",
+     "detail": "Gusts to 30 mph tonight, then rain Friday with south-southwest gusts to about 37 mph and half to three-quarters of an inch of rain, with a chance of thunderstorms 7 AM–4 PM. That's enough for scattered tree-on-line outages, but no widespread problems are expected.",
+     "when": "Tonight – Fri",
      "where": "Pacifica",
      "sources": [
       {
@@ -83,21 +86,23 @@
       }
      ],
      "confidence": "confirmed",
-     "topic": "environment"
+     "topic": "environment",
+     "trend": "rising",
+     "action": "If it worsens: charge phones and battery packs Thursday, and have flashlights ready. Report downed lines to PG&E and stay clear."
     }
    ]
   },
   {
    "id": "roads",
    "status": "clear",
-   "summary": "Highway 1 open; only routine Caltrans work scheduled nearby.",
+   "summary": "Highway 1 open; flagger delays near Montara through Fri; wet roads Fri.",
    "items": [
     {
      "id": "hwy1-montara",
      "tag": "INFO",
      "severity": "low",
      "title": "Hwy 1 one-way traffic control near Montara Thu and Fri",
-     "detail": "Caltrans drainage work south of the Tom Lantos Tunnels, with short flagger delays. The SF section of Hwy 1 also has a full maintenance closure scheduled Nov 16–17; check times before driving north.",
+     "detail": "Caltrans drainage work south of the Tom Lantos Tunnels (one-way traffic control, Thu and Fri). Hwy 1 in San Francisco has a full maintenance closure Nov 16–17; check times before driving north. Expect wet roads and ponding Friday.",
      "when": "Nov 12–13; Nov 16–17",
      "where": "Hwy 1 Montara; Hwy 1 in San Francisco",
      "lat": 37.54,
@@ -110,21 +115,22 @@
       }
      ],
      "confidence": "confirmed",
-     "topic": "infrastructure"
+     "topic": "infrastructure",
+     "trend": "steady"
     }
    ]
   },
   {
    "id": "health",
    "status": "clear",
-   "summary": "Air quality moderate (AQI ~55); no local water or health advisories.",
+   "summary": "Air quality moderate (AQI ~59); no local water or health advisories.",
    "items": [
     {
      "id": "aq-moderate",
      "tag": "INFO",
      "severity": "low",
      "title": "Air quality moderate",
-     "detail": "US AQI about 55 now, peaking near 68 early Thursday. Fine for most people; anyone sensitive may notice it.",
+     "detail": "US AQI about 59 now, peaking near 62. Fine for most people; anyone sensitive may notice it. Rain Friday should help.",
      "sources": [
       {
        "name": "Open-Meteo air quality",
@@ -153,13 +159,13 @@
   {
    "id": "supplies",
    "status": "clear",
-   "summary": "No local shortages. Oil output is nearly back to pre-war levels despite Gulf shipping disruption.",
+   "summary": "No local shortages. Oil steady (WTI ~$87); Hormuz still disrupted.",
    "items": [
     {
      "id": "oil-supply",
      "tag": "INFO",
      "title": "Oil output near pre-war levels; Hormuz still disrupted",
-     "detail": "OPEC says production is close to where it was before the Iran war. Shipping through the Strait of Hormuz is still restricted, so fuel prices could jump if fighting resumes.",
+     "detail": "OPEC says production is close to pre-war levels, and WTI crude is about $87, flat on the day. Shipping through the Strait of Hormuz is still restricted, so fuel prices could jump if fighting resumes.",
      "supply_dim": "food",
      "supply": {
       "3d": "WATCH",
@@ -182,16 +188,16 @@
  ],
  "readiness": {
   "default": {
-   "task": "Check flashlights and battery packs before Thursday's rain.",
-   "why": "Storm season is starting, and wind-driven outages usually come at night."
+   "task": "Charge phones and battery packs and set out flashlights tonight.",
+   "why": "Friday brings gusts to 37 mph and rain; wind outages usually come at night."
   },
   "3d": {
    "task": "Add a gallon of water per person and a few days of shelf-stable food to the next grocery run.",
    "why": "Three days is the minimum the county recommends; a week is the goal for a big quake."
   },
   "3w": {
-   "task": "Check flashlights and battery packs before Thursday's rain.",
-   "why": "Your food supply is in good shape; light and power are the usual weak spots."
+   "task": "Charge phones and battery packs and set out flashlights tonight.",
+   "why": "Friday brings gusts to 37 mph and rain; wind outages usually come at night."
   },
   "3m": {
    "task": "Rotate the oldest stored food and water into this week's use.",
@@ -205,23 +211,23 @@
  "ladder": [
   {
    "level": "pacifica",
-   "summary": "Calm. The only local story is the swell; see Home front.",
+   "summary": "Calm. Local story is the weekend surf; see Home front.",
    "items": []
   },
   {
    "level": "california",
-   "summary": "Sierra winter storm watch; otherwise quiet. No major fires active.",
+   "summary": "Sierra winter storm warnings; otherwise quiet. No major fires active.",
    "items": [
     {
      "id": "sierra-storm",
      "tag": "WATCH",
      "severity": "hazard",
-     "title": "Winter Storm Watch for the Sierra: Tahoe, Yosemite, Mono",
-     "detail": "Heavy mountain snow possible from Friday into early next week, with high wind near the Nevada line. Chain controls likely on I-80 and US-50.",
-     "action": "If you plan to drive to the mountains, go before Friday or carry chains, water and blankets.",
+     "title": "Winter Storm Warnings for the Sierra: Tahoe, Yosemite, Sequoia",
+     "detail": "Heavy mountain snow from Friday; Tahoe/Mono warnings run to Saturday morning, and Yosemite/Sequoia/Kings Canyon to Tuesday. High wind warning for Siskiyou County. Chain controls likely on I-80 and US-50.",
+     "action": "Avoid mountain travel Friday–Tuesday if you can; otherwise carry chains, water and blankets.",
      "when": "Fri – Tue",
      "where": "Sierra Nevada",
-     "trend": "new",
+     "trend": "rising",
      "lat": 38.9,
      "lon": -120.0,
      "area": 3,
@@ -252,7 +258,7 @@
   },
   {
    "level": "usa",
-   "summary": "Iran-linked threat activity is the main security thread at home; patch your devices.",
+   "summary": "Iran-linked threats to officials and a major tech-leadership shake-up; patch your devices.",
    "items": [
     {
      "id": "iran-plots-us",
@@ -296,23 +302,23 @@
      "topic": "cyber"
     },
     {
-     "id": "nyc-collapse",
+     "id": "nvidia-ceo",
      "tag": "INFO",
-     "severity": "low",
-     "title": "Brooklyn building collapse: 1 dead, 12 hurt",
-     "detail": "A three-storey building collapsed and rescuers are searching the rubble. There's no sign of foul play.",
-     "lat": 40.65,
-     "lon": -73.95,
-     "area": 1,
+     "title": "Nvidia CEO Jensen Huang resigns",
+     "detail": "Reported by BBC, Al Jazeera and SFGate after his affair with an alleged Chinese spy raised national-security concerns. Nvidia shares fell and the interim CEO is Colette Kress. No direct effect on households.",
+     "trend": "new",
+     "confidence": "confirmed",
+     "topic": "economy",
      "sources": [
       {
        "name": "BBC",
-       "url": "https://www.bbc.co.uk/news/videos/c60rkwjj7x7go"
+       "url": "https://www.bbc.com/news/business"
+      },
+      {
+       "name": "Al Jazeera",
+       "url": "https://www.aljazeera.com/"
       }
-     ],
-     "confidence": "confirmed",
-     "topic": "public-safety",
-     "where": "Brooklyn, New York"
+     ]
     },
     {
      "id": "markets",
@@ -320,13 +326,13 @@
      "severity": "low",
      "topic": "economy",
      "confidence": "confirmed",
-     "title": "Markets calm: stocks up, oil drifting lower",
-     "detail": "S&P 500 up 1.3% on the day but down 2.4% over the month. Brent crude is about $92, down 14% in a month as Gulf output recovers. The VIX fear gauge is 17.5, which is normal.",
+     "title": "Markets: no stress signals; gold down 3%",
+     "detail": "The VIX is 18.3, below the 25 stress level; WTI crude about $87, flat. Gold fell 3.3% on the day and the 10-year Treasury yield is 5.07%, up 1.5%. (S&P 500 data was unavailable today.)",
      "trend": "steady",
      "sources": [
       {
        "name": "Yahoo Finance",
-       "url": "https://finance.yahoo.com/quote/%5EGSPC/"
+       "url": "https://finance.yahoo.com/"
       }
      ]
     }
@@ -501,7 +507,7 @@
      "title": "Israel prepares for a possible strike on Iran; Tehran threatens retaliation",
      "detail": "Israel ordered its military to step up preparations, and Iran says it will retaliate more widely if attacked. Talks with the US hinge on Iran's seven conditions. A new round of fighting would hit oil prices and Gulf shipping first.",
      "action": "If strikes begin, expect fuel prices to jump within days; top off the car tank then.",
-     "trend": "rising",
+     "trend": "steady",
      "lat": 32.4,
      "lon": 53.7,
      "area": 5,
@@ -540,7 +546,7 @@
      "tag": "INFO",
      "severity": "critical",
      "title": "Ukraine war: Abu Dhabi talks end without a breakthrough",
-     "detail": "Talks turned to Europe's post-war security framework. US envoys are due to meet Putin and Zelensky on Thursday. Fighting continues, and Russia is recruiting abroad, including from Indonesia.",
+     "detail": "US envoys met Putin in Moscow after the Abu Dhabi talks and are heading to Dublin to see Zelensky. Ukraine says Russia disrupted military Starlink service again. Fighting continues.",
      "lat": 48.5,
      "lon": 36.0,
      "area": 5,
@@ -551,8 +557,8 @@
        "url": "https://www.bbc.co.uk/news/articles/ck792we7zrz4o"
       },
       {
-       "name": "The Guardian",
-       "url": "https://www.theguardian.com/world/2026/nov/11/ukraine-indonesian-pow-prisoner-of-war-russia"
+       "name": "NPR",
+       "url": "https://www.npr.org/sections/world/"
       }
      ],
      "confidence": "confirmed",
@@ -563,8 +569,8 @@
      "id": "gaza",
      "tag": "INFO",
      "severity": "critical",
-     "title": "Israeli strikes in Gaza kill nine, hit Nasser Medical Complex",
-     "detail": "Strikes continue across the enclave. The UN is appealing for aid as heavy rain floods tent camps.",
+     "title": "Israeli strike on Gaza hospital kills six",
+     "detail": "Health ministry says six died; aid groups urge Israel to allow shelters as heavy rain hits tent camps.",
      "lat": 31.35,
      "lon": 34.3,
      "area": 2,
@@ -598,25 +604,6 @@
      "confidence": "confirmed",
      "topic": "health",
      "where": "Kenya"
-    },
-    {
-     "id": "solomons-quake",
-     "tag": "INFO",
-     "severity": "hazard",
-     "title": "M6.4 earthquake, Solomon Islands",
-     "detail": "Rated green by USGS (little damage expected). No Pacific-wide tsunami threat.",
-     "lat": -10.87,
-     "lon": 165.56,
-     "area": 2,
-     "sources": [
-      {
-       "name": "USGS",
-       "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tx16"
-      }
-     ],
-     "confidence": "confirmed",
-     "topic": "environment",
-     "where": "Solomon Islands"
     }
    ]
   }
@@ -685,20 +672,24 @@
   {
    "name": "FEMA IPAWS",
    "url": "https://www.fema.gov/openfema-data-page/ipaws-archived-alerts-v1"
+  },
+  {
+   "name": "NWS alerts",
+   "url": "https://alerts.weather.gov/"
   }
  ],
  "status": {
   "local": {
    "level": "steady",
-   "note": "No outages or orders; big surf Fri–Sun."
+   "note": "No outages or orders; rain Fri, big surf Fri–Sun."
   },
   "regional": {
    "level": "steady",
-   "note": "Sierra storm watch; Iran-linked threats to officials."
+   "note": "Sierra winter storm warnings; Iran-linked threats to officials."
   },
   "world": {
    "level": "strained",
-   "note": "Iran–Israel brinkmanship; Ukraine war grinds on."
+   "note": "Iran–Israel brinkmanship; Ukraine talks continue."
   }
  },
  "coming_up": [
@@ -706,20 +697,25 @@
    "when": "Thu Nov 12",
    "date": "2026-11-12",
    "level": "world",
-   "title": "US envoys meet Putin and Zelensky",
-   "detail": "Follow-up to the Abu Dhabi talks on post-war security.",
+   "title": "US envoys meet Zelensky in Dublin",
    "sources": [
     {
-     "name": "BBC",
-     "url": "https://www.bbc.co.uk/news/articles/ck792we7zrz4o"
+     "name": "NPR",
+     "url": "https://www.npr.org/sections/world/"
     }
    ]
   },
   {
-   "when": "Thu night",
-   "date": "2026-11-12",
+   "when": "Fri, all day",
+   "date": "2026-11-13",
    "level": "pacifica",
-   "title": "Rain and gusty south wind in Pacifica"
+   "title": "Rain, gusts to 37 mph, possible thunderstorms",
+   "sources": [
+    {
+     "name": "NWS San Francisco",
+     "url": "https://forecast.weather.gov/MapClick.php?lat=37.6138&lon=-122.4869"
+    }
+   ]
   },
   {
    "when": "Fri 6 PM – Sun 4 AM",
@@ -728,7 +724,19 @@
    "title": "High Surf Warning on the coast",
    "sources": [
     {
-     "name": "NWS",
+     "name": "NWS San Francisco",
+     "url": "https://forecast.weather.gov/MapClick.php?lat=37.6138&lon=-122.4869"
+    }
+   ]
+  },
+  {
+   "when": "Sat, midnight – 6 PM",
+   "date": "2026-11-14",
+   "level": "pacifica",
+   "title": "Coastal Flood Advisory (high tides)",
+   "sources": [
+    {
+     "name": "NWS San Francisco",
      "url": "https://forecast.weather.gov/MapClick.php?lat=37.6138&lon=-122.4869"
     }
    ]
@@ -737,13 +745,25 @@
    "when": "Fri – Tue",
    "date": "2026-11-13",
    "level": "california",
-   "title": "Sierra winter storm; chain controls likely"
+   "title": "Sierra winter storm warnings; chain controls likely",
+   "sources": [
+    {
+     "name": "NWS alerts",
+     "url": "https://alerts.weather.gov/"
+    }
+   ]
   },
   {
    "when": "Nov 16–17",
    "date": "2026-11-16",
    "level": "pacifica",
-   "title": "Hwy 1 full maintenance closure in San Francisco"
+   "title": "Hwy 1 full maintenance closure in San Francisco",
+   "sources": [
+    {
+     "name": "Caltrans QuickMap",
+     "url": "https://quickmap.dot.ca.gov/"
+    }
+   ]
   }
  ]
 }
