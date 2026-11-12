@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
-"""Push a phone notification (via ntfy.sh) when today's briefing has ACTION items.
+"""Compose (and optionally push via ntfy.sh) the phone alert for today's ACTION items.
+
+The daily cloud run uses --dry-run to print the text and sends it with Claude's
+PushNotification tool, because ntfy.sh rate-limits shared cloud addresses (HTTP 429).
 
 Silent when there is nothing to do. The topic name is private: pass it with
 --topic or the NTFY_TOPIC environment variable, never commit it to this
