@@ -223,7 +223,6 @@ RSS_FEEDS = {
     "state_dept_advisories": "https://travel.state.gov/_res/rss/TAsTWs.xml",
     # cyber
     # health
-    "who_news": "https://www.who.int/rss-feeds/news-english.xml",
     "fda_food_recalls": "https://www.fda.gov/about-fda/contact-fda/stay-informed/rss-feeds/food-safety-recalls/rss.xml",
     # world news
     "bbc_world": "https://feeds.bbci.co.uk/news/world/rss.xml",

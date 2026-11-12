@@ -6,7 +6,7 @@ Run this every day at about 4 AM Pacific. The page (`index.html`) only reads `da
 
 ## Steps
 
-1. `python scripts/fetch_feeds.py`. This pulls free official feeds into `data/feeds/latest.json` (USGS quakes, NWS alerts and forecast, tsunami center, air quality, surf, CAL FIRE, Caltrans District 4 closures, space weather, CISA exploited vulnerabilities, GDACS disasters, State Dept advisories, WHO, FDA recalls, and world and California news RSS). Read all of it. A feed listed under `errors` just failed today. Cover that ground with a web search instead.
+1. `python scripts/fetch_feeds.py`. This pulls free official feeds into `data/feeds/latest.json` (USGS quakes, NWS alerts and forecast, tsunami center, air quality, surf, CAL FIRE, Caltrans District 4 closures, space weather, CISA exploited vulnerabilities, GDACS disasters, State Dept advisories, FDA recalls, and world and California news RSS). Read all of it. A feed listed under `errors` just failed today. Cover that ground with a web search instead.
 2. Read yesterday's `data/brief.json` so you can say what changed and set each item's `trend`.
 3. Use web search for what the feeds can't give you. Keep it targeted, roughly 10–20 searches:
    - **Local, always check:** SMC Alert / San Mateo County OES notices; PG&E outages or PSPS (Public Safety Power Shutoff) for Pacifica; North Coast County Water District notices; Highway 1 status (Devil's Slide / Tom Lantos Tunnels, Pacifica to Half Moon Bay, Sharp Park), Sharp Park Rd and Hwy 35, Hwy 1 north to Daly City; Pacifica police and city news; coastal bluff and erosion news; cell or internet outages in the area.
