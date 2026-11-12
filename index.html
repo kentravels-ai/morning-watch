@@ -1,0 +1,476 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Morning Watch</title>
+<meta name="description" content="A calm daily security briefing, from Pacifica out to the world.">
+<meta name="theme-color" content="#07090c">
+<style>
+:root{
+  --bg:#07090c;--panel:#0d1117;--panel2:#11161e;--line:#1f2630;--ink:#d3d9e0;--dim:#7d8792;--faint:#4a535e;
+  --crit:#ff3b3b;--elev:#ff9f1a;--watch:#ffd23f;--hazard:#3fb8ff;--low:#5fd18a;
+  --mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+  --sans:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--ink)}
+body{font:15px/1.55 var(--sans);padding:0 0 40px;overflow-x:hidden}
+main,.card,.item,.ititle,.idetail,.imeta{min-width:0;overflow-wrap:anywhere}
+a{color:#8cc8ff}
+.wrap{max-width:860px;margin:0 auto;padding:0 16px}
+header{position:sticky;top:0;z-index:5;background:rgba(7,9,12,.92);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
+.top{display:flex;align-items:center;gap:10px;padding:10px 16px;font:12px var(--mono);letter-spacing:.12em;text-transform:uppercase}
+.top b{color:#fff;letter-spacing:.2em}
+.top .date{color:var(--dim);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}
+.top b{white-space:nowrap}
+@media (max-width:480px){.top{letter-spacing:.06em;gap:8px}.top b{letter-spacing:.12em}}
+.top .sp{flex:1}
+.iconbtn{background:none;border:1px solid var(--line);color:var(--dim);border-radius:6px;padding:4px 8px;font:12px var(--mono);cursor:pointer}
+.iconbtn:hover{color:var(--ink);border-color:var(--faint)}
+.stale{display:none;background:#3a2a05;color:var(--watch);font:12px var(--mono);padding:6px 10px;border-radius:6px;margin:10px 0 0}
+
+/* overall */
+.overall{margin:16px 0 6px;display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.lvl{font:600 11px var(--mono);letter-spacing:.14em;text-transform:uppercase;padding:3px 8px;border-radius:4px;border:1px solid currentColor}
+.headline{font-size:19px;font-weight:600;color:#fff;margin:0;line-height:1.3}
+.bluf{color:var(--ink);margin:6px 0 14px}
+.bluf b{font:600 11px var(--mono);letter-spacing:.12em;color:var(--dim);margin-right:6px}
+
+/* map */
+.mapbox{background:var(--panel);border:1px solid var(--line);border-radius:8px;overflow:hidden;position:relative;touch-action:pan-y}
+.mapbox svg{display:block;width:100%;height:auto}
+.mapbar{display:flex;align-items:center;gap:8px;padding:6px 8px;border-top:1px solid var(--line);font:12px var(--mono)}
+.zbtn{width:30px;height:28px;border-radius:6px;border:1px solid var(--line);background:var(--panel2);color:var(--ink);font:16px var(--mono);cursor:pointer;line-height:1}
+.zbtn:disabled{opacity:.3;cursor:default}
+.lvlname{min-width:0;flex:1;text-align:center;letter-spacing:.14em;text-transform:uppercase;color:#fff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.pips{display:flex;gap:6px;justify-content:center;padding:0 0 8px}
+.pip{width:22px;height:5px;border-radius:3px;background:var(--faint);opacity:.45;cursor:pointer;border:0;padding:0}
+.pip.on{opacity:1;outline:1px solid #fff;outline-offset:2px}
+.tip{position:absolute;pointer-events:none;background:#000c;border:1px solid var(--line);padding:4px 8px;border-radius:4px;font:12px var(--mono);color:#fff;white-space:nowrap;transform:translate(-50%,-130%);display:none}
+@keyframes pulse{0%,100%{opacity:.5}50%{opacity:1}}
+.glow{animation:pulse 3.4s ease-in-out infinite}
+.hot{cursor:pointer}
+
+/* sections */
+h2{font:600 12px var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--dim);margin:26px 0 8px;display:flex;align-items:center;gap:8px}
+h2 .rule{flex:1;height:1px;background:var(--line)}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:8px}
+.actnow{border-color:#5a1d1d;background:linear-gradient(#1a0d0d,#120c0c)}
+.actnow.none{border-color:var(--line);background:var(--panel)}
+.none-msg{padding:12px 14px;color:var(--dim)}
+
+.item{padding:12px 14px;border-top:1px solid var(--line)}
+.item:first-child{border-top:0}
+.item.flash{animation:flash 1.6s ease-out}
+@keyframes flash{0%{background:#22303f}100%{background:transparent}}
+.ihead{display:flex;gap:8px;align-items:flex-start}
+.tag{flex:none;font:600 10px var(--mono);letter-spacing:.1em;padding:2px 6px;border-radius:3px;margin-top:3px}
+.tag.ACTION{background:var(--crit);color:#000}
+.tag.WATCH{background:transparent;color:var(--watch);border:1px solid var(--watch)}
+.tag.INFO{background:transparent;color:var(--dim);border:1px solid var(--faint)}
+.sev{flex:none;width:8px;height:8px;border-radius:50%;margin-top:7px}
+.ititle{font-weight:600;color:#fff;flex:1}
+.trend{font:11px var(--mono);color:var(--dim);white-space:nowrap;margin-top:3px}
+.idetail{color:var(--ink);margin:4px 0 0 0}
+.iact{margin:8px 0 0;padding:8px 10px;border-left:3px solid var(--crit);background:#1d1111;border-radius:0 4px 4px 0}
+.iact b{font:600 11px var(--mono);letter-spacing:.1em;color:#ff8a8a;margin-right:6px}
+.imeta{font:12px var(--mono);color:var(--dim);margin-top:6px;display:flex;flex-wrap:wrap;gap:4px 14px}
+.imeta a{color:var(--dim)}
+.supplynote{font:11px var(--mono);color:var(--hazard);margin-top:4px}
+
+.hf{border-top:1px solid var(--line)}
+.hf:first-child{border-top:0}
+.hfrow{display:flex;gap:10px;align-items:flex-start;padding:12px 14px;cursor:pointer;width:100%;background:none;border:0;color:inherit;text-align:left;font:inherit}
+.hfrow:hover{background:var(--panel2)}
+.stdot{flex:none;width:10px;height:10px;border-radius:50%;margin-top:6px}
+.st-clear{background:var(--low)}.st-watch{background:var(--watch)}.st-action{background:var(--crit);box-shadow:0 0 10px var(--crit)}
+.hftitle{font-weight:600;color:#fff}
+.hfq{font-size:13px;color:var(--dim);font-style:italic}
+.hfsum{margin-top:2px}
+.hfcount{font:12px var(--mono);color:var(--dim);white-space:nowrap;margin-top:3px}
+.hfitems{display:none;background:#0a0e13;border-top:1px dashed var(--line)}
+.hf.open .hfitems{display:block}
+.chev{transition:transform .2s;display:inline-block}
+.hf.open .chev{transform:rotate(90deg)}
+
+.ladderhead{padding:12px 14px;border-bottom:1px solid var(--line)}
+.ladderhead .ln{font:600 13px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:#fff}
+.ladderhead .ls{color:var(--ink);margin-top:2px}
+.swipehint{font:11px var(--mono);color:var(--faint);padding:8px 14px;text-align:center;border-top:1px solid var(--line)}
+
+.ready{padding:14px}
+.ready .rt{font-weight:600;color:#fff}
+.ready .rw{color:var(--dim);font-size:14px;margin-top:4px}
+.changes{margin:0;padding:12px 14px 12px 32px}
+.changes li{margin:3px 0}
+
+footer{margin-top:30px;font-size:13px;color:var(--dim)}
+footer .srcs{display:flex;flex-wrap:wrap;gap:4px 12px;font:12px var(--mono)}
+footer .srcs a{color:var(--dim)}
+.disclaim{margin-top:14px;padding:10px 12px;border:1px solid var(--line);border-radius:6px}
+select{background:var(--panel2);color:var(--ink);border:1px solid var(--line);border-radius:6px;padding:6px 8px;font:14px var(--sans)}
+
+dialog{background:var(--panel);color:var(--ink);border:1px solid var(--line);border-radius:10px;padding:18px;max-width:420px;width:calc(100% - 32px)}
+dialog::backdrop{background:#000a}
+dialog h3{margin:0 0 4px;font:600 13px var(--mono);letter-spacing:.14em;text-transform:uppercase}
+dialog p{color:var(--dim);font-size:14px;margin:4px 0 14px}
+dialog label{display:block;margin:12px 0 4px;font-weight:600}
+dialog .row{display:flex;justify-content:flex-end;gap:8px;margin-top:18px}
+.loading{padding:60px 0;text-align:center;color:var(--dim);font:13px var(--mono)}
+</style>
+</head>
+<body>
+<header><div class="wrap top">
+  <b>Morning Watch</b><span class="date" id="hdrDate">—</span><span class="sp"></span>
+  <select id="archive" aria-label="Past briefings" style="font:12px var(--mono);padding:3px 6px"></select>
+  <button class="iconbtn" id="setBtn" aria-label="Settings">⚙</button>
+</div></header>
+
+<main class="wrap" id="app"><div class="loading">Loading briefing…</div></main>
+
+<dialog id="settings">
+  <h3>Household readiness</h3>
+  <p>Optional. Saved only on this device and never sent anywhere. It changes how urgent supply-related items are and which daily task you get.</p>
+  <label for="food">Food on hand</label>
+  <select id="food"></select>
+  <label for="water">Water on hand</label>
+  <select id="water"></select>
+  <div class="row"><button class="iconbtn" id="setClose">Done</button></div>
+</dialog>
+
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/topojson-client@3.1.0/dist/topojson-client.min.js"></script>
+<script>
+"use strict";
+const HOME = {lat: 37.6138, lon: -122.4869};
+const LEVELS = [
+  {key:"pacifica",   name:"Pacifica · 94044",   center:[-122.40, 37.66], span:1.9,  res:"50m"},
+  {key:"california", name:"California",          center:[-119.4, 37.3],   span:34,   res:"50m"},
+  {key:"usa",        name:"United States",       center:[-97.5, 38.5],    span:95,   res:"50m"},
+  {key:"west",       name:"Western Civilization",center:[-38, 44],        span:165,  res:"50m"},
+  {key:"asia",       name:"Asia",                center:[92, 28],         span:125,  res:"50m"},
+  {key:"world",      name:"World",               world:true,              res:"50m"}
+];
+const HF = {
+  alerts:   {title:"Immediate threats & official alerts", q:"What could require action in the next 24–72 hours?"},
+  utilities:{title:"Power, water & communications",       q:"Can I safely stay home and keep essential services?"},
+  roads:    {title:"Roads, evacuation routes & access",   q:"Can I leave, and where could I go?"},
+  health:   {title:"Health & environmental hazards",      q:"Is anything unsafe to breathe, drink, eat or encounter?"},
+  supplies: {title:"Essential supplies & readiness",      q:"What might become hard to get, and what gap should I close today?"}
+};
+const SEV = {critical:"#ff3b3b", elevated:"#ff9f1a", watch:"#ffd23f", hazard:"#3fb8ff", low:"#5fd18a"};
+const SEV_RANK = {critical:4, elevated:3, watch:2, hazard:2, low:1};
+const TAG_RANK = {ACTION:3, WATCH:2, INFO:1};
+const OVERALL = {steady:"#5fd18a", strained:"#ffd23f", serious:"#ff9f1a", critical:"#ff3b3b"};
+const SUPPLY = [["","Not set"],["3d","About 3 days"],["3w","About 3 weeks"],["3m","About 3 months"],["1y","A year or more"]];
+const W = 1080, H = 360;
+const dotStep = () => ((document.getElementById("mapbox") || {}).clientWidth || 1000) < 600 ? 12 : 7;
+
+const store = {
+  get(k, d){ try { const v = localStorage.getItem("mw:"+k); return v === null ? d : v; } catch(e){ return d; } },
+  set(k, v){ try { localStorage.setItem("mw:"+k, v); } catch(e){} }
+};
+let brief = null, level = (() => {
+  const q = new URLSearchParams(location.search).get("level");
+  const v = q !== null ? +q : +store.get("level", 0);
+  return Number.isInteger(v) && v >= 0 && v <= 5 ? v : 0;
+})();
+const landCache = {}, gridCache = {};
+
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const safeUrl = u => /^https?:\/\//i.test(u || "") ? u : null;
+
+/* ---------- supply-aware tag ---------- */
+function supplyKey(item){
+  const k = item.supply_dim === "water" ? store.get("water","") : store.get("food","");
+  return k;
+}
+function effTag(item){
+  const k = supplyKey(item);
+  if (item.supply && k && item.supply[k]) return item.supply[k];
+  return item.tag || "INFO";
+}
+
+/* ---------- data ---------- */
+async function loadJSON(url){
+  const r = await fetch(url + (url.includes("?") ? "&" : "?") + "t=" + Date.now(), {cache:"no-store"});
+  if (!r.ok) throw new Error(url + " → " + r.status);
+  return r.json();
+}
+async function loadBrief(date){
+  const url = date ? `data/archive/${date}.json` : "data/brief.json";
+  brief = await loadJSON(url);
+  render();
+}
+async function initArchive(){
+  const sel = document.getElementById("archive");
+  try {
+    const idx = await loadJSON("data/index.json");
+    sel.innerHTML = `<option value="">Today</option>` + (idx.dates || []).slice(1).map(d => `<option value="${esc(d)}">${esc(d)}</option>`).join("");
+  } catch(e){ sel.style.display = "none"; }
+  sel.onchange = () => loadBrief(sel.value).catch(showErr);
+}
+function showErr(e){
+  document.getElementById("app").innerHTML = `<div class="loading">Couldn't load the briefing.<br>${esc(e.message)}</div>`;
+}
+
+/* ---------- map ---------- */
+function projFor(L){
+  if (L.world){
+    const LATN = 74, LATS = -46;
+    return d3.geoEquirectangular().scale(W/(2*Math.PI)).translate([W/2, H/2 + (W/360)*((LATN+LATS)/2)]);
+  }
+  return d3.geoMercator().center(L.center).scale(W / (L.span * Math.PI/180)).translate([W/2, H/2]).clipExtent([[0,0],[W,H]]);
+}
+async function land(res){
+  if (!landCache[res]) landCache[res] = d3.json(`https://cdn.jsdelivr.net/npm/world-atlas@2.0.2/land-${res}.json`)
+    .then(t => topojson.feature(t, t.objects.land));
+  return landCache[res];
+}
+async function grid(i){
+  const STEP = dotStep(), ck = i + ":" + STEP;
+  if (gridCache[ck]) return gridCache[ck];
+  const L = LEVELS[i], proj = projFor(L);
+  let feat = await land(L.res);
+  if (!L.world){
+    // Drop Antarctica: Mercator sends the pole to infinity and floods the canvas.
+    const g = feat.geometry || feat.features?.[0]?.geometry;
+    const polys = g.type === "MultiPolygon" ? g.coordinates : [g.coordinates];
+    feat = {type:"Feature", geometry:{type:"MultiPolygon", coordinates: polys.filter(p => p[0].some(c => c[1] > -60))}};
+  }
+  const c = document.createElement("canvas"); c.width = W; c.height = H;
+  const ctx = c.getContext("2d");
+  ctx.fillStyle = "#000"; ctx.beginPath(); d3.geoPath(proj, ctx)(feat); ctx.fill();
+  const px = ctx.getImageData(0, 0, W, H).data, pts = [];
+  for (let y = STEP/2; y < H; y += STEP) for (let x = STEP/2; x < W; x += STEP)
+    if (px[((y|0)*W + (x|0))*4 + 3] > 100) pts.push([x, y]);
+  return (gridCache[ck] = pts);
+}
+function allItems(){
+  if (!brief) return [];
+  const out = [];
+  (brief.home_front || []).forEach(s => (s.items || []).forEach(it => out.push({...it, _level:0, _hf:s.id})));
+  (brief.ladder || []).forEach(l => {
+    const li = LEVELS.findIndex(x => x.key === l.level);
+    (l.items || []).forEach(it => out.push({...it, _level: li < 0 ? 5 : li}));
+  });
+  return out;
+}
+function worstSev(items){
+  let best = null;
+  items.forEach(it => { if (it.severity && (!best || (SEV_RANK[it.severity]||0) > (SEV_RANK[best]||0))) best = it.severity; });
+  return best;
+}
+let drawToken = 0;
+async function drawMap(){
+  const tok = ++drawToken, L = LEVELS[level], proj = projFor(L);
+  const svg = d3.select("#map");
+  if (svg.empty()) return;
+  let pts;
+  try { pts = await grid(level); } catch(e){ pts = []; }
+  if (tok !== drawToken) return;
+  svg.selectAll("*").remove();
+  const defs = svg.append("defs");
+  Object.entries(SEV).forEach(([k,c]) => {
+    const g = defs.append("radialGradient").attr("id", "g-"+k);
+    g.append("stop").attr("offset","0%").attr("stop-color",c).attr("stop-opacity",.75);
+    g.append("stop").attr("offset","35%").attr("stop-color",c).attr("stop-opacity",.28);
+    g.append("stop").attr("offset","100%").attr("stop-color",c).attr("stop-opacity",0);
+  });
+  svg.append("g").selectAll("circle").data(pts).join("circle")
+    .attr("cx", d => d[0]).attr("cy", d => d[1]).attr("r", dotStep() > 7 ? 3.3 : 1.6).attr("fill", "#33435a");
+  // home marker
+  const hp = proj([HOME.lon, HOME.lat]);
+  if (hp && hp[0] >= 0 && hp[0] <= W && hp[1] >= 0 && hp[1] <= H){
+    svg.append("circle").attr("cx",hp[0]).attr("cy",hp[1]).attr("r",6).attr("fill","none").attr("stroke","#fff").attr("stroke-opacity",.6).attr("stroke-width",1.2);
+    svg.append("text").attr("x",hp[0]+9).attr("y",hp[1]+4).attr("fill","#9aa4ae").attr("font-size",12).attr("font-family","ui-monospace,Menlo,Consolas,monospace").text("HOME");
+  }
+  const zoomBoost = level <= 1 ? 1.25 : 1;
+  const hots = allItems().filter(it => typeof it.lat === "number" && typeof it.lon === "number" && it.severity)
+    .map(it => ({it, p: proj([it.lon, it.lat])}))
+    .filter(h => h.p && h.p[0] > -20 && h.p[0] < W+20 && h.p[1] > -20 && h.p[1] < H+20)
+    .sort((a,b) => (SEV_RANK[a.it.severity]||0) - (SEV_RANK[b.it.severity]||0));
+  const g = svg.append("g");
+  const tip = document.getElementById("tip");
+  hots.forEach((h, i) => {
+    const a = Math.max(1, Math.min(5, h.it.area || 2)), c = SEV[h.it.severity] || SEV.low;
+    const grp = g.append("g").attr("class","hot");
+    grp.append("circle").attr("class","glow").attr("cx",h.p[0]).attr("cy",h.p[1]).attr("r",(10 + a*11)*zoomBoost)
+      .attr("fill",`url(#g-${h.it.severity})`).style("animation-delay",(i*.37)+"s");
+    grp.append("circle").attr("cx",h.p[0]).attr("cy",h.p[1]).attr("r",3.2).attr("fill",c);
+    grp.append("circle").attr("cx",h.p[0]).attr("cy",h.p[1]).attr("r",1.3).attr("fill","#fff");
+    grp.append("circle").attr("cx",h.p[0]).attr("cy",h.p[1]).attr("r",16).attr("fill","transparent");
+    const box = document.querySelector(".mapbox");
+    grp.on("mouseenter", () => {
+      const r = box.getBoundingClientRect(), k = r.width / W;
+      tip.textContent = h.it.title; tip.style.left = (h.p[0]*k)+"px"; tip.style.top = (h.p[1]*k)+"px"; tip.style.display = "block";
+    }).on("mouseleave", () => tip.style.display = "none")
+      .on("click", () => focusItem(h.it));
+  });
+  // pips + controls
+  const items = allItems();
+  document.querySelectorAll(".pip").forEach((p, i) => {
+    const w = worstSev(items.filter(it => it._level === i));
+    p.style.background = w ? SEV[w] : "var(--faint)";
+    p.classList.toggle("on", i === level);
+  });
+  document.getElementById("lvlName").textContent = L.name;
+  document.getElementById("zin").disabled = level === 0;
+  document.getElementById("zout").disabled = level === LEVELS.length - 1;
+}
+function setLevel(i){
+  level = Math.max(0, Math.min(LEVELS.length - 1, i));
+  store.set("level", level);
+  drawMap(); renderLadder();
+}
+function focusItem(it){
+  if (it._hf){
+    const hf = document.querySelector(`.hf[data-id="${it._hf}"]`);
+    if (hf){ hf.classList.add("open"); flash(hf.querySelector(`[data-item="${CSS.escape(it.id||"")}"]`) || hf); }
+    return;
+  }
+  if (it._level !== level) setLevel(it._level);
+  requestAnimationFrame(() => flash(document.querySelector(`#ladder [data-item="${CSS.escape(it.id||"")}"]`)));
+}
+function flash(el){
+  if (!el) return;
+  el.scrollIntoView({behavior:"smooth", block:"center"});
+  el.classList.remove("flash"); void el.offsetWidth; el.classList.add("flash");
+}
+
+/* ---------- rendering ---------- */
+function itemHTML(it){
+  const tag = effTag(it), c = SEV[it.severity];
+  const srcs = (it.sources || []).map(s => safeUrl(s.url) ? `<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.name || "source")}</a>` : esc(s.name)).join(" · ");
+  const adjusted = it.supply && supplyKey(it) && it.supply[supplyKey(it)] && it.supply[supplyKey(it)] !== it.tag;
+  return `<div class="item" data-item="${esc(it.id || "")}">
+    <div class="ihead">
+      <span class="tag ${esc(tag)}">${esc(tag)}</span>
+      ${c ? `<span class="sev" style="background:${c}"></span>` : ""}
+      <span class="ititle">${esc(it.title)}</span>
+      ${it.trend ? `<span class="trend">${({new:"● new",rising:"▲ rising",steady:"■ steady",easing:"▼ easing"})[it.trend] || esc(it.trend)}</span>` : ""}
+    </div>
+    ${it.detail ? `<div class="idetail">${esc(it.detail)}</div>` : ""}
+    ${it.action && tag !== "INFO" ? `<div class="iact"><b>${tag === "ACTION" ? "DO" : "IF IT WORSENS"}</b>${esc(it.action)}</div>` : ""}
+    ${adjusted ? `<div class="supplynote">Adjusted for your supply setting</div>` : ""}
+    ${(it.when || it.where || srcs) ? `<div class="imeta">${it.when ? `<span>⏱ ${esc(it.when)}</span>` : ""}${it.where ? `<span>⌖ ${esc(it.where)}</span>` : ""}${srcs ? `<span>${srcs}</span>` : ""}</div>` : ""}
+  </div>`;
+}
+const sortItems = arr => [...arr].sort((a,b) => (TAG_RANK[effTag(b)]-TAG_RANK[effTag(a)]) || ((SEV_RANK[b.severity]||0)-(SEV_RANK[a.severity]||0)));
+
+function renderLadder(){
+  const el = document.getElementById("ladder"); if (!el || !brief) return;
+  const L = LEVELS[level], data = (brief.ladder || []).find(l => l.level === L.key) || {items:[]};
+  const items = sortItems(data.items || []);
+  el.innerHTML = `<div class="ladderhead"><div class="ln">${esc(L.name)}</div>${data.summary ? `<div class="ls">${esc(data.summary)}</div>` : ""}</div>
+    ${items.length ? items.map(itemHTML).join("") : `<div class="none-msg">Nothing notable at this level today.</div>`}
+    <div class="swipehint">${level < LEVELS.length-1 ? `Swipe left or press − to zoom out to ${esc(LEVELS[level+1].name)}` : "Swipe right or press + to zoom back in"}</div>`;
+}
+
+function render(){
+  const b = brief, app = document.getElementById("app");
+  const dt = new Date(b.generated_at);
+  document.getElementById("hdrDate").textContent = isNaN(dt) ? (b.date || "") :
+    dt.toLocaleDateString("en-US",{weekday:"short",month:"short",day:"numeric"}) + " · " +
+    dt.toLocaleTimeString("en-US",{hour:"numeric",minute:"2-digit",timeZone:"America/Los_Angeles"}) + " PT";
+  const ageH = (Date.now() - dt.getTime()) / 36e5;
+  const ov = b.overall || {}, ovc = OVERALL[ov.level] || "#7d8792";
+  const items = allItems();
+  const acts = sortItems(items.filter(it => effTag(it) === "ACTION"));
+  const rk = store.get("food","") || "default";
+  const ready = b.readiness ? (b.readiness[rk] || b.readiness.default) : null;
+  const viewingArchive = document.getElementById("archive").value;
+
+  app.innerHTML = `
+    <div class="stale" id="stale">${viewingArchive ? `Viewing an archived briefing from ${esc(b.date)}.` : `This briefing is ${Math.round(ageH)} hours old — today's update hasn't arrived yet.`}</div>
+    <div class="overall"><span class="lvl" style="color:${ovc}">${esc(ov.level || "—")}</span><h1 class="headline">${esc(ov.headline || "")}</h1></div>
+    ${ov.bluf ? `<p class="bluf"><b>BLUF</b>${esc(ov.bluf)}</p>` : ""}
+
+    <div class="mapbox" id="mapbox">
+      <svg id="map" viewBox="0 0 ${W} ${H}" role="img" aria-label="Hotspot map"></svg>
+      <div class="tip" id="tip"></div>
+      <div class="mapbar">
+        <button class="zbtn" id="zin" aria-label="Zoom in">+</button>
+        <span class="lvlname" id="lvlName"></span>
+        <button class="zbtn" id="zout" aria-label="Zoom out">−</button>
+      </div>
+      <div class="pips">${LEVELS.map((L,i) => `<button class="pip" data-i="${i}" title="${esc(L.name)}" aria-label="${esc(L.name)}"></button>`).join("")}</div>
+    </div>
+
+    <h2>Act now<span class="rule"></span></h2>
+    <div class="card actnow ${acts.length ? "" : "none"}">${acts.length ? acts.map(itemHTML).join("") : `<div class="none-msg">Nothing needs action today.</div>`}</div>
+
+    <h2>Home front · Pacifica<span class="rule"></span></h2>
+    <div class="card">${Object.entries(HF).map(([id, meta]) => {
+      const s = (b.home_front || []).find(x => x.id === id) || {status:"clear", summary:"No reports.", items:[]};
+      const its = sortItems(s.items || []);
+      const st = its.some(i => effTag(i) === "ACTION") ? "action" : (s.status || "clear");
+      return `<div class="hf ${st === "action" ? "open" : ""}" data-id="${id}">
+        <button class="hfrow" aria-expanded="${st === "action"}">
+          <span class="stdot st-${esc(st)}"></span>
+          <span style="flex:1"><div class="hftitle">${esc(meta.title)}</div><div class="hfq">${esc(meta.q)}</div><div class="hfsum">${esc(s.summary)}</div></span>
+          <span class="hfcount">${its.length ? its.length + " <span class='chev'>›</span>" : ""}</span>
+        </button>
+        ${its.length ? `<div class="hfitems">${its.map(itemHTML).join("")}</div>` : ""}
+      </div>`;}).join("")}</div>
+
+    ${ready ? `<h2>Today's readiness task<span class="rule"></span></h2>
+      <div class="card ready"><div class="rt">${esc(ready.task || ready)}</div>${ready.why ? `<div class="rw">${esc(ready.why)}</div>` : ""}
+      ${store.get("food","") ? "" : `<div class="rw" style="margin-top:8px">Tip: set your food and water supply in ⚙ for a task that fits you.</div>`}</div>` : ""}
+
+    <h2>The ladder<span class="rule"></span></h2>
+    <div class="card" id="ladder"></div>
+
+    ${(b.changes || []).length ? `<h2>Since yesterday<span class="rule"></span></h2><div class="card"><ul class="changes">${b.changes.map(c => `<li>${esc(c)}</li>`).join("")}</ul></div>` : ""}
+
+    <footer>
+      <h2>Sources<span class="rule"></span></h2>
+      <div class="srcs">${(b.sources_used || []).map(s => safeUrl(s.url) ? `<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.name)}</a>` : esc(s.name)).join("")}</div>
+      <div class="disclaim">Compiled automatically each morning from public sources by an AI. It can be wrong or late. It is <b>not</b> an emergency alert service. For life-safety alerts sign up for <a href="https://www.smcalert.info/" target="_blank" rel="noopener">SMC Alert</a>, and in an emergency call 911.</div>
+    </footer>`;
+
+  document.getElementById("stale").style.display = (viewingArchive || ageH > 30) ? "block" : "none";
+  document.querySelectorAll(".hfrow").forEach(btn => btn.onclick = () => {
+    const hf = btn.parentElement; hf.classList.toggle("open"); btn.setAttribute("aria-expanded", hf.classList.contains("open"));
+  });
+  document.getElementById("zin").onclick = () => setLevel(level - 1);
+  document.getElementById("zout").onclick = () => setLevel(level + 1);
+  document.querySelectorAll(".pip").forEach(p => p.onclick = () => setLevel(+p.dataset.i));
+  swipe(document.getElementById("mapbox")); swipe(document.getElementById("ladder"));
+  drawMap(); renderLadder();
+}
+function swipe(el){
+  let x0 = null, y0 = null;
+  el.addEventListener("touchstart", e => { x0 = e.touches[0].clientX; y0 = e.touches[0].clientY; }, {passive:true});
+  el.addEventListener("touchend", e => {
+    if (x0 === null) return;
+    const dx = e.changedTouches[0].clientX - x0, dy = e.changedTouches[0].clientY - y0;
+    if (Math.abs(dx) > 50 && Math.abs(dx) > Math.abs(dy) * 1.5) setLevel(level + (dx < 0 ? 1 : -1));
+    x0 = null;
+  }, {passive:true});
+}
+document.addEventListener("keydown", e => {
+  if (e.target.matches("input,select,textarea")) return;
+  if (e.key === "-" || e.key === "_") setLevel(level + 1);
+  if (e.key === "+" || e.key === "=") setLevel(level - 1);
+});
+
+/* ---------- settings ---------- */
+(function(){
+  const dlg = document.getElementById("settings");
+  ["food","water"].forEach(k => {
+    const s = document.getElementById(k);
+    s.innerHTML = SUPPLY.map(([v,l]) => `<option value="${v}">${l}</option>`).join("");
+    s.value = store.get(k, "");
+    s.onchange = () => { store.set(k, s.value); if (brief) render(); };
+  });
+  document.getElementById("setBtn").onclick = () => dlg.showModal ? dlg.showModal() : dlg.setAttribute("open","");
+  document.getElementById("setClose").onclick = () => dlg.close ? dlg.close() : dlg.removeAttribute("open");
+})();
+
+initArchive();
+loadBrief().catch(showErr);
+</script>
+</body>
+</html>

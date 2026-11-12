@@ -1,0 +1,604 @@
+{
+ "schema": 1,
+ "date": "2026-11-11",
+ "generated_at": "2026-11-11T16:46:50-08:00",
+ "overall": {
+  "level": "strained",
+  "headline": "Quiet at home apart from big surf this weekend; Iran–Israel tension is the world's main worry.",
+  "bluf": "Pacifica: no outages, closures or official orders, but a High Surf Warning runs Friday evening to Sunday morning, so stay off beaches, rocks and the pier. Rain is likely Thursday night. Abroad: Israel says it is preparing for a possible strike on Iran, and Tehran warns it will retaliate. Ukraine–Russia talks made no breakthrough. Nothing here calls for stocking up."
+ },
+ "changes": [
+  "First edition. There's no earlier briefing to compare against yet; from tomorrow this lists what moved overnight."
+ ],
+ "home_front": [
+  {
+   "id": "alerts",
+   "status": "action",
+   "summary": "High Surf Warning Fri 6 PM – Sun 4 AM; Beach Hazards Statement until then.",
+   "items": [
+    {
+     "id": "pac-high-surf",
+     "tag": "ACTION",
+     "severity": "hazard",
+     "title": "High Surf Warning for the Pacifica coast this weekend",
+     "detail": "NWS expects the first big winter swell: breakers well above normal and long-period sets that run up the beach without warning. Sneaker waves can sweep people off rocks, jetties and the pier. A Beach Hazards Statement covers today through Friday evening.",
+     "action": "Stay out of the water and off Pacifica Pier, the jetty and the rocks from Friday evening to Sunday. Keep kids and dogs well back from the waterline, and don't watch the waves from the edge of the bluffs.",
+     "when": "Fri 6 PM – Sun 4 AM",
+     "where": "SF Peninsula coast incl. Pacifica",
+     "trend": "new",
+     "lat": 37.633,
+     "lon": -122.497,
+     "area": 2,
+     "sources": [
+      {
+       "name": "NWS San Francisco",
+       "url": "https://forecast.weather.gov/MapClick.php?lat=37.6138&lon=-122.4869"
+      },
+      {
+       "name": "KQED",
+       "url": "https://ww2.kqed.org/news/2026/11/11/california-will-get-hammered-by-giant-waves-this-weekend-surfers-are-prepping/"
+      }
+     ]
+    },
+    {
+     "id": "pac-quakes",
+     "tag": "INFO",
+     "severity": "low",
+     "title": "No significant earthquakes near home",
+     "detail": "Nothing of magnitude 3 or more within 350 km this week; the largest nearby was M2.6 at The Geysers. No tsunami threat for California.",
+     "sources": [
+      {
+       "name": "USGS",
+       "url": "https://earthquake.usgs.gov/earthquakes/map/"
+      },
+      {
+       "name": "NTWC",
+       "url": "https://www.tsunami.gov/"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "utilities",
+   "status": "clear",
+   "summary": "No PG&E outages or water notices reported for Pacifica.",
+   "items": [
+    {
+     "id": "pac-rain-thu",
+     "tag": "INFO",
+     "severity": "low",
+     "title": "Rain and gusty south wind Thursday night",
+     "detail": "Rain is likely (60%) after 11 PM Thursday, with gusts to about 25 mph. That's enough for scattered tree-on-line outages, but no widespread problems are expected.",
+     "when": "Thu night",
+     "where": "Pacifica",
+     "sources": [
+      {
+       "name": "NWS San Francisco",
+       "url": "https://forecast.weather.gov/MapClick.php?lat=37.6138&lon=-122.4869"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "roads",
+   "status": "clear",
+   "summary": "Highway 1 open; only routine Caltrans work scheduled nearby.",
+   "items": [
+    {
+     "id": "hwy1-montara",
+     "tag": "INFO",
+     "severity": "low",
+     "title": "Hwy 1 one-way traffic control near Montara Thu and Fri",
+     "detail": "Caltrans drainage work south of the Tom Lantos Tunnels, with short flagger delays. The SF section of Hwy 1 also has a full maintenance closure scheduled Nov 16–17; check times before driving north.",
+     "when": "Nov 12–13; Nov 16–17",
+     "where": "Hwy 1 Montara; Hwy 1 in San Francisco",
+     "lat": 37.54,
+     "lon": -122.515,
+     "area": 1,
+     "sources": [
+      {
+       "name": "Caltrans QuickMap",
+       "url": "https://quickmap.dot.ca.gov/"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "health",
+   "status": "clear",
+   "summary": "Air quality moderate (AQI ~55); no local water or health advisories.",
+   "items": [
+    {
+     "id": "aq-moderate",
+     "tag": "INFO",
+     "severity": "low",
+     "title": "Air quality moderate",
+     "detail": "US AQI about 55 now, peaking near 68 early Thursday. Fine for most people; anyone sensitive may notice it.",
+     "sources": [
+      {
+       "name": "Open-Meteo air quality",
+       "url": "https://open-meteo.com/en/docs/air-quality-api"
+      }
+     ]
+    },
+    {
+     "id": "recall-cheddar",
+     "tag": "INFO",
+     "title": "Recall: Family Farmstead Dairy cheddar (Listeria)",
+     "detail": "All cheddar products from this New York dairy are recalled for possible Listeria. Mostly sold in the Northeast; check if you buy specialty cheese online.",
+     "sources": [
+      {
+       "name": "FDA",
+       "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/family-farmstead-dairy-announces-recall-all-cheddar-cheese-products-because-possible-health-risk"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "supplies",
+   "status": "clear",
+   "summary": "No local shortages. Oil output is nearly back to pre-war levels despite Gulf shipping disruption.",
+   "items": [
+    {
+     "id": "oil-supply",
+     "tag": "INFO",
+     "title": "Oil output near pre-war levels; Hormuz still disrupted",
+     "detail": "OPEC says production is close to where it was before the Iran war. Shipping through the Strait of Hormuz is still restricted, so fuel prices could jump if fighting resumes.",
+     "supply_dim": "food",
+     "supply": {
+      "3d": "WATCH",
+      "3w": "INFO",
+      "3m": "INFO",
+      "1y": "INFO"
+     },
+     "action": "If Iran–Israel fighting resumes, fill the car's tank early instead of when it's nearly empty.",
+     "sources": [
+      {
+       "name": "Al Jazeera",
+       "url": "https://www.aljazeera.com/news/2026/11/11/oil-production-near-pre-iran-war-levels-opec-says"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "readiness": {
+  "default": {
+   "task": "Check flashlights and battery packs before Thursday's rain.",
+   "why": "Storm season is starting, and wind-driven outages usually come at night."
+  },
+  "3d": {
+   "task": "Add a gallon of water per person and a few days of shelf-stable food to the next grocery run.",
+   "why": "Three days is the minimum the county recommends; a week is the goal for a big quake."
+  },
+  "3w": {
+   "task": "Check flashlights and battery packs before Thursday's rain.",
+   "why": "Your food supply is in good shape; light and power are the usual weak spots."
+  },
+  "3m": {
+   "task": "Rotate the oldest stored food and water into this week's use.",
+   "why": "Large stores only help if they're still good when you need them."
+  },
+  "1y": {
+   "task": "Test your backup power or radio, and check fuel or battery levels.",
+   "why": "With food covered, power and communications are what fail first."
+  }
+ },
+ "ladder": [
+  {
+   "level": "pacifica",
+   "summary": "Calm. The only local story is the swell; see Home front.",
+   "items": []
+  },
+  {
+   "level": "california",
+   "summary": "Sierra winter storm watch; otherwise quiet. No major fires active.",
+   "items": [
+    {
+     "id": "sierra-storm",
+     "tag": "WATCH",
+     "severity": "hazard",
+     "title": "Winter Storm Watch for the Sierra: Tahoe, Yosemite, Mono",
+     "detail": "Heavy mountain snow possible from Friday into early next week, with high wind near the Nevada line. Chain controls likely on I-80 and US-50.",
+     "action": "If you plan to drive to the mountains, go before Friday or carry chains, water and blankets.",
+     "when": "Fri – Tue",
+     "where": "Sierra Nevada",
+     "trend": "new",
+     "lat": 38.9,
+     "lon": -120.0,
+     "area": 3,
+     "sources": [
+      {
+       "name": "NWS alerts",
+       "url": "https://alerts.weather.gov/"
+      }
+     ]
+    },
+    {
+     "id": "ca-governor",
+     "tag": "INFO",
+     "title": "Governor-elect Becerra preparing to take office",
+     "detail": "Transition under way after the election. No policy changes yet that affect households.",
+     "sources": [
+      {
+       "name": "CalMatters",
+       "url": "https://calmatters.org/"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "level": "usa",
+   "summary": "Iran-linked threat activity is the main security thread at home; patch your devices.",
+   "items": [
+    {
+     "id": "iran-plots-us",
+     "tag": "WATCH",
+     "severity": "elevated",
+     "title": "Iran-linked threats against US officials",
+     "detail": "Treasury Secretary Bessent has moved onto a military base over alleged Iranian threats. Separately, DOJ charged three Iran-backed suspects with plots including an incident near RAF Fairford in the UK. There's no indication of a threat to the public.",
+     "action": "Nothing for households unless officials issue a public threat advisory.",
+     "trend": "rising",
+     "lat": 38.9,
+     "lon": -77.04,
+     "area": 2,
+     "sources": [
+      {
+       "name": "BBC",
+       "url": "https://www.bbc.co.uk/news/articles/cqr7gr0010r2o"
+      },
+      {
+       "name": "BBC",
+       "url": "https://www.bbc.co.uk/news/articles/c3rryrryk59zo"
+      }
+     ]
+    },
+    {
+     "id": "kev-updates",
+     "tag": "WATCH",
+     "severity": "watch",
+     "title": "Actively exploited bugs in Outlook, Chrome, OpenSSH, SonicWall",
+     "detail": "CISA added 11 actively exploited flaws to its must-patch list this week, including Microsoft Office/Outlook, Google Chromium (Chrome and Edge) and OpenSSH.",
+     "action": "Let Chrome/Edge and Microsoft Office install their updates today and restart them.",
+     "sources": [
+      {
+       "name": "CISA KEV",
+       "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+      }
+     ]
+    },
+    {
+     "id": "nyc-collapse",
+     "tag": "INFO",
+     "severity": "low",
+     "title": "Brooklyn building collapse: 1 dead, 12 hurt",
+     "detail": "A three-storey building collapsed and rescuers are searching the rubble. There's no sign of foul play.",
+     "lat": 40.65,
+     "lon": -73.95,
+     "area": 1,
+     "sources": [
+      {
+       "name": "BBC",
+       "url": "https://www.bbc.co.uk/news/videos/c60rkwjj7x7go"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "level": "west",
+   "summary": "Labour unrest in Spain and spy cases in the UK; nothing that threatens stability.",
+   "items": [
+    {
+     "id": "spain-strike",
+     "tag": "INFO",
+     "severity": "watch",
+     "title": "Spain general strike; clashes in Barcelona",
+     "detail": "Tens of thousands struck over housing and the cost of living, and there was street violence in Barcelona. Expect travel disruption in Spain for a few days.",
+     "lat": 41.39,
+     "lon": 2.17,
+     "area": 2,
+     "trend": "new",
+     "sources": [
+      {
+       "name": "BBC",
+       "url": "https://www.bbc.co.uk/news/articles/cwvg25nypmrvo"
+      }
+     ]
+    },
+    {
+     "id": "uk-spy",
+     "tag": "INFO",
+     "title": "US Army soldier held in UK on suspicion of spying for Russia",
+     "detail": "A 41-year-old senior soldier is being questioned in London under national-security laws.",
+     "sources": [
+      {
+       "name": "BBC",
+       "url": "https://www.bbc.co.uk/news/articles/c6d7q77xgw0vo"
+      }
+     ]
+    },
+    {
+     "id": "school-hoax",
+     "tag": "INFO",
+     "title": "Bomb-threat hoax hits schools in Italy, Scotland and Northern Ireland",
+     "detail": "More than 6,000 Italian schools got threats. Authorities say there was no real risk.",
+     "sources": [
+      {
+       "name": "BBC",
+       "url": "https://www.bbc.co.uk/news/articles/cwz0k79pr8z2o"
+      }
+     ]
+    },
+    {
+     "id": "ecuador",
+     "tag": "INFO",
+     "severity": "watch",
+     "title": "Ecuador gang violence worsening",
+     "detail": "The killing of journalist Tomás Beltrán underlines the deterioration. Ecuador is now among the most violent countries in Latin America.",
+     "lat": -1.8,
+     "lon": -78.2,
+     "area": 3,
+     "sources": [
+      {
+       "name": "The Guardian",
+       "url": "https://www.theguardian.com/world/2026/nov/11/ecuador-journalist-killing"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "level": "asia",
+   "summary": "Political strain in Bangladesh and Indonesia; Taiwan pressure steady.",
+   "items": [
+    {
+     "id": "bangladesh",
+     "tag": "INFO",
+     "severity": "watch",
+     "title": "Violence in Bangladesh as Hasina supporters protest",
+     "detail": "Supporters of the ousted prime minister, who is in exile in India, clashed during protests demanding her return.",
+     "lat": 23.8,
+     "lon": 90.4,
+     "area": 3,
+     "trend": "rising",
+     "sources": [
+      {
+       "name": "BBC",
+       "url": "https://www.bbc.co.uk/news/articles/cwkg5g5pjpyko"
+      }
+     ]
+    },
+    {
+     "id": "indonesia-vp",
+     "tag": "INFO",
+     "severity": "watch",
+     "title": "Indonesia's vice president resigns",
+     "detail": "A sign that President Prabowo's ruling alliance is fraying amid a rift with former president Widodo.",
+     "lat": -6.2,
+     "lon": 106.8,
+     "area": 3,
+     "trend": "new",
+     "sources": [
+      {
+       "name": "BBC",
+       "url": "https://www.bbc.co.uk/news/articles/cmvgxgz87qqro"
+      }
+     ]
+    },
+    {
+     "id": "taiwan",
+     "tag": "INFO",
+     "severity": "watch",
+     "title": "China keeps up gray-zone pressure on Taiwan",
+     "detail": "Taiwan logged 49 Chinese military sorties in one day last week and accused the China Coast Guard of harassing ships off its east coast. No large exercise is under way.",
+     "lat": 24.0,
+     "lon": 120.8,
+     "area": 3,
+     "trend": "steady",
+     "sources": [
+      {
+       "name": "Taipei Times",
+       "url": "https://www.taipeitimes.com/News/taiwan/archives/2026/11/04/2003867122"
+      }
+     ]
+    },
+    {
+     "id": "japan-quakes",
+     "tag": "INFO",
+     "severity": "hazard",
+     "title": "Cluster of M5.5–6.1 quakes off eastern Japan",
+     "detail": "Several offshore quakes near Hasaki this week. No damage or tsunami reported.",
+     "lat": 35.0,
+     "lon": 142.1,
+     "area": 2,
+     "sources": [
+      {
+       "name": "USGS",
+       "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000twg9"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "level": "world",
+   "summary": "Iran–Israel brinkmanship and the war in Ukraine are the two things to watch.",
+   "items": [
+    {
+     "id": "iran-israel",
+     "tag": "WATCH",
+     "severity": "elevated",
+     "title": "Israel prepares for a possible strike on Iran; Tehran threatens retaliation",
+     "detail": "Israel ordered its military to step up preparations, and Iran says it will retaliate more widely if attacked. Talks with the US hinge on Iran's seven conditions. A new round of fighting would hit oil prices and Gulf shipping first.",
+     "action": "If strikes begin, expect fuel prices to jump within days; top off the car tank then.",
+     "trend": "rising",
+     "lat": 32.4,
+     "lon": 53.7,
+     "area": 5,
+     "sources": [
+      {
+       "name": "Al Jazeera",
+       "url": "https://www.aljazeera.com/news/liveblog/2026/11/12/iran-war-live-tehran-warns-of-wider-retaliation-israel-kills-in-gaza"
+      }
+     ]
+    },
+    {
+     "id": "hormuz",
+     "tag": "INFO",
+     "severity": "elevated",
+     "title": "Strait of Hormuz still restricted",
+     "detail": "Iran's top negotiator says the strait will 'never return' to its pre-war status. Traffic continues under Iranian conditions.",
+     "lat": 26.6,
+     "lon": 56.3,
+     "area": 3,
+     "trend": "steady",
+     "sources": [
+      {
+       "name": "Al Jazeera",
+       "url": "https://www.aljazeera.com/news/2026/11/11/strait-of-hormuz-will-never-return-to-pre-war-status-ghalibaf"
+      }
+     ]
+    },
+    {
+     "id": "ukraine",
+     "tag": "INFO",
+     "severity": "critical",
+     "title": "Ukraine war: Abu Dhabi talks end without a breakthrough",
+     "detail": "Talks turned to Europe's post-war security framework. US envoys are due to meet Putin and Zelensky on Thursday. Fighting continues, and Russia is recruiting abroad, including from Indonesia.",
+     "lat": 48.5,
+     "lon": 36.0,
+     "area": 5,
+     "trend": "steady",
+     "sources": [
+      {
+       "name": "BBC",
+       "url": "https://www.bbc.co.uk/news/articles/ck792we7zrz4o"
+      },
+      {
+       "name": "The Guardian",
+       "url": "https://www.theguardian.com/world/2026/nov/11/ukraine-indonesian-pow-prisoner-of-war-russia"
+      }
+     ]
+    },
+    {
+     "id": "gaza",
+     "tag": "INFO",
+     "severity": "critical",
+     "title": "Israeli strikes in Gaza kill nine, hit Nasser Medical Complex",
+     "detail": "Strikes continue across the enclave. The UN is appealing for aid as heavy rain floods tent camps.",
+     "lat": 31.35,
+     "lon": 34.3,
+     "area": 2,
+     "trend": "steady",
+     "sources": [
+      {
+       "name": "Al Jazeera",
+       "url": "https://www.aljazeera.com/news/2026/11/11/israeli-strikes-hit-tent-camp-as-five-killed-in-gaza"
+      }
+     ]
+    },
+    {
+     "id": "kenya-ebola",
+     "tag": "INFO",
+     "severity": "low",
+     "title": "Kenya discharges its last Ebola patient",
+     "detail": "A 42-day countdown to being declared Ebola-free has begun.",
+     "lat": -1.29,
+     "lon": 36.82,
+     "area": 3,
+     "trend": "easing",
+     "sources": [
+      {
+       "name": "BBC",
+       "url": "https://www.bbc.co.uk/news/articles/cwe9kzv0g0v7o"
+      }
+     ]
+    },
+    {
+     "id": "solomons-quake",
+     "tag": "INFO",
+     "severity": "hazard",
+     "title": "M6.4 earthquake, Solomon Islands",
+     "detail": "Rated green by USGS (little damage expected). No Pacific-wide tsunami threat.",
+     "lat": -10.87,
+     "lon": 165.56,
+     "area": 2,
+     "sources": [
+      {
+       "name": "USGS",
+       "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tx16"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "sources_used": [
+  {
+   "name": "NWS San Francisco",
+   "url": "https://forecast.weather.gov/MapClick.php?lat=37.6138&lon=-122.4869"
+  },
+  {
+   "name": "USGS",
+   "url": "https://earthquake.usgs.gov/"
+  },
+  {
+   "name": "NTWC tsunami",
+   "url": "https://www.tsunami.gov/"
+  },
+  {
+   "name": "Caltrans",
+   "url": "https://quickmap.dot.ca.gov/"
+  },
+  {
+   "name": "CAL FIRE",
+   "url": "https://www.fire.ca.gov/incidents"
+  },
+  {
+   "name": "Open-Meteo",
+   "url": "https://open-meteo.com/"
+  },
+  {
+   "name": "CISA KEV",
+   "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+  },
+  {
+   "name": "FDA recalls",
+   "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts"
+  },
+  {
+   "name": "GDACS",
+   "url": "https://www.gdacs.org/"
+  },
+  {
+   "name": "NOAA SWPC",
+   "url": "https://www.swpc.noaa.gov/"
+  },
+  {
+   "name": "BBC",
+   "url": "https://www.bbc.com/news"
+  },
+  {
+   "name": "Al Jazeera",
+   "url": "https://www.aljazeera.com/"
+  },
+  {
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/world"
+  },
+  {
+   "name": "KQED",
+   "url": "https://www.kqed.org/news"
+  },
+  {
+   "name": "Taipei Times",
+   "url": "https://www.taipeitimes.com/"
+  }
+ ]
+}
