@@ -276,7 +276,8 @@
       }
      ],
      "confidence": "confirmed",
-     "topic": "terrorism"
+     "topic": "terrorism",
+     "where": "Washington, DC"
     },
     {
      "id": "kev-updates",
@@ -310,7 +311,8 @@
       }
      ],
      "confidence": "confirmed",
-     "topic": "public-safety"
+     "topic": "public-safety",
+     "where": "Brooklyn, New York"
     },
     {
      "id": "markets",
@@ -351,7 +353,8 @@
       }
      ],
      "confidence": "confirmed",
-     "topic": "political"
+     "topic": "political",
+     "where": "Barcelona, Spain"
     },
     {
      "id": "uk-spy",
@@ -397,7 +400,8 @@
       }
      ],
      "confidence": "confirmed",
-     "topic": "public-safety"
+     "topic": "public-safety",
+     "where": "Ecuador"
     }
    ]
   },
@@ -422,7 +426,8 @@
       }
      ],
      "confidence": "confirmed",
-     "topic": "political"
+     "topic": "political",
+     "where": "Dhaka, Bangladesh"
     },
     {
      "id": "indonesia-vp",
@@ -441,7 +446,8 @@
       }
      ],
      "confidence": "confirmed",
-     "topic": "political"
+     "topic": "political",
+     "where": "Jakarta, Indonesia"
     },
     {
      "id": "taiwan",
@@ -460,7 +466,8 @@
       }
      ],
      "confidence": "confirmed",
-     "topic": "conflict"
+     "topic": "conflict",
+     "where": "Taiwan Strait"
     },
     {
      "id": "japan-quakes",
@@ -478,7 +485,8 @@
       }
      ],
      "confidence": "confirmed",
-     "topic": "environment"
+     "topic": "environment",
+     "where": "Off eastern Japan"
     }
    ]
   },
@@ -504,7 +512,8 @@
       }
      ],
      "confidence": "likely",
-     "topic": "conflict"
+     "topic": "conflict",
+     "where": "Iran"
     },
     {
      "id": "hormuz",
@@ -523,7 +532,8 @@
       }
      ],
      "confidence": "confirmed",
-     "topic": "supply"
+     "topic": "supply",
+     "where": "Strait of Hormuz"
     },
     {
      "id": "ukraine",
@@ -546,7 +556,8 @@
       }
      ],
      "confidence": "confirmed",
-     "topic": "conflict"
+     "topic": "conflict",
+     "where": "Eastern Ukraine"
     },
     {
      "id": "gaza",
@@ -565,7 +576,8 @@
       }
      ],
      "confidence": "confirmed",
-     "topic": "conflict"
+     "topic": "conflict",
+     "where": "Gaza"
     },
     {
      "id": "kenya-ebola",
@@ -584,7 +596,8 @@
       }
      ],
      "confidence": "confirmed",
-     "topic": "health"
+     "topic": "health",
+     "where": "Kenya"
     },
     {
      "id": "solomons-quake",
@@ -602,7 +615,8 @@
       }
      ],
      "confidence": "confirmed",
-     "topic": "environment"
+     "topic": "environment",
+     "where": "Solomon Islands"
     }
    ]
   }

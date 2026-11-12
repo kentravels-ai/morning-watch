@@ -80,6 +80,8 @@ def check_item(it, path, ids):
             err(path, "lon out of range")
         if "severity" not in it:
             err(path, "mapped items (lat/lon) need a severity")
+        if not it.get("where"):
+            err(path, "mapped items (lat/lon) need a 'where' (place name shown on the map)")
     if "area" in it and (not isinstance(it["area"], int) or not 1 <= it["area"] <= 5):
         err(path, "area must be an integer 1-5")
     if "supply" in it:

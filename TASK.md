@@ -18,6 +18,7 @@ Run this every day at about 4 AM Pacific. The page (`index.html`) only reads `da
 4. Write `data/brief.json` using the schema below.
 5. `python scripts/finalize.py`. It validates the file, copies it to `data/archive/<date>.json` and updates `data/index.json`. If it prints `INVALID`, fix the file and run it again. **Never publish a briefing that fails validation.**
 6. Commit and push to `main`: `git add data && git commit -m "Briefing <date>" && git push`. Don't change `index.html`, the scripts or this file during a daily run.
+7. If the run's instructions gave you an ntfy topic, run `python scripts/notify.py --topic <topic>` after the push. It sends a phone notification only when there are ACTION items, and stays silent otherwise. Never write the topic into any file in this repo.
 
 ## Editorial rules
 
@@ -51,7 +52,7 @@ Each item can carry a `severity`. Mapped items must have one, and it sets the do
 | `hazard` | natural or environmental: quake, storm, surf, smoke, outbreak | blue |
 | `low` | minor or resolving | green |
 
-Add `lat` and `lon` (decimal degrees) for anything with a clear location so it appears on the map. `area` (1–5) sets the glow size: how large a region is affected **or could be**. 1 is a town, 2 a county or city, 3 a state or small country, 4 a large country or sub-region, 5 a multi-country or continental region.
+Add `lat` and `lon` (decimal degrees) for anything with a clear location so it appears on the map, plus a short `where` ("Gaza", "Hwy 1, Montara", "Off eastern Japan"), which is shown when the dot is hovered or tapped. `area` (1–5) sets the glow size: how large a region is affected **or could be**. 1 is a town, 2 a county or city, 3 a state or small country, 4 a large country or sub-region, 5 a multi-country or continental region.
 
 ## Supply-aware items (optional)
 

@@ -8,7 +8,7 @@
 <meta name="theme-color" content="#07090c">
 <style>
 :root{
-  --bg:#07090c;--panel:#0d1117;--panel2:#11161e;--line:#1f2630;--ink:#d3d9e0;--dim:#7d8792;--faint:#4a535e;
+  --bg:#07090c;--panel:#0d1117;--panel2:#11161e;--line:#1f2630;--ink:#d3d9e0;--dim:#a3acb7;--faint:#727c88;
   --crit:#ff3b3b;--elev:#ff9f1a;--watch:#ffd23f;--hazard:#3fb8ff;--low:#5fd18a;
   --mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace;
   --sans:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
@@ -44,10 +44,12 @@ header{position:sticky;top:0;z-index:5;background:rgba(7,9,12,.92);backdrop-filt
 .zbtn{width:30px;height:28px;border-radius:6px;border:1px solid var(--line);background:var(--panel2);color:var(--ink);font:16px var(--mono);cursor:pointer;line-height:1}
 .zbtn:disabled{opacity:.3;cursor:default}
 .lvlname{min-width:0;flex:1;text-align:center;letter-spacing:.14em;text-transform:uppercase;color:#fff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.pips{display:flex;gap:6px;justify-content:center;padding:0 0 8px}
-.pip{width:22px;height:5px;border-radius:3px;background:var(--faint);opacity:.45;cursor:pointer;border:0;padding:0}
-.pip.on{opacity:1;outline:1px solid #fff;outline-offset:2px}
-.tip{position:absolute;pointer-events:none;background:#000c;border:1px solid var(--line);padding:4px 8px;border-radius:4px;font:12px var(--mono);color:#fff;white-space:nowrap;transform:translate(-50%,-130%);display:none}
+.pips{display:flex;gap:4px;justify-content:center;padding:0 0 4px}
+.pip{width:38px;height:24px;border:0;padding:8px 4px;cursor:pointer;background:none}
+.pip i{display:block;height:8px;border-radius:4px;background:var(--faint);opacity:.5}
+.pip.on i{opacity:1;outline:1px solid #fff;outline-offset:2px}
+
+.tip{position:absolute;pointer-events:none;background:#000d;border:1px solid var(--line);padding:4px 8px;border-radius:4px;font:12px var(--mono);color:#fff;white-space:normal;max-width:70%;text-align:center;transform:translate(-50%,-130%);display:none}
 @keyframes pulse{0%,100%{opacity:.5}50%{opacity:1}}
 .glow{animation:pulse 3.4s ease-in-out infinite}
 .hot{cursor:pointer}
@@ -65,17 +67,17 @@ h2 .rule{flex:1;height:1px;background:var(--line)}
 .item.flash{animation:flash 1.6s ease-out}
 @keyframes flash{0%{background:#22303f}100%{background:transparent}}
 .ihead{display:flex;gap:8px;align-items:flex-start}
-.tag{flex:none;font:600 10px var(--mono);letter-spacing:.1em;padding:2px 6px;border-radius:3px;margin-top:3px}
+.tag{flex:none;font:600 11px var(--mono);letter-spacing:.1em;padding:2px 6px;border-radius:3px;margin-top:3px}
 .tag.ACTION{background:var(--crit);color:#000}
 .tag.WATCH{background:transparent;color:var(--watch);border:1px solid var(--watch)}
 .tag.INFO{background:transparent;color:var(--dim);border:1px solid var(--faint)}
 .sev{flex:none;width:8px;height:8px;border-radius:50%;margin-top:7px}
 .ititle{font-weight:600;color:#fff;flex:1}
-.trend{font:11px var(--mono);color:var(--dim);white-space:nowrap;margin-top:3px}
+.trend{font:12px var(--mono);color:var(--dim);white-space:nowrap;margin-top:3px}
 .idetail{color:var(--ink);margin:4px 0 0 0}
 .iact{margin:8px 0 0;padding:8px 10px;border-left:3px solid var(--crit);background:#1d1111;border-radius:0 4px 4px 0}
 .iact b{font:600 11px var(--mono);letter-spacing:.1em;color:#ff8a8a;margin-right:6px}
-.imeta{font:12px var(--mono);color:var(--dim);margin-top:6px;display:flex;flex-wrap:wrap;gap:4px 14px}
+.imeta{font:12.5px var(--mono);color:var(--dim);margin-top:6px;display:flex;flex-wrap:wrap;gap:4px 14px}
 .imeta a{color:var(--dim)}
 .supplynote{font:11px var(--mono);color:var(--hazard);margin-top:4px}
 
@@ -85,8 +87,11 @@ h2 .rule{flex:1;height:1px;background:var(--line)}
 .hfrow:hover{background:var(--panel2)}
 .stdot{flex:none;width:10px;height:10px;border-radius:50%;margin-top:6px}
 .st-clear{background:var(--low)}.st-watch{background:var(--watch)}.st-action{background:var(--crit);box-shadow:0 0 10px var(--crit)}
+.stl{flex:none;width:56px;text-align:center;font:600 10.5px var(--mono);letter-spacing:.08em;padding:3px 0;border-radius:3px;margin-top:2px}
+.stl.s-clear{color:var(--low);border:1px solid #2d5a3e}.stl.s-watch{color:var(--watch);border:1px solid #6b5a1c}.stl.s-action{background:var(--crit);color:#000}
+.ptr{display:flex;gap:8px;align-items:flex-start}.ptr a{color:#fff;font-weight:600;text-decoration:none}.ptr a:hover{text-decoration:underline}.ptr .pd{color:var(--dim);font-size:14px}
 .hftitle{font-weight:600;color:#fff}
-.hfq{font-size:13px;color:var(--dim);font-style:italic}
+.hfq{font-size:14px;color:var(--dim);font-style:italic}
 .hfsum{margin-top:2px}
 .hfcount{font:12px var(--mono);color:var(--dim);white-space:nowrap;margin-top:3px}
 .hfitems{display:none;background:#0a0e13;border-top:1px dashed var(--line)}
@@ -96,7 +101,7 @@ h2 .rule{flex:1;height:1px;background:var(--line)}
 
 .lights{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:0 0 14px}
 .light{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:9px 10px;min-width:0}
-.light .lk{font:600 10px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--dim);display:flex;align-items:center;gap:6px}
+.light .lk{font:600 11px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--dim);display:flex;align-items:center;gap:6px}
 .light .lk i{width:9px;height:9px;border-radius:50%;display:inline-block;flex:none}
 .light .lv{font:600 13px var(--mono);letter-spacing:.08em;text-transform:uppercase;margin-top:3px}
 .light .ln2{font-size:12.5px;color:var(--dim);line-height:1.35;margin-top:2px}
@@ -106,21 +111,21 @@ h2 .rule{flex:1;height:1px;background:var(--line)}
 .conf.unconfirmed{color:#ff8a8a;border:1px dashed #7a3a3a}
 .topic{text-transform:uppercase;letter-spacing:.08em}
 .chips{display:flex;gap:6px;flex-wrap:wrap;padding:10px 14px;border-bottom:1px solid var(--line)}
-.chip{background:none;border:1px solid var(--line);color:var(--dim);border-radius:999px;padding:3px 10px;font:11px var(--mono);letter-spacing:.06em;text-transform:uppercase;cursor:pointer}
+.chip{background:none;border:1px solid var(--line);color:var(--dim);border-radius:999px;padding:5px 11px;font:12px var(--mono);letter-spacing:.05em;text-transform:uppercase;cursor:pointer}
 .chip.on{color:#fff;border-color:#4a5a6e;background:var(--panel2)}
 .chip b{color:var(--faint);font-weight:400;margin-left:4px}
 .coming{list-style:none;margin:0;padding:4px 0}
 .coming li{display:flex;gap:12px;padding:9px 14px;border-top:1px solid var(--line)}
 .coming li:first-child{border-top:0}
-.coming .cw{flex:none;width:118px;font:12px var(--mono);color:var(--watch);padding-top:2px}
+.coming .cw{flex:none;width:150px;font:12px var(--mono);color:var(--watch);padding-top:2px}
 .coming .ct{color:#fff;font-weight:600}
 .coming .cd{color:var(--dim);font-size:14px}
-.coming .cl{font:10px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--faint);margin-left:6px}
-@media (max-width:480px){.coming .cw{width:84px}.light .ln2{display:none}}
+.coming .cl{font:11px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--faint);margin-left:6px}
+@media (max-width:480px){.coming li{flex-direction:column;gap:2px}.coming .cw{width:auto}.light .ln2{display:none}}
 .ladderhead{padding:12px 14px;border-bottom:1px solid var(--line)}
 .ladderhead .ln{font:600 13px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:#fff}
 .ladderhead .ls{color:var(--ink);margin-top:2px}
-.swipehint{font:11px var(--mono);color:var(--faint);padding:8px 14px;text-align:center;border-top:1px solid var(--line)}
+.swipehint{font:12px var(--mono);color:var(--faint);padding:8px 14px;text-align:center;border-top:1px solid var(--line)}
 
 .ready{padding:14px}
 .ready .rt{font-weight:600;color:#fff}
@@ -334,7 +339,9 @@ async function drawMap(){
     const box = document.querySelector(".mapbox");
     grp.on("mouseenter", () => {
       const r = box.getBoundingClientRect(), k = r.width / W;
-      tip.textContent = h.it.title; tip.style.left = (h.p[0]*k)+"px"; tip.style.top = (h.p[1]*k)+"px"; tip.style.display = "block";
+      const loc = h.it.where || (LEVELS[h.it._level] || {}).name || "";
+      tip.textContent = h.it.title + (loc ? " — " + loc : "");
+      tip.style.left = Math.max(r.width*0.2, Math.min(r.width*0.8, h.p[0]*k))+"px"; tip.style.top = (h.p[1]*k)+"px"; tip.style.display = "block";
     }).on("mouseleave", () => tip.style.display = "none")
       .on("click", () => focusItem(h.it));
   });
@@ -342,7 +349,7 @@ async function drawMap(){
   const items = allItems();
   document.querySelectorAll(".pip").forEach((p, i) => {
     const w = worstSev(items.filter(it => it._level === i));
-    p.style.background = w ? SEV[w] : "var(--faint)";
+    p.firstElementChild.style.background = w ? SEV[w] : "var(--faint)";
     p.classList.toggle("on", i === level);
   });
   document.getElementById("lvlName").textContent = L.name;
@@ -355,6 +362,10 @@ function setLevel(i){
   drawMap(); renderLadder();
 }
 function focusItem(it){
+  if (effTag(it) === "ACTION"){
+    const a = document.querySelector(`#actnow [data-item="${CSS.escape(it.id||"")}"]`);
+    if (a) return flash(a);
+  }
   if (it._hf){
     const hf = document.querySelector(`.hf[data-id="${it._hf}"]`);
     if (hf){ hf.classList.add("open"); flash(hf.querySelector(`[data-item="${CSS.escape(it.id||"")}"]`) || hf); }
@@ -392,10 +403,9 @@ const sortItems = arr => [...arr].sort((a,b) => (TAG_RANK[effTag(b)]-TAG_RANK[ef
 function renderLadder(){
   const el = document.getElementById("ladder"); if (!el || !brief) return;
   const L = LEVELS[level], data = (brief.ladder || []).find(l => l.level === L.key) || {items:[]};
-  const all = allItems().filter(it => !it._hf);
   const counts = {};
-  all.forEach(it => { if (it.topic) counts[it.topic] = (counts[it.topic] || 0) + 1; });
-  if (topicFilter && !counts[topicFilter]) topicFilter = "";
+  (data.items || []).forEach(it => { if (it.topic) counts[it.topic] = (counts[it.topic] || 0) + 1; });
+  if (topicFilter && !counts[topicFilter]) counts[topicFilter] = 0;  // keep the chosen filter visible when zooming
   const chips = Object.keys(counts).length > 1 ? `<div class="chips">
       <button class="chip ${topicFilter ? "" : "on"}" data-t="">All</button>
       ${Object.keys(TOPICS).filter(t => counts[t]).map(t => `<button class="chip ${topicFilter === t ? "on" : ""}" data-t="${t}">${esc(TOPICS[t])}<b>${counts[t]}</b></button>`).join("")}
@@ -408,6 +418,8 @@ function renderLadder(){
 }
 
 document.addEventListener("click", e => {
+  const j = e.target.closest && e.target.closest("[data-jump]");
+  if (j){ e.preventDefault(); flash(document.querySelector(`#actnow [data-item="${CSS.escape(j.dataset.jump)}"]`)); return; }
   const c = e.target.closest && e.target.closest(".chip");
   if (!c) return;
   topicFilter = c.dataset.t || ""; store.set("topic", topicFilter);
@@ -445,24 +457,27 @@ function render(){
         <span class="lvlname" id="lvlName"></span>
         <button class="zbtn" id="zout" aria-label="Zoom out">−</button>
       </div>
-      <div class="pips">${LEVELS.map((L,i) => `<button class="pip" data-i="${i}" title="${esc(L.name)}" aria-label="${esc(L.name)}"></button>`).join("")}</div>
+      <div class="pips">${LEVELS.map((L,i) => `<button class="pip" data-i="${i}" title="${esc(L.name)}" aria-label="${esc(L.name)}"><i></i></button>`).join("")}</div>
     </div>
 
     <h2>Act now<span class="rule"></span></h2>
-    <div class="card actnow ${acts.length ? "" : "none"}">${acts.length ? acts.map(itemHTML).join("") : `<div class="none-msg">Nothing needs action today.</div>`}</div>
+    <div class="card actnow ${acts.length ? "" : "none"}" id="actnow">${acts.length ? acts.map(it => itemHTML(it)).join("") : `<div class="none-msg">Nothing needs action today.</div>`}</div>
 
     <h2>Home front · Pacifica<span class="rule"></span></h2>
     <div class="card">${Object.entries(HF).map(([id, meta]) => {
       const s = (b.home_front || []).find(x => x.id === id) || {status:"clear", summary:"No reports.", items:[]};
       const its = sortItems(s.items || []);
       const st = its.some(i => effTag(i) === "ACTION") ? "action" : (s.status || "clear");
-      return `<div class="hf ${st === "action" ? "open" : ""}" data-id="${id}">
-        <button class="hfrow" aria-expanded="${st === "action"}">
-          <span class="stdot st-${esc(st)}"></span>
+      const lab = {clear:"CLEAR", watch:"WATCH", action:"ACTION"}[st] || esc(st).toUpperCase();
+      return `<div class="hf" data-id="${id}">
+        <button class="hfrow" aria-expanded="false">
+          <span class="stl s-${esc(st)}">${lab}</span>
           <span style="flex:1"><div class="hftitle">${esc(meta.title)}</div><div class="hfq">${esc(meta.q)}</div><div class="hfsum">${esc(s.summary)}</div></span>
           <span class="hfcount">${its.length ? its.length + " <span class='chev'>›</span>" : ""}</span>
         </button>
-        ${its.length ? `<div class="hfitems">${its.map(itemHTML).join("")}</div>` : ""}
+        ${its.length ? `<div class="hfitems">${its.map(it => effTag(it) === "ACTION"
+          ? `<div class="item ptr" data-item="${esc(it.id || "")}"><span class="tag ACTION">ACTION</span><span><a href="#actnow" data-jump="${esc(it.id || "")}">${esc(it.title)}</a><div class="pd">Full details and what to do are in Act now ↑</div></span></div>`
+          : itemHTML(it)).join("")}</div>` : ""}
       </div>`;}).join("")}</div>
 
     ${ready ? `<h2>Today's readiness task<span class="rule"></span></h2>
