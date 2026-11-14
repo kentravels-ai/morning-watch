@@ -47,8 +47,9 @@ def strip(s, n=400):
     return s[:n]
 
 
-def rss(url, limit=15):
-    """Parse RSS 2.0 or Atom into [{title, link, date, summary}]."""
+def rss(url, limit=15, tail=False):
+    """Parse RSS 2.0 or Atom into [{title, link, date, summary}].
+    tail=True keeps the end of long summaries (status pages append the newest update last)."""
     root = ET.fromstring(get(url, "application/rss+xml, application/atom+xml, application/xml"))
     out = []
     ns = {"a": "http://www.w3.org/2005/Atom"}
@@ -71,7 +72,7 @@ def rss(url, limit=15):
             "title": strip(title.text if title is not None else "", 200),
             "link": href.strip(),
             "date": (date.text or "").strip() if date is not None else "",
-            "summary": strip(desc.text if desc is not None else "", 300),
+            "summary": (lambda x: ("…" + x[-400:]) if tail and len(x) > 400 else x[:300])(strip(desc.text if desc is not None else "", 100000)),
         }
         # GeoRSS point (GDACS etc.)
         for el in it.iter():
@@ -295,6 +296,8 @@ SOURCES = {
     "cisa_known_exploited_recent": cisa_kev,
     "fema_ipaws_alerts_home": fema_ipaws,
     "markets": markets,
+    # DreamHost hosts thetins.com, recipes, classroom and the game sites
+    "dreamhost_status": lambda: rss("https://www.dreamhoststatus.com/pages/575f0f606826303142000510/rss", 8, tail=True),
 }
 for _k, _u in RSS_FEEDS.items():
     SOURCES[_k] = (lambda u: (lambda: rss(u)))(_u)
