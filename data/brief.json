@@ -1,59 +1,39 @@
 {
  "schema": 1,
- "date": "2026-11-14",
- "generated_at": "2026-11-14T04:45:00-08:00",
+ "date": "2026-11-15",
+ "generated_at": "2026-11-15T04:30:00-08:00",
  "overall": {
   "level": "strained",
-  "headline": "Very large surf hits the Pacifica coast today; a nationwide FAA flight stop ended yesterday evening.",
-  "bluf": "Pacifica: no outages, closures or official emergency orders found, but a High Surf Warning is in force with 25\u201335 ft waves (isolated sets near 50 ft possible near this afternoon's high tide) and a Coastal Flood Advisory to 6 PM. Stay well away from the shoreline. Flight delays from Friday's four-and-a-half-hour national ground stop will linger through the weekend; Microsoft's outage is fully restored. Abroad, Iran's Hormuz restrictions continue and US\u2013Russia\u2013Ukraine talks are widening."
+  "headline": "Surf is easing but rain arrives today; Iran is hitting Bahrain again.",
+  "bluf": "Pacifica has no IPAWS alerts, outages or closures; the High Surf Warning was downgraded to an Advisory through early Monday, and rain moves in after 10 AM. Flight disruption from Friday's FAA stop should clear by tonight. Abroad, Iranian attacks on Bahrain resumed and Hormuz shipping risk continues. Nothing needs action today."
  },
  "status": {
   "local": {
-   "level": "strained",
-   "note": "Dangerous surf and coastal flooding today."
+   "level": "steady",
+   "note": "Surf easing; rain today."
   },
   "regional": {
    "level": "steady",
-   "note": "Sierra snow; Bay Area flight backlog; storm Sunday."
+   "note": "Flight backlog clearing."
   },
   "world": {
-   "level": "strained",
-   "note": "Hormuz mines and Ukraine talks; Trump\u2013Xi\u2013Putin plans."
+   "level": "serious",
+   "note": "Iran\u2013Gulf attacks resume; Hormuz mines."
   }
  },
  "changes": [
-  "Surf forecast grew: KQED now cites 25\u201335 ft waves through the weekend and isolated sets near 50 ft around Saturday afternoon's high tide; Sharp Park Beach is flagged as high risk.",
-  "Coastal Flood Advisory now runs to 6 PM today; the High Surf Warning runs to 4 AM Sunday per NWS (KQED says conditions last into Monday morning).",
-  "New: FAA stopped all US departures about 1 PM\u20135:30 PM Friday after a communications failure; 300+ SFO flights cancelled, delays continue.",
-  "Resolved: Microsoft says Outlook/Teams services are fully restored.",
-  "New: White House says Trump, Putin and Xi plan a joint meeting in China next week; US has floated Ukraine ceding Donbas for NATO membership, Zelensky says.",
-  "Updated: Iran says three tankers hit mines Nov 14; the US says main routes are cleared. Traffic is about 65% below pre-war.",
-  "Dropped as stale: Brooklyn collapse, Italy hoaxes, Storm Charles, Pakistan raids, IAEA, Gaza, PNG quake, CISA list, North Korea hack (no new reports)."
+  "NWS downgraded the High Surf Warning to a High Surf Advisory, now to 4 AM Mon.",
+  "New: rain after 10 AM today, up to about 1.25 in total through tonight.",
+  "FAA stop cause identified: router fault during a cable upgrade; cyberattack ruled out.",
+  "New: Iran attacks Bahrain for the second time in three days.",
+  "Dropped as stale: Microsoft outage, North Korea hack, 'Hwy 1' as an item (closure is in San Francisco, Mon\u2013Tue)."
  ],
  "coming_up": [
   {
-   "when": "Sat afternoon high tide",
-   "date": "2026-11-14",
-   "level": "pacifica",
-   "title": "Peak surf and coastal flooding",
-   "detail": "Isolated waves up to about 50 ft possible; Coastal Flood Advisory to 6 PM.",
-   "sources": [
-    {
-     "name": "KQED",
-     "url": "https://www.kqed.org/news/12109722/bay-area-weather-big-waves-mavericks-surf-san-francisco-coastal-advisory-flooding"
-    },
-    {
-     "name": "NWS San Francisco",
-     "url": "https://www.weather.gov/mtr/"
-    }
-   ]
-  },
-  {
-   "when": "Sun after 9 AM",
+   "when": "Sun 10 AM \u2013 Mon",
    "date": "2026-11-15",
    "level": "pacifica",
-   "title": "Second storm: rain, gusts to 25 mph",
-   "detail": "Half to three-quarters of an inch of rain Sunday, another quarter to half inch Sunday night.",
+   "title": "Rain and gusts to 25 mph",
    "sources": [
     {
      "name": "NWS forecast, Pacifica",
@@ -62,23 +42,11 @@
    ]
   },
   {
-   "when": "Sat\u2013Mon",
-   "date": "2026-11-14",
-   "level": "california",
-   "title": "I-280 San Francisco full bridge-repair closures",
-   "detail": "Caltrans lists full closures Nov 14\u201315 and 15\u201316; check QuickMap before driving to SF.",
-   "sources": [
-    {
-     "name": "Caltrans QuickMap",
-     "url": "https://quickmap.dot.ca.gov/"
-    }
-   ]
-  },
-  {
-   "when": "Mon\u2013Tue, Nov 16\u201317",
+   "when": "Mon, Nov 16\u201317",
    "date": "2026-11-16",
    "level": "pacifica",
    "title": "Hwy 1 full maintenance closure in San Francisco",
+   "detail": "Caltrans lists a full closure; check QuickMap before driving north.",
    "sources": [
     {
      "name": "Caltrans QuickMap",
@@ -87,32 +55,40 @@
    ]
   },
   {
-   "when": "Early next week",
-   "date": "2026-11-16",
+   "when": "Mon 4 AM",
+   "date": "2026-11-17",
    "level": "pacifica",
-   "title": "Another, weaker swell",
-   "detail": "KQED expects a swell weaker than this weekend's.",
+   "title": "High Surf Advisory expires",
    "sources": [
     {
-     "name": "KQED",
-     "url": "https://www.kqed.org/news/12109722/bay-area-weather-big-waves-mavericks-surf-san-francisco-coastal-advisory-flooding"
+     "name": "NWS San Francisco",
+     "url": "https://www.weather.gov/mtr/"
     }
    ]
   },
   {
-   "when": "Nov 18\u201319",
+   "when": "Nov 20\u201322",
+   "date": "2026-11-20",
+   "level": "california",
+   "title": "I-280 San Francisco bridge-construction closures",
+   "detail": "Full closures Nov 20\u201321 and 21\u201322 per Caltrans.",
+   "sources": [
+    {
+     "name": "Caltrans QuickMap",
+     "url": "https://quickmap.dot.ca.gov/"
+    }
+   ]
+  },
+  {
+   "when": "Next week",
    "date": "2026-11-18",
    "level": "asia",
-   "title": "APEC summit, Shenzhen; possible Trump\u2013Xi\u2013Putin meeting",
-   "detail": "The White House says a joint meeting is planned; format and agenda not yet confirmed by other parties.",
+   "title": "Possible Trump\u2013Xi\u2013Putin meeting in China",
+   "detail": "The White House says it is planned; other parties have not confirmed.",
    "sources": [
     {
      "name": "BBC",
      "url": "https://www.bbc.co.uk/news/articles/ckz74jzpy18do"
-    },
-    {
-     "name": "EWN/AFP",
-     "url": "https://www.ewn.co.za/2026/11/09/trump-says-likely-to-meet-putin-xi-in-china"
     }
    ]
   }
@@ -120,16 +96,16 @@
  "home_front": [
   {
    "id": "alerts",
-   "status": "action",
-   "summary": "High Surf Warning to Sun 4 AM; Coastal Flood Advisory to 6 PM; no IPAWS alerts.",
+   "status": "watch",
+   "summary": "High Surf Advisory to Mon 4 AM; no IPAWS alerts.",
    "items": [
     {
-     "id": "pac-high-surf",
-     "tag": "ACTION",
+     "id": "pac-high-surf-advisory",
+     "tag": "WATCH",
      "severity": "hazard",
-     "title": "High Surf Warning: stay off Pacifica beaches, piers and rocks",
-     "detail": "NWS has a High Surf Warning to 4 AM Sunday and a Coastal Flood Advisory to 6 PM today. KQED reports 25\u201335 ft waves through the weekend, isolated sets up to about 50 ft near Saturday afternoon's high tide, and surge adding about two feet; Sharp Park Beach is among the highest-risk beaches. A woman died in the surf near Santa Cruz earlier this week.",
-     "trend": "rising",
+     "title": "High Surf Advisory continues, easing from this weekend's warning",
+     "detail": "NWS downgraded the warning to a High Surf Advisory running to 4 AM Monday Nov 17; swimmers should stay out of the water. KQED's Friday forecast had 25\u201335 ft waves peaking Saturday, so expect lingering strong surge and sneaker waves today as rain arrives.",
+     "trend": "easing",
      "confidence": "confirmed",
      "topic": "environment",
      "sources": [
@@ -142,42 +118,19 @@
        "url": "https://www.kqed.org/news/12109722/bay-area-weather-big-waves-mavericks-surf-san-francisco-coastal-advisory-flooding"
       }
      ],
-     "action": "Don't go to the beach, pier, jetty or bluff to watch waves; keep children and dogs away and never turn your back on the ocean. Avoid Beach Blvd and shoreline lots if water is washing over.",
-     "when": "Now to Sun 4 AM; peak Sat afternoon",
-     "where": "Pacifica coast, Sharp Park, Linda Mar",
-     "lat": 37.6,
-     "lon": -122.51,
+     "action": "Stay off beaches, piers, jetties and rocks; if water is washing onto Beach Blvd or shoreline lots, avoid them and treat it as an ACTION item.",
+     "when": "Now to Mon 4 AM",
+     "where": "Pacifica coast, Sharp Park",
+     "lat": 37.625,
+     "lon": -122.497,
      "area": 2
     },
     {
-     "id": "pac-fema",
+     "id": "pac-sunday-rain",
      "tag": "INFO",
-     "severity": "low",
-     "title": "No FEMA emergency alerts for Pacifica",
-     "detail": "The federal emergency-alert feed shows no active alerts for our area this morning.",
-     "trend": "steady",
-     "confidence": "confirmed",
-     "topic": "public-safety",
-     "sources": [
-      {
-       "name": "FEMA IPAWS",
-       "url": "https://www.fema.gov/openfema-data-page/ipaws-archived-alerts-v1"
-      }
-     ]
-    }
-   ]
-  },
-  {
-   "id": "utilities",
-   "status": "watch",
-   "summary": "No PG&E or water notices found; Sunday's wind and rain could cause scattered outages.",
-   "items": [
-    {
-     "id": "pac-rain-sun",
-     "tag": "WATCH",
      "severity": "hazard",
-     "title": "Rain and gusty wind Sunday",
-     "detail": "Rain after 9 AM Sunday with south-southwest wind 9\u201318 mph, gusts to 25 mph, and about half to three-quarters of an inch. I found no reported outages in Pacifica.",
+     "title": "Rain from mid-morning; half to three-quarters inch today",
+     "detail": "NWS forecasts rain after 10 AM (90%), gusts to 25 mph, another quarter to half inch tonight, then lighter showers Monday and a dry Tuesday. No flood or wind warnings are listed for Pacifica.",
      "trend": "new",
      "confidence": "confirmed",
      "topic": "environment",
@@ -187,432 +140,360 @@
        "url": "https://forecast.weather.gov/MapClick.php?lat=37.6138&lon=-122.4869"
       }
      ],
-     "action": "If power fails, report it at pge.com/outages; charge phones and battery packs Saturday.",
-     "when": "Sun 9 AM \u2013 Mon",
+     "when": "Sun 10 AM \u2013 Mon",
      "where": "Pacifica",
-     "lat": 37.61,
-     "lon": -122.49,
+     "lat": 37.6138,
+     "lon": -122.4869,
      "area": 2
+    }
+   ]
+  },
+  {
+   "id": "utilities",
+   "status": "clear",
+   "summary": "No outages or hosting incidents found.",
+   "items": [
+    {
+     "id": "util-dreamhost",
+     "tag": "INFO",
+     "severity": "low",
+     "title": "DreamHost server maintenance posted Nov 14",
+     "detail": "DreamHost posted shared, VPS and dedicated server maintenance on Nov 14; no ongoing incident affecting hosting, DNS or email is listed. Nothing needs doing.",
+     "trend": "easing",
+     "confidence": "confirmed",
+     "topic": "infrastructure",
+     "sources": [
+      {
+       "name": "DreamHost status",
+       "url": "https://www.dreamhoststatus.com/"
+      }
+     ],
+     "where": "DreamHost"
     }
    ]
   },
   {
    "id": "roads",
-   "status": "watch",
-   "summary": "Hwy 1 had no verified closure in Pacifica; surf spray and flooding possible near the shore.",
-   "items": [
-    {
-     "id": "roads-surf",
-     "tag": "WATCH",
-     "severity": "hazard",
-     "title": "Wave spray and standing water near the coast",
-     "detail": "With waves this large and surge, water can wash onto coastal roads and parking lots near Sharp Park. Caltrans lists a full Hwy 1 maintenance closure in San Francisco Mon\u2013Tue (Nov 16\u201317).",
-     "trend": "new",
-     "confidence": "likely",
-     "topic": "infrastructure",
-     "sources": [
-      {
-       "name": "Caltrans QuickMap",
-       "url": "https://quickmap.dot.ca.gov/"
-      },
-      {
-       "name": "KQED",
-       "url": "https://www.kqed.org/news/12109722/bay-area-weather-big-waves-mavericks-surf-san-francisco-coastal-advisory-flooding"
-      }
-     ],
-     "action": "Don't drive through standing water or around barricades; use Hwy 35/Skyline or I-280 if shoreline roads are wet.",
-     "when": "Sat\u2013Sun",
-     "where": "Beach Blvd, Sharp Park, Hwy 1",
-     "lat": 37.62,
-     "lon": -122.49,
-     "area": 1
-    }
-   ]
+   "status": "clear",
+   "summary": "No Pacifica closures; Hwy 1 SF closure Mon\u2013Tue.",
+   "items": []
   },
   {
    "id": "health",
    "status": "clear",
-   "summary": "Air quality good (AQI 45); no local health advisories.",
-   "items": [
-    {
-     "id": "aq-good",
-     "tag": "INFO",
-     "severity": "low",
-     "title": "Air quality good",
-     "detail": "US AQI is 45 now, peaking near 59 (moderate) Sunday morning. Fine for everyone.",
-     "trend": "steady",
-     "confidence": "confirmed",
-     "topic": "health",
-     "sources": [
-      {
-       "name": "Open-Meteo air quality",
-       "url": "https://open-meteo.com/en/docs/air-quality-api"
-      }
-     ]
-    }
-   ]
+   "summary": "Air quality moderate (AQI 56); no local advisories.",
+   "items": []
   },
   {
    "id": "supplies",
    "status": "clear",
-   "summary": "No local shortages; WTI about $89.",
-   "items": [
-    {
-     "id": "oil-supply",
-     "tag": "INFO",
-     "severity": "low",
-     "title": "Oil steady near $89 as Hormuz stays restricted",
-     "detail": "WTI is $88.56, down 0.2% on the day and about 7% lower over a month. The UN says Hormuz traffic is about 65% below pre-war levels, which keeps fuel risk elevated.",
-     "trend": "steady",
-     "confidence": "likely",
-     "topic": "energy",
-     "sources": [
-      {
-       "name": "Yahoo Finance market data",
-       "url": "https://finance.yahoo.com/"
-      },
-      {
-       "name": "Al Jazeera",
-       "url": "https://www.aljazeera.com/news/2026/11/14/un-says-25-seafarers-killed-in-around-hormuz-since-february"
-      }
-     ],
-     "where": "Strait of Hormuz",
-     "lat": 26.6,
-     "lon": 56.3,
-     "area": 5
-    }
-   ]
+   "summary": "No verified local supply disruptions.",
+   "items": []
   }
  ],
  "readiness": {
   "default": {
-   "task": "Charge phones and battery packs today and set out flashlights.",
-   "why": "Another storm with gusty wind arrives Sunday."
-  },
-  "3d": {
-   "task": "Fill a few water jugs and check three days of shelf-stable food and medication.",
-   "why": "Back-to-back storms could briefly cut roads or power."
-  },
-  "3w": {
-   "task": "Check you have three weeks of prescriptions and pet food.",
-   "why": "Wet weather makes errands harder."
-  },
-  "3m": {
-   "task": "Rotate the oldest stored food and water into this week's use.",
-   "why": "Stores only help if still good."
-  },
-  "1y": {
-   "task": "Test your backup power or radio and check fuel levels.",
-   "why": "Power and communications fail first."
+   "task": "Charge phones and check flashlight batteries before tonight's rain.",
+   "why": "Wet weather and gusts can cause brief outages."
   }
  },
  "ladder": [
   {
    "level": "pacifica",
-   "summary": "Surf and erosion dominate; see Home front.",
-   "items": [
-    {
-     "id": "pac-erosion",
-     "tag": "WATCH",
-     "severity": "hazard",
-     "title": "Surge and giant waves raise bluff erosion risk",
-     "detail": "KQED says surge about two feet above normal on top of 25\u201335 ft waves means added erosion on exposed shoreline. King tides around Thanksgiving could bring more flooding, according to climate scientist Daniel Swain.",
-     "trend": "rising",
-     "confidence": "likely",
-     "topic": "environment",
-     "sources": [
-      {
-       "name": "KQED",
-       "url": "https://www.kqed.org/news/12109722/bay-area-weather-big-waves-mavericks-surf-san-francisco-coastal-advisory-flooding"
-      }
-     ],
-     "action": "Stay back from bluff edges and closed trails; report new cracks or slumping to the city.",
-     "where": "Pacifica bluffs",
-     "lat": 37.62,
-     "lon": -122.5,
-     "area": 1
-    }
-   ]
+   "summary": "Surf easing; rain today.",
+   "items": []
   },
   {
    "level": "california",
-   "summary": "Bay Area flight backlog; Sierra snow; coastal flooding.",
+   "summary": "Flight backlog and a clemency fight.",
    "items": [
     {
-     "id": "faa-stop",
-     "tag": "WATCH",
-     "severity": "elevated",
-     "title": "Flights disrupted after nationwide FAA ground stop",
-     "detail": "The FAA halted US departures about 1 PM\u20135:30 PM PST Friday after a communication issue affecting all air route traffic control centers; officials said there is no indication of an attack. Over 300 SFO flights were cancelled by evening and SFO says the backlog could take days to clear.",
-     "trend": "new",
+     "id": "us-faa-recovery",
+     "tag": "INFO",
+     "severity": "low",
+     "title": "Flight backlog continues after Friday's FAA ground stop; cause found",
+     "detail": "The DOT secretary says a router during an L3Harris copper-to-fibre upgrade flooded air-traffic communications; officials ruled out a cyberattack. Airlines cancelled 9,000+ flights Friday and 5,000+ Saturday; full schedules are expected by Sunday night, and the FAA is still testing for further risk.",
+     "trend": "easing",
      "confidence": "confirmed",
      "topic": "infrastructure",
      "sources": [
       {
-       "name": "KQED",
-       "url": "https://www.kqed.org/news/12109662/all-bay-area-flights-ground-stopped-in-nationwide-faa-outage"
+       "name": "Al Jazeera",
+       "url": "https://www.aljazeera.com/news/2026/11/15/what-forced-the-us-to-ground-all-planes-a-router-switch-we-now-know"
       },
       {
-       "name": "BBC",
-       "url": "https://www.bbc.co.uk/news/articles/cqx2wyvyr3zzo"
+       "name": "KQED",
+       "url": "https://www.kqed.org/news"
       }
      ],
-     "action": "Check your airline's app before leaving for SFO and allow extra time; rideshares are scarce.",
-     "when": "Through the weekend",
-     "where": "SFO, US airports",
+     "where": "US airports incl. SFO",
      "lat": 37.62,
      "lon": -122.38,
      "area": 4
     },
     {
-     "id": "sierra-storm",
-     "tag": "WATCH",
-     "severity": "hazard",
-     "title": "Winter Storm Warning in the southern Sierra",
-     "detail": "NWS has a Winter Storm Warning for Yosemite, Kings Canyon and Sequoia areas until 4 AM Tuesday, plus a warning for the Eastern Sierra slopes of Inyo County to 4 PM today.",
+     "id": "ca-election",
+     "tag": "INFO",
+     "severity": "low",
+     "title": "Newsom clemency empties death row; some DAs plan to seek death penalty",
+     "detail": "KQED and CalMatters report Newsom spared 500+ death-row inmates; some district attorneys say they will still pursue capital charges.",
      "trend": "steady",
      "confidence": "confirmed",
-     "topic": "environment",
+     "topic": "political",
      "sources": [
       {
-       "name": "NWS alerts",
-       "url": "https://alerts.weather.gov/"
+       "name": "CalMatters",
+       "url": "https://calmatters.org/"
       }
      ],
-     "action": "If driving to the mountains, check Caltrans QuickMap and carry chains, or delay.",
-     "when": "Now \u2013 Tue 4 AM",
-     "where": "Sierra Nevada",
-     "lat": 37.8,
-     "lon": -119.5,
-     "area": 3
+     "where": "California"
     }
    ]
   },
   {
    "level": "usa",
-   "summary": "Flight backlog, Nvidia fallout, a US\u2013China\u2013Russia summit plan.",
+   "summary": "Talks and travel disruption.",
    "items": [
     {
-     "id": "msft-restored",
+     "id": "cyber-cisa",
      "tag": "INFO",
      "severity": "low",
-     "title": "Microsoft says outage fully restored",
-     "detail": "Services (Outlook, Teams) are back after a day-long global outage that Microsoft said was not a cyberattack.",
-     "trend": "easing",
+     "title": "CISA adds Check Point and UnrealIRCd flaws to exploited list",
+     "detail": "Added Nov 13 as known to be exploited. Update affected products when patches are available; Outlook flaw added Nov 10.",
+     "trend": "new",
      "confidence": "confirmed",
      "topic": "cyber",
      "sources": [
       {
-       "name": "BBC",
-       "url": "https://www.bbc.co.uk/news/articles/c6rrg51rkz09o"
-      },
-      {
-       "name": "SFGate/AP",
-       "url": "https://www.sfgate.com/business/article/microsoft-says-services-fully-restored-after-22530488.php"
-      }
-     ]
-    },
-    {
-     "id": "nvidia",
-     "tag": "INFO",
-     "severity": "watch",
-     "title": "Nvidia scandal widens; Lutnick under pressure",
-     "detail": "Nvidia's CEO has stepped down; the Treasury Secretary has blamed the Commerce Department over alleged inaction on a China-linked national-security concern. No household impact.",
-     "trend": "steady",
-     "confidence": "confirmed",
-     "topic": "political",
-     "sources": [
-      {
-       "name": "Guardian",
-       "url": "https://www.theguardian.com/technology/2026/nov/13/nvidia-scandal-sparks-us-national-security-concerns-china"
-      }
-     ]
-    },
-    {
-     "id": "cruise",
-     "tag": "INFO",
-     "severity": "low",
-     "title": "All passengers rescued after New Orleans cruise ship collision",
-     "detail": "BBC reports everyone was rescued after a cruise ship and cargo ship collided on the Mississippi.",
-     "trend": "new",
-     "confidence": "confirmed",
-     "topic": "public-safety",
-     "sources": [
-      {
-       "name": "BBC",
-       "url": "https://www.bbc.co.uk/news/articles/cw20xmy0m5yyo"
+       "name": "CISA KEV",
+       "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
       }
      ],
-     "where": "New Orleans",
-     "lat": 29.95,
-     "lon": -90.07,
-     "area": 1
-    },
-    {
-     "id": "markets",
-     "tag": "INFO",
-     "severity": "low",
-     "title": "Markets calm; 10-year yield 5.15%",
-     "detail": "S&P 500 is down 0.4% and VIX 19.3, both below stress levels; the 10-year Treasury yield rose 1.0% on the day to 5.15% and the dollar index is 103.4.",
-     "trend": "steady",
-     "confidence": "confirmed",
-     "topic": "economy",
-     "sources": [
-      {
-       "name": "Yahoo Finance market data",
-       "url": "https://finance.yahoo.com/"
-      }
-     ]
+     "where": "Global"
     }
    ]
   },
   {
    "level": "west",
-   "summary": "US floats Donbas-for-NATO idea; drones over UK base reported.",
+   "summary": "Protests, migration and a base-fire death.",
    "items": [
     {
-     "id": "ukraine-talks",
-     "tag": "WATCH",
-     "severity": "elevated",
-     "title": "Ukraine says US floated Donbas withdrawal for NATO membership",
-     "detail": "Zelensky says US negotiators asked in Abu Dhabi whether Ukraine would leave Donbas in return for NATO membership; he says there is no concrete offer, Ukraine won't withdraw troops, and Moscow opposes NATO entry. Russia says a Ukrainian drone killed three in Belgorod; Ukraine says Russia launched 96 drones overnight.",
+     "id": "west-canada-wainwright",
+     "tag": "INFO",
+     "severity": "low",
+     "title": "Fifth Canadian soldier dies from base-fire injuries",
+     "detail": "BBC reports a fifth death from the October grenade-exercise fire at CFB Wainwright, Alberta. Officials have investigators on the case.",
      "trend": "new",
-     "confidence": "confirmed",
-     "topic": "conflict",
+     "confidence": "likely",
+     "topic": "public-safety",
+     "sources": [
+      {
+       "name": "BBC",
+       "url": "https://www.bbc.co.uk/news/world"
+      }
+     ],
+     "where": "Wainwright, Alberta",
+     "lat": 52.8,
+     "lon": -110.9,
+     "area": 2
+    },
+    {
+     "id": "west-protests",
+     "tag": "INFO",
+     "severity": "watch",
+     "title": "Police confront protesters in clashes across France and Germany",
+     "detail": "Al Jazeera reports clashes on Nov 15; details on the cause and scale were not available at publication.",
+     "trend": "new",
+     "confidence": "unconfirmed",
+     "topic": "public-safety",
      "sources": [
       {
        "name": "Al Jazeera",
-       "url": "https://www.aljazeera.com/news/2026/11/14/three-killed-in-russia-as-ukraine-claims-us-floated-nato-membership-option"
-      },
-      {
-       "name": "BBC",
-       "url": "https://www.bbc.co.uk/news/articles/cwvg2l312ylqo"
+       "url": "https://www.aljazeera.com/news/"
       }
      ],
-     "action": "Nothing to do; if talks collapse or strikes spread to NATO states, watch fuel and gas prices.",
-     "where": "Ukraine, Russia",
-     "lat": 50.4,
-     "lon": 30.5,
-     "area": 4
+     "where": "France / Germany",
+     "lat": 49.0,
+     "lon": 5.0,
+     "area": 3
     },
     {
-     "id": "lakenheath",
+     "id": "west-canary-migrants",
      "tag": "INFO",
-     "severity": "watch",
-     "title": "US Air Force responds to 'suspected drones' over RAF Lakenheath",
-     "detail": "BBC reports the US Air Force responded to suspected drones over the UK base on Friday. I could not open the article for details, so scope and origin are unknown.",
+     "severity": "low",
+     "title": "Nearly 2,200 migrants reach the Canary Islands in two days",
+     "detail": "Spain's maritime rescue service reports the arrivals; more than 28,000 people have come to Spain by sea this year.",
      "trend": "new",
-     "confidence": "unconfirmed",
-     "topic": "conflict",
-     "sources": [
-      {
-       "name": "BBC",
-       "url": "https://www.bbc.co.uk/news/articles/c6jd75geegzyo"
-      }
-     ],
-     "where": "RAF Lakenheath, UK",
-     "lat": 52.41,
-     "lon": 0.56,
-     "area": 2
-    }
-   ]
-  },
-  {
-   "level": "asia",
-   "summary": "Trump\u2013Xi\u2013Putin meeting plan; Indonesian political strain.",
-   "items": [
-    {
-     "id": "trump-xi-putin",
-     "tag": "WATCH",
-     "severity": "watch",
-     "title": "White House: Trump, Putin and Xi plan joint meeting in China",
-     "detail": "The White House says the meeting is planned for next week, around the APEC summit in Shenzhen Nov 18\u201319. Earlier reports said China only confirmed talks, so the format is not final.",
-     "trend": "new",
-     "confidence": "likely",
-     "topic": "political",
-     "sources": [
-      {
-       "name": "BBC",
-       "url": "https://www.bbc.co.uk/news/articles/ckz74jzpy18do"
-      },
-      {
-       "name": "EWN/AFP",
-       "url": "https://www.ewn.co.za/2026/11/09/trump-says-likely-to-meet-putin-xi-in-china"
-      }
-     ],
-     "action": "Nothing to do; watch for any Ukraine or Taiwan terms that move fuel or markets.",
-     "when": "Nov 18\u201319",
-     "where": "Shenzhen, China",
-     "lat": 22.54,
-     "lon": 114.06,
-     "area": 5
-    },
-    {
-     "id": "indonesia-vp",
-     "tag": "INFO",
-     "severity": "watch",
-     "title": "Indonesia's vice president resigns",
-     "detail": "He resigned as his eligibility and academic credentials were questioned, a sign of strain in the ruling alliance.",
-     "trend": "steady",
      "confidence": "confirmed",
      "topic": "political",
      "sources": [
       {
-       "name": "NPR",
-       "url": "https://www.npr.org/2026/11/13/g-s1-153532/up-first-newsletter-nvidia-jensen-huang-colette-kress-ukraine-russia-chris-van-hollen"
+       "name": "SFGate/AP",
+       "url": "https://www.sfgate.com/news/world/article/spain-says-nearly-2-200-migrants-have-reached-22531728.php"
       }
      ],
-     "where": "Jakarta",
-     "lat": -6.2,
-     "lon": 106.8,
+     "where": "Canary Islands",
+     "lat": 28.3,
+     "lon": -15.5,
      "area": 3
     }
    ]
   },
   {
-   "level": "world",
-   "summary": "Hormuz mines and restrictions; new Qatar\u2013Turkey pact.",
+   "level": "asia",
+   "summary": "Summits in Manila and China.",
    "items": [
     {
-     "id": "hormuz",
+     "id": "asia-apec-summit",
+     "tag": "INFO",
+     "severity": "watch",
+     "title": "ASEAN summit opens in Manila; APEC and a planned Trump\u2013Xi\u2013Putin meeting follow",
+     "detail": "Protesters condemned US policies as ASEAN began; the White House says the three leaders plan a joint meeting in China next week, with Iran and nuclear arms on the agenda. Other parties have not confirmed the format.",
+     "trend": "steady",
+     "confidence": "likely",
+     "topic": "political",
+     "sources": [
+      {
+       "name": "Al Jazeera",
+       "url": "https://www.aljazeera.com/news/liveblog/2026/11/15/iran-war-live-israel-vows-gaza-offensive-policy-despite-caretaker-status"
+      },
+      {
+       "name": "BBC",
+       "url": "https://www.bbc.co.uk/news/articles/ckz74jzpy18do"
+      }
+     ],
+     "where": "Manila / China",
+     "lat": 14.6,
+     "lon": 121.0,
+     "area": 4
+    }
+   ]
+  },
+  {
+   "level": "world",
+   "summary": "Gulf attacks resume; Hormuz and Ukraine talks.",
+   "items": [
+    {
+     "id": "world-iran-bahrain",
      "tag": "WATCH",
      "severity": "elevated",
-     "title": "Iran says three tankers hit mines; Hormuz traffic 65% below pre-war",
-     "detail": "Iran says three tankers struck mines in restricted waters east of the strait on Nov 14 and warns others entering will be set on fire; the US says main routes are cleared. The UN says 25 seafarers have died in and around Hormuz since February.",
+     "title": "Iran attacks Bahrain again; Gulf states warned against backing US",
+     "detail": "Bahrain says its air defences intercepted several Iranian drone and missile attacks on Nov 15, the second in three days, and issued its first nationwide alert since September. Iran's Guards claim they hit a US radar; Saudi Arabia says it also downed Houthi missiles aimed at Riyadh.",
      "trend": "rising",
+     "confidence": "confirmed",
+     "topic": "conflict",
+     "sources": [
+      {
+       "name": "The National",
+       "url": "https://www.thenationalnews.com/news/gulf/2026/11/15/bahrain-issues-first-nationwide-alert-in-months-as-iran-claims-attack-on-base-hosting-us-helicopters/"
+      },
+      {
+       "name": "Al Jazeera",
+       "url": "https://www.aljazeera.com/news/liveblog/2026/11/15/iran-war-live-israel-vows-gaza-offensive-policy-despite-caretaker-status"
+      }
+     ],
+     "action": "Check the State Dept advisory before any Gulf travel or transit; watch for oil and shipping effects.",
+     "where": "Bahrain / Gulf",
+     "lat": 26.07,
+     "lon": 50.55,
+     "area": 4
+    },
+    {
+     "id": "world-hormuz",
+     "tag": "WATCH",
+     "severity": "elevated",
+     "title": "Hormuz: UN counts 25 seafarers killed; three more ships hit mines",
+     "detail": "Iran reports three more vessels struck mines on Nov 14 and the UN says 25 seafarers have died in and around the strait since the war began. WTI is about $88.6 and Brent about $95.8, both down over the past month.",
+     "trend": "steady",
+     "confidence": "likely",
+     "topic": "energy",
+     "sources": [
+      {
+       "name": "Al Jazeera",
+       "url": "https://www.aljazeera.com/news/liveblog/2026/11/15/iran-war-live-israel-vows-gaza-offensive-policy-despite-caretaker-status"
+      },
+      {
+       "name": "Morning Watch markets feed",
+       "url": "https://finance.yahoo.com/quote/CL=F/"
+      }
+     ],
+     "action": "If California gasoline prices jump, top up the car's tank before they rise further.",
+     "where": "Strait of Hormuz",
+     "lat": 26.5,
+     "lon": 56.3,
+     "area": 4
+    },
+    {
+     "id": "world-ukraine-talks",
+     "tag": "INFO",
+     "severity": "watch",
+     "title": "US floats Donbas-for-NATO deal; Kushner seeks Europe\u2013Russia talks",
+     "detail": "Zelensky says Washington floated Ukraine ceding Donbas in exchange for NATO membership; US envoy Kushner says he aims to broker direct Europe\u2013Russia talks. Nothing is agreed.",
+     "trend": "steady",
      "confidence": "likely",
      "topic": "conflict",
      "sources": [
       {
        "name": "Al Jazeera",
-       "url": "https://www.aljazeera.com/news/2026/11/14/un-says-25-seafarers-killed-in-around-hormuz-since-february"
+       "url": "https://www.aljazeera.com/news/liveblog/2026/11/15/iran-war-live-israel-vows-gaza-offensive-policy-despite-caretaker-status"
+      },
+      {
+       "name": "BBC",
+       "url": "https://www.bbc.co.uk/news/articles/ckz74jzpy18do"
       }
      ],
-     "action": "If fuel prices jump, fill the car's tank early.",
-     "where": "Strait of Hormuz",
-     "lat": 26.6,
-     "lon": 56.3,
-     "area": 5
+     "where": "Ukraine / Russia",
+     "lat": 49.0,
+     "lon": 32.0,
+     "area": 4
     },
     {
-     "id": "qatar-turkey",
+     "id": "world-gaza",
      "tag": "INFO",
-     "severity": "watch",
-     "title": "Qatar and Turkey sign a mutual defence pact",
-     "detail": "The pact commits both to a common position against armed attack on either; the communique does not say what triggers it. Both call for safe passage through Hormuz.",
-     "trend": "new",
+     "severity": "elevated",
+     "title": "Israel kills senior Hamas commander; EU urges Gaza aid access",
+     "detail": "Israel says an airstrike on a Gaza camp killed a Hamas commander involved in planning attacks. The EU is calling for immediate humanitarian access after UN agencies were blocked.",
+     "trend": "steady",
      "confidence": "confirmed",
-     "topic": "political",
+     "topic": "conflict",
+     "sources": [
+      {
+       "name": "BBC",
+       "url": "https://www.bbc.co.uk/news/world"
+      },
+      {
+       "name": "Al Jazeera",
+       "url": "https://www.aljazeera.com/news/liveblog/2026/11/15/iran-war-live-israel-vows-gaza-offensive-policy-despite-caretaker-status"
+      }
+     ],
+     "where": "Gaza",
+     "lat": 31.4,
+     "lon": 34.35,
+     "area": 3
+    },
+    {
+     "id": "world-sudan-grid",
+     "tag": "INFO",
+     "severity": "critical",
+     "title": "Drone attacks on power stations plunge Sudan's cities into darkness",
+     "detail": "Al Jazeera reports new drone strikes on Sudan's power stations; the army blames the RSF, which has not commented. Earlier reporting says the Merowe Dam supplies over 70% of national electricity.",
+     "trend": "steady",
+     "confidence": "likely",
+     "topic": "conflict",
      "sources": [
       {
        "name": "Al Jazeera",
-       "url": "https://www.aljazeera.com/news/2026/11/14/qatar-and-turkiye-sign-a-mutual-defence-pact-what-do-we-know"
+       "url": "https://www.aljazeera.com/news/"
+      },
+      {
+       "name": "AP via WFTV",
+       "url": "https://www.wftv.com/news/world/sudans-power-grid/OPPUJFEXJUY6VMTVQOCRW7KXKQ/"
       }
      ],
-     "where": "Istanbul, Doha",
-     "lat": 41.0,
-     "lon": 28.98,
-     "area": 4
+     "where": "Sudan",
+     "lat": 15.6,
+     "lon": 32.5,
+     "area": 3
     }
    ]
   }
@@ -623,24 +504,24 @@
    "url": "https://www.weather.gov/mtr/"
   },
   {
-   "name": "USGS",
-   "url": "https://earthquake.usgs.gov/"
-  },
-  {
-   "name": "Caltrans QuickMap",
-   "url": "https://quickmap.dot.ca.gov/"
-  },
-  {
    "name": "KQED",
-   "url": "https://www.kqed.org/"
+   "url": "https://www.kqed.org/news/12109722/bay-area-weather-big-waves-mavericks-surf-san-francisco-coastal-advisory-flooding"
   },
   {
-   "name": "BBC",
-   "url": "https://www.bbc.co.uk/news"
+   "name": "NWS forecast, Pacifica",
+   "url": "https://forecast.weather.gov/MapClick.php?lat=37.6138&lon=-122.4869"
   },
   {
    "name": "Al Jazeera",
-   "url": "https://www.aljazeera.com/"
+   "url": "https://www.aljazeera.com/news/liveblog/2026/11/15/iran-war-live-israel-vows-gaza-offensive-policy-despite-caretaker-status"
+  },
+  {
+   "name": "The National",
+   "url": "https://www.thenationalnews.com/news/gulf/2026/11/15/bahrain-issues-first-nationwide-alert-in-months-as-iran-claims-attack-on-base-hosting-us-helicopters/"
+  },
+  {
+   "name": "Al Jazeera",
+   "url": "https://www.aljazeera.com/news/2026/11/15/what-forced-the-us-to-ground-all-planes-a-router-switch-we-now-know"
   },
   {
    "name": "FEMA IPAWS",
