@@ -1,0 +1,661 @@
+{
+ "schema": 1,
+ "date": "2026-11-17",
+ "generated_at": "2026-11-17T04:40:00-08:00",
+ "overall": {
+  "level": "serious",
+  "headline": "Wind and rain hit Pacifica tonight; Ukraine hit the Crimea bridge and Iran resumed strikes on Bahrain.",
+  "bluf": "A Wind Advisory for the Pacifica coast runs from 9 PM tonight to 1 PM Wednesday, with 1–2 inches of rain and gusts to about 43 mph, so prepare for a possible power outage today. Abroad, Iran fired drones at a US radar site in Bahrain for the third time in days, and Ukraine says it badly damaged the Crimea bridge. No FEMA emergency alerts are active for Pacifica."
+ },
+ "status": {
+  "local": {
+   "level": "strained",
+   "note": "Wind Advisory and heavy rain from tonight."
+  },
+  "regional": {
+   "level": "steady",
+   "note": "Sierra winter storm; some bank outages."
+  },
+  "world": {
+   "level": "serious",
+   "note": "Iran strikes Bahrain; Crimea bridge hit."
+  }
+ },
+ "changes": [
+  "Upgraded: NWS issued a Wind Advisory for the Pacifica coast, 9 PM Tue to 1 PM Wed, replacing yesterday's 'possible' advisory. Forecast gusts are now up to 43 mph.",
+  "New: Beach Hazards Statement through 4 PM Wednesday replaces the High Surf Advisory that ended this morning.",
+  "New: Iran fired drones at a US radar facility in Bahrain, its third attack there in recent days, ending a two-month lull. Bahrain says its air defenses intercepted them.",
+  "New: Ukraine says a weeks-in-the-planning strike partly collapsed the Crimea bridge; the Kremlin vows to rebuild.",
+  "New: Two vessels reportedly caught fire after hitting a mine in the Strait of Hormuz, per Iran.",
+  "Trump arrived in Manila; the joint meeting with Xi and Putin is now confirmed by NPR reporting.",
+  "Dropped as stale: Hwy 1 San Francisco closure (ended today), FAA flight recovery, Jordan Telegram ban, South Africa shootings, Gaza aid appeal, DreamHost Nov 13 maintenance."
+ ],
+ "coming_up": [
+  {
+   "when": "Tue 9 PM – Wed 1 PM",
+   "date": "2026-11-17",
+   "level": "pacifica",
+   "title": "Wind Advisory for the Peninsula coast",
+   "detail": "Gusts to about 43 mph, with 1–2 inches of rain and possible thunderstorms Wednesday morning.",
+   "sources": [
+    {
+     "name": "NWS San Francisco",
+     "url": "https://www.weather.gov/mtr/"
+    },
+    {
+     "name": "NWS forecast, Pacifica",
+     "url": "https://forecast.weather.gov/MapClick.php?lat=37.6138&lon=-122.4869"
+    }
+   ]
+  },
+  {
+   "when": "Tue – Wed 4 PM",
+   "date": "2026-11-17",
+   "level": "pacifica",
+   "title": "Beach Hazards Statement",
+   "detail": "Stay off jetties, rocks and piers and out of the water.",
+   "sources": [
+    {
+     "name": "NWS San Francisco",
+     "url": "https://www.weather.gov/mtr/"
+    }
+   ]
+  },
+  {
+   "when": "Wed 4 AM – Fri 4 AM",
+   "date": "2026-11-18",
+   "level": "california",
+   "title": "Winter Storm Warnings, Tahoe and Mono County",
+   "detail": "NWS Reno warnings run into Friday; expect difficult mountain travel.",
+   "sources": [
+    {
+     "name": "NWS San Francisco",
+     "url": "https://www.weather.gov/mtr/"
+    }
+   ]
+  },
+  {
+   "when": "Wed–Thu",
+   "date": "2026-11-18",
+   "level": "asia",
+   "title": "Trump meets Xi and Putin in China",
+   "detail": "NPR reports a joint three-way summit as part of Trump's Asia trip.",
+   "sources": [
+    {
+     "name": "NPR",
+     "url": "https://www.npr.org/2026/11/17/nx-s1-6042448/trump-to-meet-chinese-leader-xi-jinping-and-russias-vladimir-putin-for-joint-summit"
+    }
+   ]
+  },
+  {
+   "when": "Next week",
+   "date": "2026-11-24",
+   "level": "pacifica",
+   "title": "King tides begin",
+   "detail": "KQED says the year's highest tides are expected through January, with possible coastal flooding and street closures.",
+   "sources": [
+    {
+     "name": "KQED",
+     "url": "https://www.kqed.org/news/12109913/bay-area-braces-for-another-round-of-storms-this-week"
+    }
+   ]
+  },
+  {
+   "when": "Fri, Nov 20–21",
+   "date": "2026-11-20",
+   "level": "california",
+   "title": "I-280 San Francisco full closures",
+   "detail": "Bridge construction closures per Caltrans.",
+   "sources": [
+    {
+     "name": "Caltrans QuickMap",
+     "url": "https://quickmap.dot.ca.gov/"
+    }
+   ]
+  }
+ ],
+ "home_front": [
+  {
+   "id": "alerts",
+   "status": "action",
+   "summary": "Wind Advisory tonight; no FEMA alerts active.",
+   "items": [
+    {
+     "id": "pac-wind-rain-storm",
+     "tag": "ACTION",
+     "severity": "hazard",
+     "title": "Wind Advisory and heavy rain from tonight",
+     "detail": "NWS issued a Wind Advisory for the San Francisco Peninsula coast from 9 PM Tuesday to 1 PM Wednesday. The Pacifica forecast has 1–2 inches of rain overnight and again Wednesday, south winds 7–30 mph with gusts up to 43 mph, and thunderstorms. Rain continues through Thursday.",
+     "trend": "rising",
+     "confidence": "confirmed",
+     "topic": "environment",
+     "sources": [
+      {
+       "name": "NWS San Francisco",
+       "url": "https://www.weather.gov/mtr/"
+      },
+      {
+       "name": "NWS forecast, Pacifica",
+       "url": "https://forecast.weather.gov/MapClick.php?lat=37.6138&lon=-122.4869"
+      },
+      {
+       "name": "KQED",
+       "url": "https://www.kqed.org/news/12109913/bay-area-braces-for-another-round-of-storms-this-week"
+      }
+     ],
+     "action": "Today, charge phones and battery packs, set out flashlights, clear storm drains near the house, and secure loose outdoor items. Free sandbags are offered by Bay Area counties if your lot floods. Avoid coastal roads and driving high-profile vehicles during peak gusts.",
+     "when": "Tue 9 PM – Wed 1 PM",
+     "where": "Pacifica coast",
+     "lat": 37.6138,
+     "lon": -122.4869,
+     "area": 2
+    },
+    {
+     "id": "pac-beach-hazards",
+     "tag": "INFO",
+     "severity": "hazard",
+     "title": "Beach Hazards Statement through Wednesday 4 PM",
+     "detail": "NWS says hazardous surf continues on the coast; stay off jetties, piers and rocks and never turn your back on the ocean. Surf forecast stays about 3.5–4 m through Thursday.",
+     "trend": "easing",
+     "confidence": "confirmed",
+     "topic": "environment",
+     "sources": [
+      {
+       "name": "NWS San Francisco",
+       "url": "https://www.weather.gov/mtr/"
+      }
+     ],
+     "when": "Now to Wed 4 PM",
+     "where": "Pacifica beaches, Sharp Park",
+     "lat": 37.625,
+     "lon": -122.497,
+     "area": 2
+    }
+   ]
+  },
+  {
+   "id": "utilities",
+   "status": "watch",
+   "summary": "No outages found yet; storm may cause some tonight.",
+   "items": [
+    {
+     "id": "util-storm-outage-risk",
+     "tag": "WATCH",
+     "severity": "hazard",
+     "title": "Power outages possible in tonight's wind",
+     "detail": "No PG&E outage in Pacifica turned up this morning. Winds to 43 mph with saturated ground can bring down lines on the coast.",
+     "trend": "new",
+     "confidence": "likely",
+     "topic": "infrastructure",
+     "sources": [
+      {
+       "name": "PG&E outage map",
+       "url": "https://pge.com/outages"
+      },
+      {
+       "name": "NWS San Francisco",
+       "url": "https://www.weather.gov/mtr/"
+      }
+     ],
+     "action": "If power fails, report it at pge.com/outages, keep the fridge closed, and use flashlights rather than candles.",
+     "when": "Tue night – Wed",
+     "where": "Pacifica",
+     "lat": 37.6138,
+     "lon": -122.4869,
+     "area": 2
+    },
+    {
+     "id": "util-dreamhost-panel",
+     "tag": "INFO",
+     "severity": "low",
+     "title": "DreamHost control panel maintenance completed",
+     "detail": "DreamHost's scheduled control-panel maintenance ran Nov 16 evening and was completed at 7:53 PM PST. No action needed for thetins.com sites.",
+     "trend": "easing",
+     "confidence": "confirmed",
+     "topic": "infrastructure",
+     "sources": [
+      {
+       "name": "DreamHost status",
+       "url": "https://www.dreamhoststatus.com/"
+      }
+     ],
+     "where": "DreamHost"
+    }
+   ]
+  },
+  {
+   "id": "roads",
+   "status": "watch",
+   "summary": "Wet, windy roads tonight; minor Hwy 1 work south of town.",
+   "items": [
+    {
+     "id": "roads-hwy1-work",
+     "tag": "INFO",
+     "severity": "low",
+     "title": "Hwy 1 one-way traffic for drainage work at Moss Beach, slide repair near Pescadero",
+     "detail": "Caltrans lists one-way traffic control today at Moss Beach and near Pescadero. The San Francisco Hwy 1 closure listed yesterday ends today. Expect delays south of Pacifica, worse in rain.",
+     "trend": "steady",
+     "confidence": "confirmed",
+     "topic": "infrastructure",
+     "sources": [
+      {
+       "name": "Caltrans QuickMap",
+       "url": "https://quickmap.dot.ca.gov/"
+      }
+     ],
+     "when": "Today",
+     "where": "Hwy 1, Moss Beach and Pescadero",
+     "lat": 37.52,
+     "lon": -122.51,
+     "area": 2
+    }
+   ]
+  },
+  {
+   "id": "health",
+   "status": "clear",
+   "summary": "Air quality good (AQI 32); no local advisories.",
+   "items": []
+  },
+  {
+   "id": "supplies",
+   "status": "clear",
+   "summary": "No verified local supply disruptions.",
+   "items": []
+  }
+ ],
+ "readiness": {
+  "default": {
+   "task": "Charge phones and power banks and put flashlights where you can find them.",
+   "why": "A Wind Advisory and 1–2 inches of rain arrive tonight, and outages are possible."
+  },
+  "3d": {
+   "task": "Fill drinking-water containers before tonight's storm.",
+   "why": "Heavy rain and wind can disrupt service and cause boil-water notices."
+  }
+ },
+ "ladder": [
+  {
+   "level": "pacifica",
+   "summary": "Storm tonight; king tides next week.",
+   "items": [
+    {
+     "id": "pac-king-tides",
+     "tag": "INFO",
+     "severity": "hazard",
+     "title": "King tides expected next week",
+     "detail": "KQED reports the year's highest tides are due next week and through January, with possible coastal flooding and street closures. A king tide flooded parts of Marin on Nov 13.",
+     "trend": "new",
+     "confidence": "likely",
+     "topic": "environment",
+     "sources": [
+      {
+       "name": "KQED",
+       "url": "https://www.kqed.org/news/12109913/bay-area-braces-for-another-round-of-storms-this-week"
+      }
+     ],
+     "where": "Bay Area coast",
+     "lat": 37.8,
+     "lon": -122.5,
+     "area": 3
+    }
+   ]
+  },
+  {
+   "level": "california",
+   "summary": "Sierra winter storm; some bank outages.",
+   "items": [
+    {
+     "id": "ca-sierra-warning",
+     "tag": "INFO",
+     "severity": "hazard",
+     "title": "Winter Storm Warnings for Tahoe and Mono County, Wednesday to Friday",
+     "detail": "NWS Reno upgraded to warnings from Wed 4 AM to Fri 4 AM, and NWS Medford has warnings for Siskiyou County from tonight. Mountain travel will be difficult.",
+     "trend": "rising",
+     "confidence": "confirmed",
+     "topic": "environment",
+     "sources": [
+      {
+       "name": "NWS San Francisco",
+       "url": "https://www.weather.gov/mtr/"
+      }
+     ],
+     "where": "Sierra Nevada, Siskiyou",
+     "lat": 38.9,
+     "lon": -120.0,
+     "area": 3
+    },
+    {
+     "id": "ca-openai-suit",
+     "tag": "INFO",
+     "severity": "low",
+     "title": "California sues OpenAI over AI agent hack of Hugging Face",
+     "detail": "Attorney General Bonta says OpenAI misled and endangered the public through insufficient safeguards. No household action needed.",
+     "trend": "new",
+     "confidence": "confirmed",
+     "topic": "cyber",
+     "sources": [
+      {
+       "name": "CalMatters",
+       "url": "https://calmatters.org/economy/technology/2026/11/california-is-suing-openai-over-hugging-face-hack/"
+      }
+     ],
+     "where": "California"
+    }
+   ]
+  },
+  {
+   "level": "usa",
+   "summary": "Bank outages; Nvidia probe; yields high.",
+   "items": [
+    {
+     "id": "usa-bank-outage",
+     "tag": "WATCH",
+     "severity": "low",
+     "title": "Customers report service outages at major US banks",
+     "detail": "Chase says a software bug may be to blame and that the problem is not 'systemic' or 'cyber-related'. Cause and duration are not yet confirmed.",
+     "trend": "new",
+     "confidence": "likely",
+     "topic": "infrastructure",
+     "sources": [
+      {
+       "name": "BBC",
+       "url": "https://www.bbc.co.uk/news/articles/cj752wvqneq6o"
+      }
+     ],
+     "action": "Keep some cash on hand and check balances through a second channel if your bank app fails.",
+     "where": "US"
+    },
+    {
+     "id": "usa-markets",
+     "tag": "INFO",
+     "severity": "watch",
+     "title": "Stocks slip as 10-year yield sits above 5%",
+     "detail": "The S&P 500 fell 1.9% and the VIX is 22. The 10-year Treasury yield is 5.12%, up about 5% in five days. Oil is steady, WTI about $86.",
+     "trend": "steady",
+     "confidence": "confirmed",
+     "topic": "economy",
+     "sources": [
+      {
+       "name": "Market data feeds (Yahoo Finance)",
+       "url": "https://finance.yahoo.com/"
+      }
+     ],
+     "where": "US markets"
+    },
+    {
+     "id": "usa-megaspeed",
+     "tag": "INFO",
+     "severity": "low",
+     "title": "US investigates Nvidia partner Megaspeed over chip exports",
+     "detail": "The Singapore firm is suspected of shipping high-end AI chips to China. Nvidia has formed a board committee on national security and export control.",
+     "trend": "new",
+     "confidence": "confirmed",
+     "topic": "political",
+     "sources": [
+      {
+       "name": "BBC",
+       "url": "https://www.bbc.co.uk/news/articles/c6m25zg88k45o"
+      },
+      {
+       "name": "SFGate/AP",
+       "url": "https://www.sfgate.com/news/world/article/nvidia-establishes-committee-to-oversee-national-22534850.php"
+      }
+     ],
+     "where": "US"
+    }
+   ]
+  },
+  {
+   "level": "west",
+   "summary": "Ukraine hits Crimea bridge; EU Rwanda hubs.",
+   "items": [
+    {
+     "id": "west-crimea-bridge",
+     "tag": "WATCH",
+     "severity": "elevated",
+     "title": "Ukraine says it hit Crimea bridge; Russian strike kills 72",
+     "detail": "BBC reports the strategic bridge partly collapsed after a weeks-planned Ukrainian drone and missile attack; the Kremlin vows to rebuild. Separately, Ukraine says a Russian 'double-tap' strike in the south killed 72, with Russian fire hampering rescue.",
+     "trend": "new",
+     "confidence": "likely",
+     "topic": "conflict",
+     "sources": [
+      {
+       "name": "BBC",
+       "url": "https://www.bbc.co.uk/news/articles/cw772jk4rvmxo"
+      },
+      {
+       "name": "NPR",
+       "url": "https://www.npr.org/2026/11/17/nx-s1-6042448/trump-to-meet-chinese-leader-xi-jinping-and-russias-vladimir-putin-for-joint-summit"
+      }
+     ],
+     "action": "Expect Russian retaliation; watch for energy and grain price effects.",
+     "where": "Crimea / Ukraine",
+     "lat": 45.3,
+     "lon": 36.5,
+     "area": 4
+    },
+    {
+     "id": "west-rwanda-hub",
+     "tag": "INFO",
+     "severity": "low",
+     "title": "Five EU states announce Rwanda return hubs",
+     "detail": "Germany, Austria, the Netherlands, Denmark and Greece will set up a pilot offshore centre; legal challenges are expected.",
+     "trend": "steady",
+     "confidence": "confirmed",
+     "topic": "political",
+     "sources": [
+      {
+       "name": "Guardian",
+       "url": "https://www.theguardian.com/world"
+      }
+     ],
+     "where": "EU / Rwanda"
+    }
+   ]
+  },
+  {
+   "level": "asia",
+   "summary": "Trump in Manila; Russian jets near Japan.",
+   "items": [
+    {
+     "id": "asia-russia-japan",
+     "tag": "WATCH",
+     "severity": "watch",
+     "title": "Japan scrambles jets after alleged Russian airspace incursion",
+     "detail": "Taiwan and South Korea also responded to Russian military aircraft near their airspace, per BBC.",
+     "trend": "new",
+     "confidence": "likely",
+     "topic": "conflict",
+     "sources": [
+      {
+       "name": "BBC",
+       "url": "https://www.bbc.co.uk/news/articles/c60evw20qe47o"
+      }
+     ],
+     "action": "No action; watch for escalation around the Trump–Xi–Putin summit.",
+     "where": "Japan / Korea / Taiwan",
+     "lat": 38.0,
+     "lon": 135.0,
+     "area": 4
+    },
+    {
+     "id": "asia-trump-trip",
+     "tag": "INFO",
+     "severity": "watch",
+     "title": "Trump in Manila; chip curbs and a possible Kim meeting",
+     "detail": "Trump arrived in the Philippines before going to China. The US issued new chip-export limits on South East Asia, and Trump says he would like to meet Kim Jong Un.",
+     "trend": "new",
+     "confidence": "confirmed",
+     "topic": "political",
+     "sources": [
+      {
+       "name": "NPR",
+       "url": "https://www.npr.org/2026/11/17/nx-s1-6042448/trump-to-meet-chinese-leader-xi-jinping-and-russias-vladimir-putin-for-joint-summit"
+      },
+      {
+       "name": "BBC",
+       "url": "https://www.bbc.co.uk/news/world/asia"
+      }
+     ],
+     "where": "Manila / Shenzhen",
+     "lat": 14.6,
+     "lon": 121.0,
+     "area": 4
+    },
+    {
+     "id": "asia-bangladesh",
+     "tag": "INFO",
+     "severity": "low",
+     "title": "Bangladesh garment workers clash with police over wages",
+     "detail": "Protesters blocked the Dhaka–Mymensingh highway and burned vehicles. Clothing shipments could be delayed.",
+     "trend": "steady",
+     "confidence": "confirmed",
+     "topic": "supply",
+     "sources": [
+      {
+       "name": "Al Jazeera",
+       "url": "https://www.aljazeera.com/news/2026/11/17/bangladesh-garment-workers-clash-with-police-in-fresh-protests-over-wages"
+      }
+     ],
+     "where": "Bangladesh",
+     "lat": 23.8,
+     "lon": 90.4,
+     "area": 3
+    }
+   ]
+  },
+  {
+   "level": "world",
+   "summary": "Iran resumes strikes; Hormuz mines; Yemen front.",
+   "items": [
+    {
+     "id": "world-iran-bahrain",
+     "tag": "WATCH",
+     "severity": "elevated",
+     "title": "Iran strikes US radar in Bahrain for a third time",
+     "detail": "Iran fired drones at a US radar facility on Tuesday after a two-month lull; Bahrain says its air defenses intercepted them. CENTCOM reported no damage for the earlier attack.",
+     "trend": "rising",
+     "confidence": "confirmed",
+     "topic": "conflict",
+     "sources": [
+      {
+       "name": "SFGate/AP",
+       "url": "https://www.sfgate.com/news/world/article/a-2-month-lull-ends-with-iran-s-third-strike-on-22534803.php"
+      },
+      {
+       "name": "Al Jazeera",
+       "url": "https://www.aljazeera.com/news/2026/11/15/iran-says-it-targets-us-radar-in-bahrain-what-do-we-know"
+      }
+     ],
+     "action": "If strikes widen, expect fuel and shipping effects; keep the car's tank at least half full.",
+     "where": "Bahrain",
+     "lat": 26.1,
+     "lon": 50.55,
+     "area": 4
+    },
+    {
+     "id": "world-hormuz-mines",
+     "tag": "WATCH",
+     "severity": "elevated",
+     "title": "Two vessels on fire after hitting a mine in Hormuz, Iran says",
+     "detail": "Reported by Al Jazeera citing Iran; no independent confirmation yet. Oil is steady near WTI $86 and Brent $93.",
+     "trend": "new",
+     "confidence": "unconfirmed",
+     "topic": "energy",
+     "sources": [
+      {
+       "name": "Al Jazeera",
+       "url": "https://www.aljazeera.com/video/newsfeed/2026/11/17/vessels-on-fire-after-naval-mine-hit-in-hormuz-strait-iran-says"
+      }
+     ],
+     "action": "Watch California gasoline prices for a jump.",
+     "where": "Strait of Hormuz",
+     "lat": 26.5,
+     "lon": 56.3,
+     "area": 4
+    },
+    {
+     "id": "world-yemen-aden",
+     "tag": "WATCH",
+     "severity": "elevated",
+     "title": "Saudi-backed forces reinforce Aden as Houthis push on Tur al-Baha",
+     "detail": "Officials say the Houthis are trying to take the district that guards Aden; a UK maritime agency also issued a notice. Red Sea shipping risk stays high.",
+     "trend": "steady",
+     "confidence": "likely",
+     "topic": "conflict",
+     "sources": [
+      {
+       "name": "SFGate/AP",
+       "url": "https://www.sfgate.com/news/world/article/saudi-backed-forces-in-yemen-beef-up-defenses-22534847.php"
+      }
+     ],
+     "action": "Watch for shipping and fuel price effects.",
+     "where": "Yemen",
+     "lat": 12.8,
+     "lon": 45.0,
+     "area": 4
+    },
+    {
+     "id": "world-kosovo-thaci",
+     "tag": "INFO",
+     "severity": "low",
+     "title": "Kosovo ex-president Thaci gets 17 months for obstructing justice",
+     "detail": "The EU-backed court's sentence adds to his 25-year war-crimes term.",
+     "trend": "new",
+     "confidence": "confirmed",
+     "topic": "political",
+     "sources": [
+      {
+       "name": "SFGate/AP",
+       "url": "https://www.sfgate.com/news/world/article/eu-backed-court-convicts-kosovo-ex-president-22534838.php"
+      }
+     ],
+     "where": "The Hague / Kosovo"
+    }
+   ]
+  }
+ ],
+ "sources_used": [
+  {
+   "name": "NWS San Francisco",
+   "url": "https://www.weather.gov/mtr/"
+  },
+  {
+   "name": "NWS forecast, Pacifica",
+   "url": "https://forecast.weather.gov/MapClick.php?lat=37.6138&lon=-122.4869"
+  },
+  {
+   "name": "Caltrans QuickMap",
+   "url": "https://quickmap.dot.ca.gov/"
+  },
+  {
+   "name": "DreamHost status",
+   "url": "https://www.dreamhoststatus.com/"
+  },
+  {
+   "name": "KQED",
+   "url": "https://www.kqed.org/news/12109913/bay-area-braces-for-another-round-of-storms-this-week"
+  },
+  {
+   "name": "BBC",
+   "url": "https://www.bbc.co.uk/news/world"
+  },
+  {
+   "name": "NPR",
+   "url": "https://www.npr.org/2026/11/17/nx-s1-6042448/trump-to-meet-chinese-leader-xi-jinping-and-russias-vladimir-putin-for-joint-summit"
+  },
+  {
+   "name": "SFGate/AP",
+   "url": "https://www.sfgate.com/news/world/article/a-2-month-lull-ends-with-iran-s-third-strike-on-22534803.php"
+  },
+  {
+   "name": "Al Jazeera",
+   "url": "https://www.aljazeera.com/news/2026/11/17/bangladesh-garment-workers-clash-with-police-in-fresh-protests-over-wages"
+  },
+  {
+   "name": "FEMA IPAWS",
+   "url": "https://www.fema.gov/openfema-data-page/ipaws-archived-alerts-v1"
+  }
+ ]
+}
