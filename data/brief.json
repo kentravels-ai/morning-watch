@@ -1,47 +1,56 @@
 {
  "schema": 1,
- "date": "2026-11-17",
- "generated_at": "2026-11-17T04:40:00-08:00",
+ "date": "2026-11-18",
+ "generated_at": "2026-11-18T05:30:00-08:00",
  "overall": {
   "level": "serious",
-  "headline": "Wind and rain hit Pacifica tonight; Ukraine hit the Crimea bridge and Iran resumed strikes on Bahrain.",
-  "bluf": "A Wind Advisory for the Pacifica coast runs from 9 PM tonight to 1 PM Wednesday, with 1–2 inches of rain and gusts to about 43 mph, so prepare for a possible power outage today. Abroad, Iran fired drones at a US radar site in Bahrain for the third time in days, and Ukraine says it badly damaged the Crimea bridge. No FEMA emergency alerts are active for Pacifica."
+  "headline": "Storm winds and rain hit Pacifica this morning; Iran widened its Gulf attacks to Kuwait.",
+  "bluf": "A Wind Advisory for the Pacifica coast runs until 1 PM today with gusts to about 44 mph and 1\u20132 inches of rain, and a High Surf Advisory follows from 4 PM through Thursday; power outages are possible. Abroad, Iran fired on a US air base in Kuwait and sites in Bahrain after US strikes on an Iranian missile site, while Trump landed in China ahead of a Thursday three-way meeting with Xi and Putin. No FEMA emergency alerts are active for Pacifica."
  },
  "status": {
   "local": {
    "level": "strained",
-   "note": "Wind Advisory and heavy rain from tonight."
+   "note": "Wind Advisory, heavy rain, surf advisory."
   },
   "regional": {
    "level": "steady",
-   "note": "Sierra winter storm; some bank outages."
+   "note": "Sierra winter storm; US tech outages."
   },
   "world": {
    "level": "serious",
-   "note": "Iran strikes Bahrain; Crimea bridge hit."
+   "note": "Iran widens Gulf attacks; Yemen offensive."
   }
  },
  "changes": [
-  "Upgraded: NWS issued a Wind Advisory for the Pacifica coast, 9 PM Tue to 1 PM Wed, replacing yesterday's 'possible' advisory. Forecast gusts are now up to 43 mph.",
-  "New: Beach Hazards Statement through 4 PM Wednesday replaces the High Surf Advisory that ended this morning.",
-  "New: Iran fired drones at a US radar facility in Bahrain, its third attack there in recent days, ending a two-month lull. Bahrain says its air defenses intercepted them.",
-  "New: Ukraine says a weeks-in-the-planning strike partly collapsed the Crimea bridge; the Kremlin vows to rebuild.",
-  "New: Two vessels reportedly caught fire after hitting a mine in the Strait of Hormuz, per Iran.",
-  "Trump arrived in Manila; the joint meeting with Xi and Putin is now confirmed by NPR reporting.",
-  "Dropped as stale: Hwy 1 San Francisco closure (ended today), FAA flight recovery, Jordan Telegram ban, South Africa shootings, Gaza aid appeal, DreamHost Nov 13 maintenance."
+  "Updated: The Wind Advisory now ends at 1 PM today. A High Surf Advisory runs 4 PM today to 4 PM Thursday, replacing the Beach Hazards Statement that expires at 4 PM.",
+  "New: Iran fired on a US air base in Kuwait and sites in Bahrain after American strikes on an Iranian missile site; Bahrain issued two shelter alerts.",
+  "New: Saudi-led coalition struck about 60 Houthi sites as Houthis pushed toward Aden and fired cruise missiles at Riyadh.",
+  "New: Trump landed in China; NPR says the three-way meeting with Xi and Putin is Thursday.",
+  "New: Rubio says there is 'zero evidence' linking recent Microsoft, bank, FAA and NSANet outages to an attack; the classified NSANet outage was reported Tuesday.",
+  "New: The US lost its measles elimination status, with over 5,400 cases this year.",
+  "Dropped as stale: Moss Beach/Pescadero Hwy 1 one-way work (no new Caltrans entry past today), DreamHost control-panel maintenance, Hormuz mine report (no new reporting), Bangladesh, Thaci and Rwanda hub items."
  ],
  "coming_up": [
   {
-   "when": "Tue 9 PM – Wed 1 PM",
-   "date": "2026-11-17",
+   "when": "Wed 4 PM \u2013 Thu 4 PM",
+   "date": "2026-11-18",
    "level": "pacifica",
-   "title": "Wind Advisory for the Peninsula coast",
-   "detail": "Gusts to about 43 mph, with 1–2 inches of rain and possible thunderstorms Wednesday morning.",
+   "title": "High Surf Advisory on the coast",
+   "detail": "Surf about 3.7\u20133.9 m; stay off beaches, rocks and jetties.",
    "sources": [
     {
      "name": "NWS San Francisco",
      "url": "https://www.weather.gov/mtr/"
-    },
+    }
+   ]
+  },
+  {
+   "when": "Thu",
+   "date": "2026-11-19",
+   "level": "pacifica",
+   "title": "More rain, about half to three-quarters of an inch",
+   "detail": "Rain and possible thunderstorms before 2 PM, then drying Friday.",
+   "sources": [
     {
      "name": "NWS forecast, Pacifica",
      "url": "https://forecast.weather.gov/MapClick.php?lat=37.6138&lon=-122.4869"
@@ -49,41 +58,41 @@
    ]
   },
   {
-   "when": "Tue – Wed 4 PM",
-   "date": "2026-11-17",
-   "level": "pacifica",
-   "title": "Beach Hazards Statement",
-   "detail": "Stay off jetties, rocks and piers and out of the water.",
-   "sources": [
-    {
-     "name": "NWS San Francisco",
-     "url": "https://www.weather.gov/mtr/"
-    }
-   ]
-  },
-  {
-   "when": "Wed 4 AM – Fri 4 AM",
-   "date": "2026-11-18",
-   "level": "california",
-   "title": "Winter Storm Warnings, Tahoe and Mono County",
-   "detail": "NWS Reno warnings run into Friday; expect difficult mountain travel.",
-   "sources": [
-    {
-     "name": "NWS San Francisco",
-     "url": "https://www.weather.gov/mtr/"
-    }
-   ]
-  },
-  {
-   "when": "Wed–Thu",
-   "date": "2026-11-18",
+   "when": "Thu",
+   "date": "2026-11-19",
    "level": "asia",
-   "title": "Trump meets Xi and Putin in China",
-   "detail": "NPR reports a joint three-way summit as part of Trump's Asia trip.",
+   "title": "Trump, Xi and Putin three-way meeting",
+   "detail": "NPR reports the meeting in China is set for Thursday.",
    "sources": [
     {
      "name": "NPR",
-     "url": "https://www.npr.org/2026/11/17/nx-s1-6042448/trump-to-meet-chinese-leader-xi-jinping-and-russias-vladimir-putin-for-joint-summit"
+     "url": "https://www.npr.org/"
+    }
+   ]
+  },
+  {
+   "when": "Wed \u2013 Fri 4 AM",
+   "date": "2026-11-18",
+   "level": "california",
+   "title": "Winter Storm Warnings, Sierra and Siskiyou",
+   "detail": "NWS Reno warnings run to Friday 4 AM; Medford to Thursday 4 AM. Mountain travel will be difficult.",
+   "sources": [
+    {
+     "name": "NWS San Francisco",
+     "url": "https://www.weather.gov/mtr/"
+    }
+   ]
+  },
+  {
+   "when": "Sat PM \u2013 Sun",
+   "date": "2026-11-21",
+   "level": "pacifica",
+   "title": "Next round of rain",
+   "detail": "NWS forecast shows rain returning Saturday afternoon and likely Sunday.",
+   "sources": [
+    {
+     "name": "NWS forecast, Pacifica",
+     "url": "https://forecast.weather.gov/MapClick.php?lat=37.6138&lon=-122.4869"
     }
    ]
   },
@@ -92,24 +101,11 @@
    "date": "2026-11-24",
    "level": "pacifica",
    "title": "King tides begin",
-   "detail": "KQED says the year's highest tides are expected through January, with possible coastal flooding and street closures.",
+   "detail": "KQED says the year's highest tides run through January, with possible coastal flooding.",
    "sources": [
     {
      "name": "KQED",
      "url": "https://www.kqed.org/news/12109913/bay-area-braces-for-another-round-of-storms-this-week"
-    }
-   ]
-  },
-  {
-   "when": "Fri, Nov 20–21",
-   "date": "2026-11-20",
-   "level": "california",
-   "title": "I-280 San Francisco full closures",
-   "detail": "Bridge construction closures per Caltrans.",
-   "sources": [
-    {
-     "name": "Caltrans QuickMap",
-     "url": "https://quickmap.dot.ca.gov/"
     }
    ]
   }
@@ -118,15 +114,15 @@
   {
    "id": "alerts",
    "status": "action",
-   "summary": "Wind Advisory tonight; no FEMA alerts active.",
+   "summary": "Wind Advisory until 1 PM and heavy rain; no FEMA alerts.",
    "items": [
     {
      "id": "pac-wind-rain-storm",
      "tag": "ACTION",
      "severity": "hazard",
-     "title": "Wind Advisory and heavy rain from tonight",
-     "detail": "NWS issued a Wind Advisory for the San Francisco Peninsula coast from 9 PM Tuesday to 1 PM Wednesday. The Pacifica forecast has 1–2 inches of rain overnight and again Wednesday, south winds 7–30 mph with gusts up to 43 mph, and thunderstorms. Rain continues through Thursday.",
-     "trend": "rising",
+     "title": "Wind Advisory and heavy rain until 1 PM today",
+     "detail": "NWS has a Wind Advisory for Pacifica until 1 PM Wednesday, with south-southwest gusts to about 44\u201346 mph. Another 1\u20132 inches of rain and possible thunderstorms are forecast today, with more rain Thursday. Ground is saturated, so slides and fallen branches are more likely.",
+     "trend": "steady",
      "confidence": "confirmed",
      "topic": "environment",
      "sources": [
@@ -137,26 +133,22 @@
       {
        "name": "NWS forecast, Pacifica",
        "url": "https://forecast.weather.gov/MapClick.php?lat=37.6138&lon=-122.4869"
-      },
-      {
-       "name": "KQED",
-       "url": "https://www.kqed.org/news/12109913/bay-area-braces-for-another-round-of-storms-this-week"
       }
      ],
-     "action": "Today, charge phones and battery packs, set out flashlights, clear storm drains near the house, and secure loose outdoor items. Free sandbags are offered by Bay Area counties if your lot floods. Avoid coastal roads and driving high-profile vehicles during peak gusts.",
-     "when": "Tue 9 PM – Wed 1 PM",
+     "action": "This morning, stay off coastal roads where you can, avoid driving a tall vehicle in peak gusts, keep phones and power banks charged, and keep storm drains near the house clear.",
+     "when": "Now to Wed 1 PM",
      "where": "Pacifica coast",
      "lat": 37.6138,
      "lon": -122.4869,
      "area": 2
     },
     {
-     "id": "pac-beach-hazards",
+     "id": "pac-high-surf",
      "tag": "INFO",
      "severity": "hazard",
-     "title": "Beach Hazards Statement through Wednesday 4 PM",
-     "detail": "NWS says hazardous surf continues on the coast; stay off jetties, piers and rocks and never turn your back on the ocean. Surf forecast stays about 3.5–4 m through Thursday.",
-     "trend": "easing",
+     "title": "High Surf Advisory from 4 PM today to 4 PM Thursday",
+     "detail": "NWS issued the advisory at 3:25 AM today; the Beach Hazards Statement ends at 4 PM. Surf is forecast near 3.7\u20133.9 m through Thursday. Stay off jetties, piers and rocks and never turn your back on the ocean.",
+     "trend": "steady",
      "confidence": "confirmed",
      "topic": "environment",
      "sources": [
@@ -165,7 +157,7 @@
        "url": "https://www.weather.gov/mtr/"
       }
      ],
-     "when": "Now to Wed 4 PM",
+     "when": "Wed 4 PM \u2013 Thu 4 PM",
      "where": "Pacifica beaches, Sharp Park",
      "lat": 37.625,
      "lon": -122.497,
@@ -176,15 +168,15 @@
   {
    "id": "utilities",
    "status": "watch",
-   "summary": "No outages found yet; storm may cause some tonight.",
+   "summary": "No Pacifica outage reports found; wind risk until 1 PM.",
    "items": [
     {
      "id": "util-storm-outage-risk",
      "tag": "WATCH",
      "severity": "hazard",
-     "title": "Power outages possible in tonight's wind",
-     "detail": "No PG&E outage in Pacifica turned up this morning. Winds to 43 mph with saturated ground can bring down lines on the coast.",
-     "trend": "new",
+     "title": "Power outages possible in this morning's wind",
+     "detail": "I found no reported PG&E outage in Pacifica as of early morning, but gusts to 44 mph on saturated ground can bring down lines. The PG&E outage map is the live source.",
+     "trend": "steady",
      "confidence": "likely",
      "topic": "infrastructure",
      "sources": [
@@ -198,42 +190,25 @@
       }
      ],
      "action": "If power fails, report it at pge.com/outages, keep the fridge closed, and use flashlights rather than candles.",
-     "when": "Tue night – Wed",
+     "when": "Through Wed 1 PM",
      "where": "Pacifica",
      "lat": 37.6138,
      "lon": -122.4869,
      "area": 2
-    },
-    {
-     "id": "util-dreamhost-panel",
-     "tag": "INFO",
-     "severity": "low",
-     "title": "DreamHost control panel maintenance completed",
-     "detail": "DreamHost's scheduled control-panel maintenance ran Nov 16 evening and was completed at 7:53 PM PST. No action needed for thetins.com sites.",
-     "trend": "easing",
-     "confidence": "confirmed",
-     "topic": "infrastructure",
-     "sources": [
-      {
-       "name": "DreamHost status",
-       "url": "https://www.dreamhoststatus.com/"
-      }
-     ],
-     "where": "DreamHost"
     }
    ]
   },
   {
    "id": "roads",
    "status": "watch",
-   "summary": "Wet, windy roads tonight; minor Hwy 1 work south of town.",
+   "summary": "Wet, windy roads; Hwy 1 work south of town.",
    "items": [
     {
      "id": "roads-hwy1-work",
      "tag": "INFO",
      "severity": "low",
-     "title": "Hwy 1 one-way traffic for drainage work at Moss Beach, slide repair near Pescadero",
-     "detail": "Caltrans lists one-way traffic control today at Moss Beach and near Pescadero. The San Francisco Hwy 1 closure listed yesterday ends today. Expect delays south of Pacifica, worse in rain.",
+     "title": "Hwy 1 one-way traffic at Moss Beach and near Pescadero today",
+     "detail": "Caltrans lists one-way traffic control for drainage work at Moss Beach and slide repair near Pescadero on Nov 18. Expect delays south of Pacifica, worse in rain. Flooding at low spots on Hwy 1 in Pacifica is possible in heavy rain.",
      "trend": "steady",
      "confidence": "confirmed",
      "topic": "infrastructure",
@@ -254,7 +229,7 @@
   {
    "id": "health",
    "status": "clear",
-   "summary": "Air quality good (AQI 32); no local advisories.",
+   "summary": "Air quality good (AQI 34); no local advisories.",
    "items": []
   },
   {
@@ -266,26 +241,26 @@
  ],
  "readiness": {
   "default": {
-   "task": "Charge phones and power banks and put flashlights where you can find them.",
-   "why": "A Wind Advisory and 1–2 inches of rain arrive tonight, and outages are possible."
+   "task": "Check that flashlights have fresh batteries and the weather radio works.",
+   "why": "Wind and rain are hitting this morning, with more rain Thursday and again this weekend."
   },
   "3d": {
-   "task": "Fill drinking-water containers before tonight's storm.",
-   "why": "Heavy rain and wind can disrupt service and cause boil-water notices."
+   "task": "Top up stored drinking water.",
+   "why": "Heavy rain and wind can disrupt service or cause boil-water notices."
   }
  },
  "ladder": [
   {
    "level": "pacifica",
-   "summary": "Storm tonight; king tides next week.",
+   "summary": "Storm today; king tides next week.",
    "items": [
     {
      "id": "pac-king-tides",
      "tag": "INFO",
      "severity": "hazard",
      "title": "King tides expected next week",
-     "detail": "KQED reports the year's highest tides are due next week and through January, with possible coastal flooding and street closures. A king tide flooded parts of Marin on Nov 13.",
-     "trend": "new",
+     "detail": "KQED says the year's highest tides arrive next week and run through January, with possible coastal flooding and street closures. No new reporting since Nov 17.",
+     "trend": "steady",
      "confidence": "likely",
      "topic": "environment",
      "sources": [
@@ -303,15 +278,15 @@
   },
   {
    "level": "california",
-   "summary": "Sierra winter storm; some bank outages.",
+   "summary": "Sierra storm; High Wind Warning in the Bay Area.",
    "items": [
     {
      "id": "ca-sierra-warning",
      "tag": "INFO",
      "severity": "hazard",
-     "title": "Winter Storm Warnings for Tahoe and Mono County, Wednesday to Friday",
-     "detail": "NWS Reno upgraded to warnings from Wed 4 AM to Fri 4 AM, and NWS Medford has warnings for Siskiyou County from tonight. Mountain travel will be difficult.",
-     "trend": "rising",
+     "title": "Winter Storm Warnings for Tahoe, Mono and Siskiyou",
+     "detail": "NWS Reno warnings run until Friday 4 AM and NWS Medford warnings until Thursday 4 AM. Mountain travel will be difficult.",
+     "trend": "steady",
      "confidence": "confirmed",
      "topic": "environment",
      "sources": [
@@ -326,18 +301,18 @@
      "area": 3
     },
     {
-     "id": "ca-openai-suit",
+     "id": "ca-newsom-commutations",
      "tag": "INFO",
      "severity": "low",
-     "title": "California sues OpenAI over AI agent hack of Hugging Face",
-     "detail": "Attorney General Bonta says OpenAI misled and endangered the public through insufficient safeguards. No household action needed.",
+     "title": "Prosecutors ask state Supreme Court to block Newsom's death-sentence commutations",
+     "detail": "CalMatters reports the request was filed Monday and Tuesday. No household action needed.",
      "trend": "new",
      "confidence": "confirmed",
-     "topic": "cyber",
+     "topic": "political",
      "sources": [
       {
        "name": "CalMatters",
-       "url": "https://calmatters.org/economy/technology/2026/11/california-is-suing-openai-over-hugging-face-hack/"
+       "url": "https://calmatters.org/"
       }
      ],
      "where": "California"
@@ -346,33 +321,72 @@
   },
   {
    "level": "usa",
-   "summary": "Bank outages; Nvidia probe; yields high.",
+   "summary": "Tech outages probed; measles status lost.",
    "items": [
     {
-     "id": "usa-bank-outage",
+     "id": "usa-tech-outages",
      "tag": "WATCH",
      "severity": "low",
-     "title": "Customers report service outages at major US banks",
-     "detail": "Chase says a software bug may be to blame and that the problem is not 'systemic' or 'cyber-related'. Cause and duration are not yet confirmed.",
+     "title": "Microsoft, bank, FAA and NSANet outages: no sign of attack, officials say",
+     "detail": "Rubio says there is 'zero evidence' that recent disruptions are connected. Microsoft blamed a network upgrade and the FAA a system upgrade; Defense One reports a classified NSANet outage with no immediate sign of a cyberattack. Confirmed causes are still limited.",
      "trend": "new",
      "confidence": "likely",
-     "topic": "infrastructure",
+     "topic": "cyber",
      "sources": [
       {
        "name": "BBC",
-       "url": "https://www.bbc.co.uk/news/articles/cj752wvqneq6o"
+       "url": "https://www.bbc.co.uk/news/articles/crkgvxxwpwz2o"
+      },
+      {
+       "name": "Defense One",
+       "url": "https://www.defenseone.com/threats/2026/11/classified-nsa-communications-network-down-people-familiar-say/417278/"
       }
      ],
      "action": "Keep some cash on hand and check balances through a second channel if your bank app fails.",
      "where": "US"
     },
     {
+     "id": "usa-measles",
+     "tag": "INFO",
+     "severity": "hazard",
+     "title": "US loses measles elimination status",
+     "detail": "BBC reports more than 5,400 cases and 10 measles-related deaths this year. Check that family vaccinations are up to date.",
+     "trend": "new",
+     "confidence": "confirmed",
+     "topic": "health",
+     "sources": [
+      {
+       "name": "BBC",
+       "url": "https://www.bbc.co.uk/news/articles/c977p71jx0xxo"
+      }
+     ],
+     "where": "US"
+    },
+    {
+     "id": "usa-iran-plot",
+     "tag": "WATCH",
+     "severity": "watch",
+     "title": "Trump says US takes any Iranian plot against Washington 'very seriously'",
+     "detail": "BBC reports Tehran rejects as baseless any suggestion it plotted a dirty-bomb attack on the US capital. The underlying intelligence claim is unconfirmed; a White House spokesperson has said there are no credible threats to the homeland.",
+     "trend": "new",
+     "confidence": "unconfirmed",
+     "topic": "terrorism",
+     "sources": [
+      {
+       "name": "BBC",
+       "url": "https://www.bbc.co.uk/news/articles/cq808vzd3nnpo"
+      }
+     ],
+     "action": "No action; follow official DHS and local alerts if this changes.",
+     "where": "Washington, DC"
+    },
+    {
      "id": "usa-markets",
      "tag": "INFO",
      "severity": "watch",
-     "title": "Stocks slip as 10-year yield sits above 5%",
-     "detail": "The S&P 500 fell 1.9% and the VIX is 22. The 10-year Treasury yield is 5.12%, up about 5% in five days. Oil is steady, WTI about $86.",
-     "trend": "steady",
+     "title": "Stocks lower, volatility elevated",
+     "detail": "The S&P 500 fell about 1% and the VIX is 24, up about 38% in five days. Oil eased: WTI about $84. The 10-year yield is 5.10%.",
+     "trend": "easing",
      "confidence": "confirmed",
      "topic": "economy",
      "sources": [
@@ -382,54 +396,33 @@
       }
      ],
      "where": "US markets"
-    },
-    {
-     "id": "usa-megaspeed",
-     "tag": "INFO",
-     "severity": "low",
-     "title": "US investigates Nvidia partner Megaspeed over chip exports",
-     "detail": "The Singapore firm is suspected of shipping high-end AI chips to China. Nvidia has formed a board committee on national security and export control.",
-     "trend": "new",
-     "confidence": "confirmed",
-     "topic": "political",
-     "sources": [
-      {
-       "name": "BBC",
-       "url": "https://www.bbc.co.uk/news/articles/c6m25zg88k45o"
-      },
-      {
-       "name": "SFGate/AP",
-       "url": "https://www.sfgate.com/news/world/article/nvidia-establishes-committee-to-oversee-national-22534850.php"
-      }
-     ],
-     "where": "US"
     }
    ]
   },
   {
    "level": "west",
-   "summary": "Ukraine hits Crimea bridge; EU Rwanda hubs.",
+   "summary": "Crimea bridge aftermath; EU Rwanda hubs.",
    "items": [
     {
      "id": "west-crimea-bridge",
      "tag": "WATCH",
      "severity": "elevated",
-     "title": "Ukraine says it hit Crimea bridge; Russian strike kills 72",
-     "detail": "BBC reports the strategic bridge partly collapsed after a weeks-planned Ukrainian drone and missile attack; the Kremlin vows to rebuild. Separately, Ukraine says a Russian 'double-tap' strike in the south killed 72, with Russian fire hampering rescue.",
-     "trend": "new",
-     "confidence": "likely",
+     "title": "Crimea bridge partly collapsed after Ukrainian attack",
+     "detail": "BBC reports Putin's Crimean Bridge partly collapsed on Tuesday; Zelensky called it an 'unprecedented' attack. Russia struck Kyiv bridges in the same period. Putin still meets Trump and Xi Thursday.",
+     "trend": "steady",
+     "confidence": "confirmed",
      "topic": "conflict",
      "sources": [
       {
        "name": "BBC",
-       "url": "https://www.bbc.co.uk/news/articles/cw772jk4rvmxo"
+       "url": "https://www.bbc.co.uk/news/world"
       },
       {
        "name": "NPR",
-       "url": "https://www.npr.org/2026/11/17/nx-s1-6042448/trump-to-meet-chinese-leader-xi-jinping-and-russias-vladimir-putin-for-joint-summit"
+       "url": "https://www.npr.org/"
       }
      ],
-     "action": "Expect Russian retaliation; watch for energy and grain price effects.",
+     "action": "Watch for Russian retaliation and grain or energy price effects.",
      "where": "Crimea / Ukraine",
      "lat": 45.3,
      "lon": 36.5,
@@ -439,15 +432,15 @@
      "id": "west-rwanda-hub",
      "tag": "INFO",
      "severity": "low",
-     "title": "Five EU states announce Rwanda return hubs",
-     "detail": "Germany, Austria, the Netherlands, Denmark and Greece will set up a pilot offshore centre; legal challenges are expected.",
+     "title": "Criticism grows over EU Rwanda return hubs",
+     "detail": "Al Jazeera and the Guardian report rights groups and politicians criticising the plan by five EU states; no household effect.",
      "trend": "steady",
      "confidence": "confirmed",
      "topic": "political",
      "sources": [
       {
-       "name": "Guardian",
-       "url": "https://www.theguardian.com/world"
+       "name": "Al Jazeera",
+       "url": "https://www.aljazeera.com/"
       }
      ],
      "where": "EU / Rwanda"
@@ -456,15 +449,39 @@
   },
   {
    "level": "asia",
-   "summary": "Trump in Manila; Russian jets near Japan.",
+   "summary": "Trump in China; Russian jets near Japan.",
    "items": [
     {
-     "id": "asia-russia-japan",
-     "tag": "WATCH",
+     "id": "asia-summit",
+     "tag": "INFO",
      "severity": "watch",
-     "title": "Japan scrambles jets after alleged Russian airspace incursion",
-     "detail": "Taiwan and South Korea also responded to Russian military aircraft near their airspace, per BBC.",
+     "title": "Trump lands in China; three-way meeting with Xi and Putin Thursday",
+     "detail": "Xi greeted Trump at Shenzhen. The US issued chip-export curbs on Southeast Asia, and Trump says he would like to meet Kim Jong Un.",
      "trend": "new",
+     "confidence": "confirmed",
+     "topic": "political",
+     "sources": [
+      {
+       "name": "NPR",
+       "url": "https://www.npr.org/"
+      },
+      {
+       "name": "Al Jazeera",
+       "url": "https://www.aljazeera.com/"
+      }
+     ],
+     "where": "Shenzhen, China",
+     "lat": 22.5,
+     "lon": 114.1,
+     "area": 4
+    },
+    {
+     "id": "asia-russia-japan",
+     "tag": "INFO",
+     "severity": "watch",
+     "title": "Japan scrambled jets after alleged Russian airspace incursion",
+     "detail": "Taiwan and South Korea also responded to Russian aircraft near their airspace, per BBC on Nov 17. No newer reporting.",
+     "trend": "steady",
      "confidence": "likely",
      "topic": "conflict",
      "sources": [
@@ -473,121 +490,55 @@
        "url": "https://www.bbc.co.uk/news/articles/c60evw20qe47o"
       }
      ],
-     "action": "No action; watch for escalation around the Trump–Xi–Putin summit.",
      "where": "Japan / Korea / Taiwan",
      "lat": 38.0,
      "lon": 135.0,
      "area": 4
-    },
-    {
-     "id": "asia-trump-trip",
-     "tag": "INFO",
-     "severity": "watch",
-     "title": "Trump in Manila; chip curbs and a possible Kim meeting",
-     "detail": "Trump arrived in the Philippines before going to China. The US issued new chip-export limits on South East Asia, and Trump says he would like to meet Kim Jong Un.",
-     "trend": "new",
-     "confidence": "confirmed",
-     "topic": "political",
-     "sources": [
-      {
-       "name": "NPR",
-       "url": "https://www.npr.org/2026/11/17/nx-s1-6042448/trump-to-meet-chinese-leader-xi-jinping-and-russias-vladimir-putin-for-joint-summit"
-      },
-      {
-       "name": "BBC",
-       "url": "https://www.bbc.co.uk/news/world/asia"
-      }
-     ],
-     "where": "Manila / Shenzhen",
-     "lat": 14.6,
-     "lon": 121.0,
-     "area": 4
-    },
-    {
-     "id": "asia-bangladesh",
-     "tag": "INFO",
-     "severity": "low",
-     "title": "Bangladesh garment workers clash with police over wages",
-     "detail": "Protesters blocked the Dhaka–Mymensingh highway and burned vehicles. Clothing shipments could be delayed.",
-     "trend": "steady",
-     "confidence": "confirmed",
-     "topic": "supply",
-     "sources": [
-      {
-       "name": "Al Jazeera",
-       "url": "https://www.aljazeera.com/news/2026/11/17/bangladesh-garment-workers-clash-with-police-in-fresh-protests-over-wages"
-      }
-     ],
-     "where": "Bangladesh",
-     "lat": 23.8,
-     "lon": 90.4,
-     "area": 3
     }
    ]
   },
   {
    "level": "world",
-   "summary": "Iran resumes strikes; Hormuz mines; Yemen front.",
+   "summary": "Iran widens Gulf attacks; Yemen offensive.",
    "items": [
     {
-     "id": "world-iran-bahrain",
+     "id": "world-iran-gulf",
      "tag": "WATCH",
      "severity": "elevated",
-     "title": "Iran strikes US radar in Bahrain for a third time",
-     "detail": "Iran fired drones at a US radar facility on Tuesday after a two-month lull; Bahrain says its air defenses intercepted them. CENTCOM reported no damage for the earlier attack.",
+     "title": "Iran fires on US air base in Kuwait and sites in Bahrain",
+     "detail": "AP says Iran targeted a US air base in Kuwait after American strikes on an Iranian missile site; Kuwait says its defenses intercepted drones and Bahrain issued two shelter alerts. This follows Iran's strikes on a US radar site in Bahrain.",
      "trend": "rising",
      "confidence": "confirmed",
      "topic": "conflict",
      "sources": [
       {
        "name": "SFGate/AP",
-       "url": "https://www.sfgate.com/news/world/article/a-2-month-lull-ends-with-iran-s-third-strike-on-22534803.php"
-      },
-      {
-       "name": "Al Jazeera",
-       "url": "https://www.aljazeera.com/news/2026/11/15/iran-says-it-targets-us-radar-in-bahrain-what-do-we-know"
+       "url": "https://www.sfgate.com/news/world/article/iran-widens-gulf-attacks-firing-on-a-us-air-base-22536963.php"
       }
      ],
      "action": "If strikes widen, expect fuel and shipping effects; keep the car's tank at least half full.",
-     "where": "Bahrain",
-     "lat": 26.1,
-     "lon": 50.55,
+     "where": "Kuwait / Bahrain",
+     "lat": 29.3,
+     "lon": 47.5,
      "area": 4
     },
     {
-     "id": "world-hormuz-mines",
+     "id": "world-yemen",
      "tag": "WATCH",
      "severity": "elevated",
-     "title": "Two vessels on fire after hitting a mine in Hormuz, Iran says",
-     "detail": "Reported by Al Jazeera citing Iran; no independent confirmation yet. Oil is steady near WTI $86 and Brent $93.",
-     "trend": "new",
-     "confidence": "unconfirmed",
-     "topic": "energy",
-     "sources": [
-      {
-       "name": "Al Jazeera",
-       "url": "https://www.aljazeera.com/video/newsfeed/2026/11/17/vessels-on-fire-after-naval-mine-hit-in-hormuz-strait-iran-says"
-      }
-     ],
-     "action": "Watch California gasoline prices for a jump.",
-     "where": "Strait of Hormuz",
-     "lat": 26.5,
-     "lon": 56.3,
-     "area": 4
-    },
-    {
-     "id": "world-yemen-aden",
-     "tag": "WATCH",
-     "severity": "elevated",
-     "title": "Saudi-backed forces reinforce Aden as Houthis push on Tur al-Baha",
-     "detail": "Officials say the Houthis are trying to take the district that guards Aden; a UK maritime agency also issued a notice. Red Sea shipping risk stays high.",
-     "trend": "steady",
-     "confidence": "likely",
+     "title": "Saudi coalition hits 60 Houthi sites as Houthis push toward Aden",
+     "detail": "Al Jazeera reports fierce fighting in Taiz. AP says Houthis fired two cruise missiles at Riyadh; Saudi Arabia intercepted one. Red Sea shipping risk stays high.",
+     "trend": "rising",
+     "confidence": "confirmed",
      "topic": "conflict",
      "sources": [
       {
+       "name": "Al Jazeera",
+       "url": "https://www.aljazeera.com/news/2026/11/18/houthis-advance-on-aden-as-saudi-coalition-targets-military-sites"
+      },
+      {
        "name": "SFGate/AP",
-       "url": "https://www.sfgate.com/news/world/article/saudi-backed-forces-in-yemen-beef-up-defenses-22534847.php"
+       "url": "https://www.sfgate.com/news/article/saudi-backed-forces-launch-major-attack-on-22536932.php"
       }
      ],
      "action": "Watch for shipping and fuel price effects.",
@@ -597,21 +548,24 @@
      "area": 4
     },
     {
-     "id": "world-kosovo-thaci",
+     "id": "world-iran-protest",
      "tag": "INFO",
      "severity": "low",
-     "title": "Kosovo ex-president Thaci gets 17 months for obstructing justice",
-     "detail": "The EU-backed court's sentence adds to his 25-year war-crimes term.",
+     "title": "Rare protests in southwestern Iran after crash kills 13 refinery workers",
+     "detail": "Hundreds rallied in Abdanan demanding officials resign, per AP.",
      "trend": "new",
      "confidence": "confirmed",
      "topic": "political",
      "sources": [
       {
        "name": "SFGate/AP",
-       "url": "https://www.sfgate.com/news/world/article/eu-backed-court-convicts-kosovo-ex-president-22534838.php"
+       "url": "https://www.sfgate.com/news/world/article/protesters-rally-in-a-town-in-southwestern-iran-22536996.php"
       }
      ],
-     "where": "The Hague / Kosovo"
+     "where": "Abdanan, Iran",
+     "lat": 32.99,
+     "lon": 47.98,
+     "area": 2
     }
    ]
   }
@@ -630,12 +584,12 @@
    "url": "https://quickmap.dot.ca.gov/"
   },
   {
-   "name": "DreamHost status",
-   "url": "https://www.dreamhoststatus.com/"
+   "name": "PG&E outage map",
+   "url": "https://pge.com/outages"
   },
   {
    "name": "KQED",
-   "url": "https://www.kqed.org/news/12109913/bay-area-braces-for-another-round-of-storms-this-week"
+   "url": "https://www.kqed.org/"
   },
   {
    "name": "BBC",
@@ -643,15 +597,19 @@
   },
   {
    "name": "NPR",
-   "url": "https://www.npr.org/2026/11/17/nx-s1-6042448/trump-to-meet-chinese-leader-xi-jinping-and-russias-vladimir-putin-for-joint-summit"
+   "url": "https://www.npr.org/"
   },
   {
    "name": "SFGate/AP",
-   "url": "https://www.sfgate.com/news/world/article/a-2-month-lull-ends-with-iran-s-third-strike-on-22534803.php"
+   "url": "https://www.sfgate.com/news/world/article/iran-widens-gulf-attacks-firing-on-a-us-air-base-22536963.php"
   },
   {
    "name": "Al Jazeera",
-   "url": "https://www.aljazeera.com/news/2026/11/17/bangladesh-garment-workers-clash-with-police-in-fresh-protests-over-wages"
+   "url": "https://www.aljazeera.com/"
+  },
+  {
+   "name": "Defense One",
+   "url": "https://www.defenseone.com/"
   },
   {
    "name": "FEMA IPAWS",
