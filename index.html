@@ -29,10 +29,12 @@ header{position:sticky;top:0;z-index:5;background:rgba(7,9,12,.92);backdrop-filt
 .top b{color:#fff;letter-spacing:.2em}
 .top .date{color:var(--dim);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}
 .top b{white-space:nowrap}
-@media (max-width:480px){.top{letter-spacing:.06em;gap:8px}.top b{letter-spacing:.12em}}
+@media (max-width:480px){.top{letter-spacing:.06em;gap:6px}.top b{letter-spacing:.12em}.top .iconbtn{padding:4px 6px}#archive{max-width:74px}}
 .top .sp{flex:1}
 .iconbtn{background:none;border:1px solid var(--line);color:var(--dim);border-radius:6px;padding:4px 8px;font:12px var(--mono);cursor:pointer}
 .iconbtn:hover{color:var(--ink);border-color:var(--faint)}
+#refreshBtn.busy{animation:spin 1s linear infinite;pointer-events:none}
+@keyframes spin{to{transform:rotate(360deg)}}
 .stale{display:none;background:#3a2a05;color:var(--watch);font:12px var(--mono);padding:6px 10px;border-radius:6px;margin:10px 0 0}
 
 /* overall */
@@ -157,6 +159,8 @@ dialog .row{display:flex;justify-content:flex-end;gap:8px;margin-top:18px}
 <header><div class="wrap top">
   <b>Morning Watch</b><span class="date" id="hdrDate">—</span><span class="sp"></span>
   <select id="archive" aria-label="Past briefings" style="font:12px var(--mono);padding:3px 6px"></select>
+  <button class="iconbtn" id="refreshBtn" aria-label="Pull the latest briefing" title="Pull the latest briefing">↻</button>
+  <a class="iconbtn" id="runBtn" href="https://claude.ai/code/routines/trig_01KLnihEyGyEagSVv5pro4ZT" target="_blank" rel="noopener" aria-label="Run a new briefing now (opens Claude; sign-in required)" title="Run a new briefing now (opens Claude; sign-in required)" style="text-decoration:none">▶</a>
   <a class="iconbtn" href="resources.html" style="text-decoration:none">Kit</a>
   <button class="iconbtn" id="setBtn" aria-label="Settings">⚙</button>
 </div></header>
@@ -549,6 +553,18 @@ document.addEventListener("keydown", e => {
 
 initArchive();
 loadBrief().catch(showErr);
+
+document.getElementById("refreshBtn").onclick = async () => {
+  const btn = document.getElementById("refreshBtn"), sel = document.getElementById("archive");
+  const keep = sel.value;
+  btn.classList.add("busy");
+  try {
+    await initArchive();
+    if ([...sel.options].some(o => o.value === keep)) sel.value = keep;
+    await loadBrief(sel.value);
+  } catch(e){ showErr(e); }
+  finally { btn.classList.remove("busy"); }
+};
 </script>
 </body>
 </html>
