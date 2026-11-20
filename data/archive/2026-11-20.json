@@ -1,0 +1,529 @@
+{
+ "schema": 1,
+ "date": "2026-11-20",
+ "generated_at": "2026-11-20T05:30:00-08:00",
+ "overall": {
+  "level": "serious",
+  "headline": "Quiet at home today; Russia hit Kyiv's bridges and Wall Street fell 2%.",
+  "bluf": "Nothing needs action in Pacifica: NWS has no active alerts for the city, no FEMA emergency alerts cover it, and rain returns Saturday afternoon. Abroad, Russia launched one of its biggest air attacks on Ukraine after the Kerch Bridge strikes, and a Russian missile crashed in Poland. The S&P 500 fell about 2% and the VIX rose to about 30, a stress signal worth watching but not a household step."
+ },
+ "status": {
+  "local": {
+   "level": "steady",
+   "note": "No active alerts; rain returns Saturday."
+  },
+  "regional": {
+   "level": "steady",
+   "note": "Big swells easing; Sierra snow ending."
+  },
+  "world": {
+   "level": "serious",
+   "note": "Kyiv bridges hit; Hormuz ship attacks; Poland missile."
+  }
+ },
+ "changes": [
+  "New: NWS shows no active alerts for Pacifica this morning. Wednesday's flood advisory and the High Surf Advisory are gone.",
+  "New: Russia hit three Kyiv bridges in a large missile and drone attack, killing at least 8 (BBC, AP via SFGate). Putin had vowed retaliation for the Kerch Bridge strikes.",
+  "New: Poland's leader says a Russian missile that crashed there was likely an intentional provocation (SFGate alert); details are still emerging.",
+  "New: The S&P 500 fell 2.0% and the VIX rose to 29.9, above the 25 stress line (market feed). Gold fell 3%.",
+  "New: The White House replaced its cyber director after the recent tech outages; Kirsten Davies is the new appointee (BBC, Al Jazeera).",
+  "New: A M5.0 quake struck near Pinnacles, about 160 km south-southeast of Pacifica, at 6:49 UTC (USGS).",
+  "Dropped as stale: Thursday's thunderstorm action item, Houthi and Riyadh strike, Gaza Yellow Line item and the North Korea enrichment item; I found no new reports on them today."
+ ],
+ "coming_up": [
+  {
+   "when": "Sat after 2 PM",
+   "date": "2026-11-21",
+   "level": "pacifica",
+   "title": "Rain returns",
+   "detail": "Rain is 90% likely Saturday, with less than a tenth of an inch new; more rain Sunday.",
+   "sources": [
+    {
+     "name": "NWS forecast, Pacifica",
+     "url": "https://forecast.weather.gov/MapClick.php?lat=37.6138&lon=-122.4869"
+    }
+   ]
+  },
+  {
+   "when": "Fri night – Sat night",
+   "date": "2026-11-20",
+   "level": "california",
+   "title": "I-280 full closures in San Francisco for bridge work",
+   "detail": "Caltrans listed full closures Nov 20–21 and 21–22; confirm on QuickMap before driving to the city.",
+   "sources": [
+    {
+     "name": "Caltrans QuickMap",
+     "url": "https://quickmap.dot.ca.gov/"
+    }
+   ]
+  },
+  {
+   "when": "Fri – this weekend",
+   "date": "2026-11-20",
+   "level": "california",
+   "title": "Westbound I-80 lane closed at the Bay Bridge for a flood barrier",
+   "detail": "Caltrans is installing a Tiger Dam; one lane to the toll plaza closes from Friday morning (KQED).",
+   "sources": [
+    {
+     "name": "KQED",
+     "url": "https://ww2.kqed.org/news/2026/11/20/to-prevent-flooding-near-bay-bridge-caltrans-to-install-tiger-dam-this-weekend/"
+    }
+   ]
+  },
+  {
+   "when": "Mon–Tue",
+   "date": "2026-11-23",
+   "level": "pacifica",
+   "title": "Hwy 1 one-way traffic at Montara and Pescadero",
+   "detail": "Caltrans lists drainage work in Montara and slide repair near Pescadero on Nov 23 and 24.",
+   "sources": [
+    {
+     "name": "Caltrans QuickMap",
+     "url": "https://quickmap.dot.ca.gov/"
+    }
+   ]
+  },
+  {
+   "when": "Next week",
+   "date": "2026-11-24",
+   "level": "pacifica",
+   "title": "King tides begin",
+   "detail": "KQED said the year's highest tides arrive next week; low-lying coast may flood. I found no new report today.",
+   "sources": [
+    {
+     "name": "KQED",
+     "url": "https://www.kqed.org/news/12109913/bay-area-braces-for-another-round-of-storms-this-week"
+    }
+   ]
+  }
+ ],
+ "home_front": [
+  {
+   "id": "alerts",
+   "status": "clear",
+   "summary": "No NWS or FEMA alerts for Pacifica.",
+   "items": []
+  },
+  {
+   "id": "utilities",
+   "status": "clear",
+   "summary": "No Pacifica outage found; DreamHost VPS work finished.",
+   "items": [
+    {
+     "id": "util-dreamhost-vps",
+     "tag": "INFO",
+     "severity": "low",
+     "title": "DreamHost emergency VPS maintenance completed",
+     "detail": "DreamHost's status page says emergency maintenance on VPS servers was completed Nov 19 (12:39 PM PST). It affects VPS customers only; shared hosting is not mentioned.",
+     "trend": "new",
+     "confidence": "confirmed",
+     "topic": "infrastructure",
+     "sources": [
+      {
+       "name": "DreamHost status",
+       "url": "https://www.dreamhoststatus.com/"
+      }
+     ],
+     "where": "DreamHost"
+    }
+   ]
+  },
+  {
+   "id": "roads",
+   "status": "watch",
+   "summary": "Hwy 1 work south of town; I-280 closures this weekend.",
+   "items": [
+    {
+     "id": "roads-hwy1-work",
+     "tag": "WATCH",
+     "severity": "low",
+     "title": "Hwy 1 one-way traffic for drainage work at Moss Beach today",
+     "detail": "Caltrans lists one-way traffic today at Moss Beach and near Pescadero, and again Nov 23–24 at Montara and Pescadero. I found no closure in Pacifica itself.",
+     "trend": "steady",
+     "confidence": "confirmed",
+     "topic": "infrastructure",
+     "sources": [
+      {
+       "name": "Caltrans QuickMap",
+       "url": "https://quickmap.dot.ca.gov/"
+      }
+     ],
+     "action": "Allow extra time toward Half Moon Bay; Hwy 35 or Hwy 1 north to Daly City are alternates.",
+     "when": "Today",
+     "where": "Hwy 1, Moss Beach",
+     "lat": 37.52,
+     "lon": -122.51,
+     "area": 1
+    }
+   ]
+  },
+  {
+   "id": "health",
+   "status": "clear",
+   "summary": "Air quality good (AQI 36); no local advisories.",
+   "items": []
+  },
+  {
+   "id": "supplies",
+   "status": "clear",
+   "summary": "No verified local supply disruptions.",
+   "items": []
+  }
+ ],
+ "readiness": {
+  "default": {
+   "task": "Test the weather radio and check batteries before rain returns Saturday.",
+   "why": "Another wet weekend follows days of storms and big surf."
+  },
+  "3d": {
+   "task": "Check that you have three days of drinking water, about 1 gallon per person per day.",
+   "why": "Saturated ground and king tides next week can disrupt services."
+  }
+ },
+ "ladder": [
+  {
+   "level": "pacifica",
+   "summary": "Calm morning; king tides next week.",
+   "items": [
+    {
+     "id": "pac-king-tides",
+     "tag": "INFO",
+     "severity": "hazard",
+     "title": "King tides expected next week",
+     "detail": "KQED said the year's highest tides arrive next week and run through January, with possible coastal flooding. No new reports since Nov 17.",
+     "trend": "steady",
+     "confidence": "likely",
+     "topic": "environment",
+     "sources": [
+      {
+       "name": "KQED",
+       "url": "https://www.kqed.org/news/12109913/bay-area-braces-for-another-round-of-storms-this-week"
+      }
+     ],
+     "where": "Bay Area coast",
+     "lat": 37.8,
+     "lon": -122.5,
+     "area": 3
+    }
+   ]
+  },
+  {
+   "level": "california",
+   "summary": "Biggest waves in years this week; Bay Bridge barrier work.",
+   "items": [
+    {
+     "id": "ca-big-waves",
+     "tag": "INFO",
+     "severity": "hazard",
+     "title": "Coastal hazard warnings this week as biggest waves in years hit California",
+     "detail": "The Guardian reports successive low-pressure systems produced swells with waves above 9 metres this week. NWS currently lists no surf advisory for Pacifica.",
+     "trend": "easing",
+     "confidence": "likely",
+     "topic": "environment",
+     "sources": [
+      {
+       "name": "The Guardian",
+       "url": "https://www.theguardian.com/us-news/2026/nov/20/california-coastal-communities-alert-big-waves-hit-state"
+      }
+     ],
+     "where": "California coast",
+     "lat": 37.0,
+     "lon": -122.2,
+     "area": 3
+    },
+    {
+     "id": "ca-pinnacles-quake",
+     "tag": "INFO",
+     "severity": "hazard",
+     "title": "M5.0 earthquake near Pinnacles with aftershocks",
+     "detail": "USGS shows a M4.98 quake at 6:49 UTC and several M3 aftershocks, about 160 km from Pacifica. The feed's tsunami flag is a standard field; the Tsunami Center lists no threat to the coast.",
+     "trend": "new",
+     "confidence": "confirmed",
+     "topic": "environment",
+     "sources": [
+      {
+       "name": "USGS",
+       "url": "https://earthquake.usgs.gov/earthquakes/eventpage/nc75468702"
+      }
+     ],
+     "where": "Pinnacles, San Benito County",
+     "lat": 36.59,
+     "lon": -121.22,
+     "area": 2
+    }
+   ]
+  },
+  {
+   "level": "usa",
+   "summary": "Stocks fell 2%; White House swaps cyber chief.",
+   "items": [
+    {
+     "id": "usa-markets",
+     "tag": "WATCH",
+     "severity": "watch",
+     "title": "Stocks drop 2%; VIX near 30",
+     "detail": "The S&P 500 fell 2.0% to 7,176 and is down 5.5% over five days; VIX is 29.9, above the 25 stress line. Gold fell 3%, Brent oil is $89 and WTI $82. The 10-year yield feed failed today. I found no wire report explaining the move.",
+     "trend": "rising",
+     "confidence": "confirmed",
+     "topic": "economy",
+     "sources": [
+      {
+       "name": "Market data feeds (Yahoo Finance)",
+       "url": "https://finance.yahoo.com/"
+      }
+     ],
+     "action": "No household step; avoid selling long-term savings on a single day's drop.",
+     "where": "US markets"
+    },
+    {
+     "id": "usa-cyber-chief",
+     "tag": "INFO",
+     "severity": "low",
+     "title": "White House replaces cyber director after tech outages",
+     "detail": "BBC and Defense One say Sean Cairncross was removed; Al Jazeera says Kirsten Davies was appointed. Officials earlier said they had seen no evidence of an attack behind the outages.",
+     "trend": "new",
+     "confidence": "confirmed",
+     "topic": "cyber",
+     "sources": [
+      {
+       "name": "Al Jazeera",
+       "url": "https://www.aljazeera.com/news/2026/11/20/us-appoints-new-cybersecurity-chief-after-series-of-tech-failures"
+      },
+      {
+       "name": "BBC",
+       "url": "https://www.bbc.co.uk/news/articles/cwz0k3nn5p5mo"
+      }
+     ],
+     "where": "Washington, DC"
+    }
+   ]
+  },
+  {
+   "level": "west",
+   "summary": "Russian strikes on Kyiv; missile crash in Poland.",
+   "items": [
+    {
+     "id": "west-kyiv-bridges",
+     "tag": "WATCH",
+     "severity": "critical",
+     "title": "Russia hits three Kyiv bridges in one of its biggest air attacks",
+     "detail": "BBC and AP say the attack killed at least 8 and damaged embassies, after Putin vowed to retaliate for the Kerch Bridge strikes. Russia also rejected security guarantees for Ukraine.",
+     "trend": "rising",
+     "confidence": "confirmed",
+     "topic": "conflict",
+     "sources": [
+      {
+       "name": "BBC",
+       "url": "https://www.bbc.co.uk/news/articles/c6x29gn4pdn9o"
+      },
+      {
+       "name": "SFGate/AP",
+       "url": "https://www.sfgate.com/news/world/article/russian-attacks-on-kyiv-kill-3-cripple-bridges-22541125.php"
+      }
+     ],
+     "action": "No household step; watch for energy and grain price effects.",
+     "where": "Kyiv, Ukraine",
+     "lat": 50.45,
+     "lon": 30.52,
+     "area": 4
+    },
+    {
+     "id": "west-poland-missile",
+     "tag": "WATCH",
+     "severity": "elevated",
+     "title": "Russian missile crashes in Poland; Polish leader calls it likely a provocation",
+     "detail": "SFGate's alert says the leader believes it was intentional while European troops drill nearby. Details are limited; the official account is still developing.",
+     "trend": "new",
+     "confidence": "likely",
+     "topic": "conflict",
+     "sources": [
+      {
+       "name": "SFGate/AP",
+       "url": "https://www.sfgate.com/news/world/article/an-unidentified-object-appears-to-have-crashed-in-22541164.php"
+      }
+     ],
+     "action": "No household step; watch for NATO consultations.",
+     "where": "Poland",
+     "lat": 50.5,
+     "lon": 23.0,
+     "area": 3
+    },
+    {
+     "id": "west-uk-eu",
+     "tag": "INFO",
+     "severity": "low",
+     "title": "UK and EU seal a reset deal at a summit",
+     "detail": "Al Jazeera and NPR report agreements including a youth mobility scheme and food-trade deals.",
+     "trend": "new",
+     "confidence": "confirmed",
+     "topic": "political",
+     "sources": [
+      {
+       "name": "Al Jazeera",
+       "url": "https://www.aljazeera.com/"
+      },
+      {
+       "name": "NPR",
+       "url": "https://www.npr.org/"
+      }
+     ],
+     "where": "UK / EU",
+     "lat": 51.5,
+     "lon": -0.1,
+     "area": 3
+    }
+   ]
+  },
+  {
+   "level": "asia",
+   "summary": "APEC aftermath; Rohingya genocide ruling.",
+   "items": [
+    {
+     "id": "asia-apec",
+     "tag": "INFO",
+     "severity": "watch",
+     "title": "Xi emerges with a diplomatic win after hosting Trump and Putin",
+     "detail": "AP says the joint statement named UN reform and oil supplies but not Ukraine or Iran (The Guardian). BBC called the summit high on spectacle and short on substance.",
+     "trend": "steady",
+     "confidence": "confirmed",
+     "topic": "political",
+     "sources": [
+      {
+       "name": "The Guardian",
+       "url": "https://www.theguardian.com/world/2026/nov/19/china-russia-us-agree-peace-statement-no-mention-ukraine-iran-wars"
+      },
+      {
+       "name": "BBC",
+       "url": "https://www.bbc.co.uk/news/world"
+      }
+     ],
+     "where": "Shenzhen, China",
+     "lat": 22.5,
+     "lon": 114.1,
+     "area": 4
+    },
+    {
+     "id": "asia-rohingya",
+     "tag": "INFO",
+     "severity": "low",
+     "title": "Rights groups urge sanctions after ICJ finds Myanmar committed genocide",
+     "detail": "The ruling was Thursday; today rights groups are calling for sanctions (AP).",
+     "trend": "steady",
+     "confidence": "confirmed",
+     "topic": "political",
+     "sources": [
+      {
+       "name": "Al Jazeera",
+       "url": "https://www.aljazeera.com/news/2026/11/19/un-top-court-convicts-myanmar-of-genocidal-intent-against-rohingya"
+      }
+     ],
+     "where": "Myanmar",
+     "lat": 21.9,
+     "lon": 95.9,
+     "area": 3
+    }
+   ]
+  },
+  {
+   "level": "world",
+   "summary": "Iran attacks Gulf shipping; Iraq militia deadline.",
+   "items": [
+    {
+     "id": "world-hormuz",
+     "tag": "WATCH",
+     "severity": "elevated",
+     "title": "Iran escalates attacks on ships in the Strait of Hormuz",
+     "detail": "NPR reports Iran attacked ships and carried out airstrikes on several Gulf countries. Details are from Thursday's report; I found no newer update.",
+     "trend": "rising",
+     "confidence": "likely",
+     "topic": "conflict",
+     "sources": [
+      {
+       "name": "NPR",
+       "url": "https://www.npr.org/2026/11/19/nx-s1-6044206/irans-attacks-on-ships-in-the-strait-of-hormuz-escalate"
+      }
+     ],
+     "action": "Keep the car's tank at least half full if fuel prices spike.",
+     "where": "Strait of Hormuz",
+     "lat": 26.5,
+     "lon": 56.3,
+     "area": 4
+    },
+    {
+     "id": "world-kataib",
+     "tag": "INFO",
+     "severity": "watch",
+     "title": "Kataib Hezbollah faces deadline to leave Iraqi stronghold",
+     "detail": "Al Jazeera reports the deadline today; no details on consequences.",
+     "trend": "new",
+     "confidence": "likely",
+     "topic": "conflict",
+     "sources": [
+      {
+       "name": "Al Jazeera",
+       "url": "https://www.aljazeera.com/video/newsfeed/2026/11/20/kataib-hezbollah-faces-deadline-to-leave-iraqi-stronghold"
+      }
+     ],
+     "where": "Iraq",
+     "lat": 33.3,
+     "lon": 44.4,
+     "area": 3
+    }
+   ]
+  }
+ ],
+ "sources_used": [
+  {
+   "name": "NWS San Francisco",
+   "url": "https://www.weather.gov/mtr/"
+  },
+  {
+   "name": "NWS forecast, Pacifica",
+   "url": "https://forecast.weather.gov/MapClick.php?lat=37.6138&lon=-122.4869"
+  },
+  {
+   "name": "Caltrans QuickMap",
+   "url": "https://quickmap.dot.ca.gov/"
+  },
+  {
+   "name": "USGS",
+   "url": "https://earthquake.usgs.gov/"
+  },
+  {
+   "name": "KQED",
+   "url": "https://www.kqed.org/"
+  },
+  {
+   "name": "BBC",
+   "url": "https://www.bbc.co.uk/news/world"
+  },
+  {
+   "name": "Al Jazeera",
+   "url": "https://www.aljazeera.com/"
+  },
+  {
+   "name": "SFGate/AP",
+   "url": "https://www.sfgate.com/"
+  },
+  {
+   "name": "NPR",
+   "url": "https://www.npr.org/"
+  },
+  {
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/"
+  },
+  {
+   "name": "Defense One",
+   "url": "https://www.defenseone.com/"
+  },
+  {
+   "name": "DreamHost status",
+   "url": "https://www.dreamhoststatus.com/"
+  },
+  {
+   "name": "FEMA IPAWS",
+   "url": "https://www.fema.gov/openfema-data-page/ipaws-archived-alerts-v1"
+  }
+ ]
+}
