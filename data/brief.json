@@ -1,55 +1,54 @@
 {
  "schema": 1,
- "date": "2026-11-21",
- "generated_at": "2026-11-21T04:30:00-08:00",
+ "date": "2026-11-22",
+ "generated_at": "2026-11-22T04:45:00-08:00",
  "overall": {
   "level": "serious",
-  "headline": "Pacifica is calm today, but a king-tide storm arrives Tuesday and Wall Street fell hard Friday.",
-  "bluf": "Nothing needs action today. A minor Coastal Flood Advisory runs through Nov 26 and NWS expects a stormy, high-tide Tuesday\u2013Wednesday, so prepare quietly this weekend. The S&P 500 closed in correction territory after a 3.7% drop with the VIX near 36, Russia's overnight attack sent missiles into Poland, and the Iran war remains stalled."
+  "headline": "Big surf and coastal flooding are forecast for Pacifica Tuesday to Thursday; the Gulf and Ukraine fronts stay hot.",
+  "bluf": "Prepare for the coast this weekend: NWS forecasts 14–24 ft surf and 'major to extreme' coastal flooding Tuesday through Thursday, with a storm and the highest tides of the year. Today and Monday look quiet and mostly dry. Abroad, Iran's attacks on Gulf shipping and states continue, and Russia struck Ukraine and Poland's border region on Friday."
  },
  "status": {
   "local": {
-   "level": "steady",
-   "note": "Minor flood advisory; storm and king tides Tue."
+   "level": "strained",
+   "note": "Big surf and flooding forecast Tue–Thu."
   },
   "regional": {
    "level": "strained",
-   "note": "Stocks in correction; Bay Area storm Tue-Wed."
+   "note": "Bay storm Tue; stocks in correction."
   },
   "world": {
    "level": "serious",
-   "note": "Missiles hit Poland; Hormuz disrupted."
+   "note": "Gulf shipping attacks; Ukraine war goes on."
   }
  },
  "changes": [
-  "New: NWS Coastal Flood Advisory for the San Francisco Peninsula coast, including Pacifica, runs Nov 21 to Nov 26. A Coastal Flood Warning for the Bay shoreline begins Nov 23 (NWS).",
-  "New: KQED reports an atmospheric river with possible thunderstorms Tue Nov 24, with flooding and king tides disrupting travel Tue\u2013Wed.",
-  "New: S&P 500 fell 3.7% Friday and, with the Dow, closed in correction; VIX rose to 35.9 (market feed, CNBC, CNN).",
-  "New: Russian missiles and a drone fell in southeast Poland Friday; Poland has not invoked NATO Article 4 (Al Jazeera).",
-  "New: CNN and NBC report the FBI is investigating a suspected breach of its NCIC criminal database; the FBI has not confirmed it.",
-  "New: Iran's Guard says it shot down US drones over Hormuz Saturday; talks to end the war remain stalled (Al Jazeera).",
-  "Dropped as stale: Pinnacles quake, Kyiv bridges item, Kataib Hezbollah deadline, UK-EU deal, Rohingya ruling, APEC item, DreamHost VPS notice (VPS only, resolved Nov 19)."
+  "Upgraded: NWS's 3:56 AM forecast discussion now calls for 14–18 ft surf Tuesday and 18–24 ft Wednesday, with 'major to extreme' coastal flooding. Yesterday this was a WATCH; it is now an ACTION item.",
+  "New: Coastal Flood Warning for the San Francisco Bay shoreline starts Mon 6 AM and runs to Thu 4 PM (NWS).",
+  "New: A Russia-bound cargo ship hit by two drones is still burning off Finland; its crew was evacuated (Al Jazeera, BBC).",
+  "New: Bahrain blames an Iranian attack for an industrial fire; two tankers were reported hit near Oman Saturday (Al Jazeera).",
+  "New: A Mexican cartel leader on the FBI's Ten Most Wanted list was captured in a firefight that left 11 dead (NPR, BBC, Guardian).",
+  "Dropped as stale: Palisades verdict, Timor-Leste and Peru quakes, Nepal visit, Iraq power-plant fire, CISA additions, Naia sorbetto recall (older than 36 hours; no local effect)."
  ],
  "coming_up": [
   {
-   "when": "Sat after 4 PM",
-   "date": "2026-11-21",
-   "level": "pacifica",
-   "title": "Rain returns",
-   "detail": "NWS: 80\u201390% chance Saturday afternoon and night, a tenth to a quarter inch; lighter Sunday.",
+   "when": "Mon 6 AM – Thu 4 PM",
+   "date": "2026-11-23",
+   "level": "california",
+   "title": "Coastal Flood Warning for SF Bay shoreline",
+   "detail": "NWS: major to extreme flooding possible around Thanksgiving week high tides; Pacific coast advisory runs through Thursday.",
    "sources": [
     {
-     "name": "NWS forecast, Pacifica",
-     "url": "https://forecast.weather.gov/MapClick.php?lat=37.6138&lon=-122.4869"
+     "name": "NWS San Francisco forecast discussion",
+     "url": "https://forecast.weather.gov/product.php?site=MTR&issuedby=MTR&product=AFD"
     }
    ]
   },
   {
-   "when": "Mon Nov 23",
+   "when": "Mon–Tue",
    "date": "2026-11-23",
-   "level": "california",
-   "title": "I-280 full closure in San Francisco; Hwy 1 one-way work",
-   "detail": "Caltrans lists a full I-280 bridge-repair closure in SF on Nov 23, and one-way traffic on Hwy 1 at Montara and Pescadero Nov 23\u201324. Check QuickMap first.",
+   "level": "pacifica",
+   "title": "Hwy 1 one-way work at Montara and Pescadero; paving at Half Moon Bay",
+   "detail": "Caltrans lists drainage work at Montara Nov 23–24, slide repair near Pescadero Nov 23–24, and paving at Half Moon Bay through Nov 25.",
    "sources": [
     {
      "name": "Caltrans QuickMap",
@@ -58,28 +57,45 @@
    ]
   },
   {
-   "when": "Mon \u2013 Thu",
-   "date": "2026-11-23",
+   "when": "Tue, rain after ~10 AM",
+   "date": "2026-11-24",
    "level": "pacifica",
-   "title": "King tides with Coastal Flood Warning for Bay shoreline",
-   "detail": "NWS expects water about 2\u20132.5 ft above normal high tide in Bay-side areas; advisory covers the Peninsula coast through Nov 26.",
+   "title": "Storm arrives; 14–18 ft surf; SF high tide 10:05 AM",
+   "detail": "NWS: heavy rain and rough seas spread in Tuesday into Wednesday; timing could slip about 6 hours. Pacifica forecast: 90% rain, 0.75–1 inch.",
    "sources": [
     {
-     "name": "NWS San Francisco",
-     "url": "https://www.weather.gov/mtr/"
+     "name": "NWS San Francisco forecast discussion",
+     "url": "https://forecast.weather.gov/product.php?site=MTR&issuedby=MTR&product=AFD"
     }
    ]
   },
   {
-   "when": "Tue \u2013 Wed",
-   "date": "2026-11-24",
+   "when": "Wed, high tide 10:49 AM",
+   "date": "2026-11-25",
    "level": "pacifica",
-   "title": "Atmospheric river with possible thunderstorms",
-   "detail": "KQED, citing NWS, expects peak rain Nov 24\u201325 with big waves and travel disruption; drizzle ends by Thanksgiving.",
+   "title": "High surf event: 18–24 ft waves",
+   "detail": "NWS expects the biggest waves Wednesday, 2.8 ft above normal tide at SF, with sneaker waves and rip currents.",
+   "sources": [
+    {
+     "name": "NWS San Francisco forecast discussion",
+     "url": "https://forecast.weather.gov/product.php?site=MTR&issuedby=MTR&product=AFD"
+    }
+   ]
+  },
+  {
+   "when": "Thu Nov 26",
+   "date": "2026-11-26",
+   "level": "california",
+   "title": "Thanksgiving: drizzle ends, coastal flood products expire 4 PM",
+   "detail": "KQED, citing NWS, says rain should taper by Thanksgiving; another westerly swell arrives Fri–Sat.",
    "sources": [
     {
      "name": "KQED",
      "url": "https://www.kqed.org/news/12110854/another-storm-is-hitting-the-bay-area-heres-how-it-could-affect-thanksgiving-travel"
+    },
+    {
+     "name": "NWS San Francisco forecast discussion",
+     "url": "https://forecast.weather.gov/product.php?site=MTR&issuedby=MTR&product=AFD"
     }
    ]
   }
@@ -87,22 +103,22 @@
  "home_front": [
   {
    "id": "alerts",
-   "status": "watch",
-   "summary": "Minor coastal flood advisory; bigger storm and king tides Tue\u2013Wed.",
+   "status": "action",
+   "summary": "Major surf and coastal flooding forecast Tue–Thu; prepare Monday.",
    "items": [
     {
-     "id": "alerts-coastal-flood",
-     "tag": "WATCH",
+     "id": "alerts-surf-flood",
+     "tag": "ACTION",
      "severity": "hazard",
-     "title": "Coastal Flood Advisory for the Peninsula coast through Nov 26",
-     "detail": "NWS San Francisco says low-lying shoreline spots may flood and some roads may close. It starts this morning; KQED says a storm and the year's highest tides combine Tue\u2013Wed. No FEMA emergency alerts cover Pacifica.",
+     "title": "Big surf and major coastal flooding forecast Tue–Thu",
+     "detail": "NWS says breaking waves of 14–18 ft Tuesday and 18–24 ft Wednesday, with sneaker waves, strong rip currents and a storm surge of up to 1.6 ft on the highest tides of the year. A Coastal Flood Advisory already covers the Peninsula coast through Thursday; NWS calls the flooding impacts 'major to extreme'. No FEMA emergency alerts cover Pacifica today.",
      "trend": "rising",
      "confidence": "confirmed",
      "topic": "environment",
      "sources": [
       {
-       "name": "NWS San Francisco",
-       "url": "https://www.weather.gov/mtr/"
+       "name": "NWS San Francisco forecast discussion",
+       "url": "https://forecast.weather.gov/product.php?site=MTR&issuedby=MTR&product=AFD"
       },
       {
        "name": "KQED",
@@ -113,9 +129,9 @@
        "url": "https://www.fema.gov/openfema-data-page/ipaws-archived-alerts-v1"
       }
      ],
-     "action": "If you live or park near the shoreline, clear storm drains and move vehicles and stored items to higher ground by Monday; don't drive around barricades.",
-     "when": "Now \u2013 Thu Nov 26",
-     "where": "Pacifica coast, low-lying areas",
+     "action": "By Monday night: move cars, bins and stored items away from the shoreline and low spots, clear storm drains, charge phones and power banks, and fill the gas tank. Stay off beaches, piers and bluff edges Tue–Thu; don't drive through water.",
+     "when": "Mon prep; hazard Tue–Thu (peak Tue–Wed ~10 AM high tides)",
+     "where": "Pacifica coast, Rockaway, Sharp Park, Linda Mar, low-lying streets",
      "lat": 37.61,
      "lon": -122.49,
      "area": 2
@@ -125,20 +141,20 @@
   {
    "id": "utilities",
    "status": "clear",
-   "summary": "No Pacifica outage found; no DreamHost hosting incident in the window.",
+   "summary": "No Pacifica outage found; no DreamHost incident in the window.",
    "items": []
   },
   {
    "id": "roads",
    "status": "watch",
-   "summary": "Hwy 1 paving at Half Moon Bay; I-280 closure in SF Mon.",
+   "summary": "Hwy 1 work south of Pacifica; storm may close coastal roads Tue–Wed.",
    "items": [
     {
      "id": "roads-hwy1-work",
      "tag": "WATCH",
      "severity": "low",
-     "title": "Hwy 1 one-way traffic and paving south of Pacifica",
-     "detail": "Caltrans lists one-way traffic for paving at Half Moon Bay today, lane closures there Sun\u2013Tue, and drainage work at Montara and slide repair near Pescadero Nov 23\u201324. No closure inside Pacifica is listed.",
+     "title": "Hwy 1 work at Montara, Pescadero and Half Moon Bay",
+     "detail": "Caltrans lists lane closures for paving at Half Moon Bay through Nov 25, drainage work at Montara and slide repair near Pescadero on Nov 23–24. No closure inside Pacifica is listed, but big surf and flooding could close low coastal roads Tue–Wed.",
      "trend": "steady",
      "confidence": "confirmed",
      "topic": "infrastructure",
@@ -148,38 +164,20 @@
        "url": "https://quickmap.dot.ca.gov/"
       }
      ],
-     "action": "Allow extra time toward Half Moon Bay; Hwy 35 or Hwy 1 north to Daly City are alternates. Storm flooding could add closures Tuesday.",
-     "when": "Today \u2013 Nov 25",
-     "where": "Hwy 1, Half Moon Bay \u2013 Montara",
-     "lat": 37.5,
-     "lon": -122.48,
-     "area": 1
+     "action": "Check QuickMap before driving south; if Hwy 1 floods or closes, use Hwy 35 or I-280 and allow extra time.",
+     "when": "Now – Wed Nov 25",
+     "where": "Hwy 1, Montara to Pescadero",
+     "lat": 37.54,
+     "lon": -122.51,
+     "area": 2
     }
    ]
   },
   {
    "id": "health",
    "status": "clear",
-   "summary": "Air quality good (AQI 44); one California food recall.",
-   "items": [
-    {
-     "id": "health-naia-recall",
-     "tag": "INFO",
-     "severity": "low",
-     "title": "Naia Chocolate Banana Bar Sorbetto recalled for undeclared allergens",
-     "detail": "Naia, Inc. of Hercules, CA says the sorbetto may contain undeclared tree nuts, milk and eggs. FDA posted the notice Nov 16 and it remains in effect.",
-     "trend": "steady",
-     "confidence": "confirmed",
-     "topic": "health",
-     "sources": [
-      {
-       "name": "FDA recalls",
-       "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts"
-      }
-     ],
-     "where": "California"
-    }
-   ]
+   "summary": "Air quality good (AQI 49); no local health advisories found.",
+   "items": []
   },
   {
    "id": "supplies",
@@ -191,323 +189,281 @@
  "readiness": {
   "default": {
    "task": "Charge phones and power banks and check flashlight batteries before Tuesday's storm.",
-   "why": "An atmospheric river with king tides could bring outages and road closures."
+   "why": "Heavy rain, surf and wind from Tuesday can bring brief outages and road closures."
   },
   "3d": {
    "task": "Check you have three days of drinking water, about 1 gallon per person per day.",
-   "why": "Storm flooding Tue\u2013Wed can disrupt services briefly."
+   "why": "Storm flooding Tue–Thu can briefly disrupt services."
   }
  },
  "ladder": [
   {
    "level": "pacifica",
-   "summary": "Quiet today; storm and king tides Tue\u2013Wed.",
+   "summary": "Quiet through Monday; the surf and storm are the story.",
    "items": []
   },
   {
    "level": "california",
-   "summary": "Storm Tuesday; Palisades fire verdict.",
+   "summary": "Bay storm Tuesday; Bay shoreline flood warning from Monday.",
    "items": [
     {
-     "id": "ca-atmo-river",
+     "id": "ca-bay-flood-warning",
      "tag": "WATCH",
      "severity": "hazard",
-     "title": "Bay Area storm and king tides expected Tue\u2013Wed",
-     "detail": "KQED, citing NWS, expects an atmospheric river with possible thunderstorms Nov 24, coastal and bayfront flooding, and disruption at airports, roads, trains and ferries ahead of Thanksgiving.",
-     "trend": "new",
-     "confidence": "likely",
+     "title": "Coastal Flood Warning for SF Bay shoreline Mon–Thu",
+     "detail": "NWS upgrades the Bay advisory to a warning at 6 AM Monday, with high tide about 2.6–2.8 ft above normal at the SF gauge Tue–Wed. KQED expects disruption at airports, roads, trains and ferries for Thanksgiving travelers.",
+     "trend": "rising",
+     "confidence": "confirmed",
      "topic": "environment",
      "sources": [
       {
-       "name": "KQED",
-       "url": "https://www.kqed.org/news/12110854/another-storm-is-hitting-the-bay-area-heres-how-it-could-affect-thanksgiving-travel"
+       "name": "NWS San Francisco forecast discussion",
+       "url": "https://forecast.weather.gov/product.php?site=MTR&issuedby=MTR&product=AFD"
       },
       {
-       "name": "NWS San Francisco",
-       "url": "https://www.weather.gov/mtr/"
+       "name": "KQED",
+       "url": "https://www.kqed.org/news/12110854/another-storm-is-hitting-the-bay-area-heres-how-it-could-affect-thanksgiving-travel"
       }
      ],
-     "action": "If you travel for Thanksgiving, plan to leave Monday or Wednesday evening and check flights and trains first.",
-     "where": "Bay Area",
-     "lat": 37.8,
+     "action": "If you travel through SFO, Oakland or bayfront roads Tue–Wed, check flight and road status first and leave extra time.",
+     "when": "Mon 6 AM – Thu 4 PM",
+     "where": "SF Bay shoreline",
+     "lat": 37.7,
      "lon": -122.3,
      "area": 3
-    },
-    {
-     "id": "ca-palisades",
-     "tag": "INFO",
-     "severity": "low",
-     "title": "Man convicted of starting the Palisades fire",
-     "detail": "BBC reports a 30-year-old Los Angeles resident was convicted of arson over the fire that killed 12 people and destroyed more than 6,800 buildings.",
-     "trend": "new",
-     "confidence": "confirmed",
-     "topic": "public-safety",
-     "sources": [
-      {
-       "name": "BBC",
-       "url": "https://www.bbc.co.uk/news/world"
-      }
-     ],
-     "where": "Los Angeles",
-     "lat": 34.05,
-     "lon": -118.55,
-     "area": 2
     }
    ]
   },
   {
    "level": "usa",
-   "summary": "Stocks in correction; FBI database probe.",
+   "summary": "Stocks in correction; FBI database breach reported.",
    "items": [
     {
      "id": "usa-markets",
      "tag": "WATCH",
      "severity": "watch",
-     "title": "S&P 500 falls 3.7% into correction; VIX near 36",
-     "detail": "The S&P 500 closed at 6,910, down 8.6% over five days, after an AI-stock sell-off; Nasdaq fell about 5% and Anthropic shares slid (CNN, BBC). Gold fell 4.6%; Brent is $92.6. The VIX above 25 is a stress signal.",
-     "trend": "rising",
+     "title": "S&P 500 closed Friday in correction after 3.7% drop; VIX near 36",
+     "detail": "The index ended at 6,910, down 8.6% in five days, after an AI-stock sell-off; markets are closed until Monday. Oil is calmer: Brent fell 2.2% to about $90 and WTI is near $83.",
+     "trend": "steady",
      "confidence": "confirmed",
      "topic": "economy",
      "sources": [
       {
-       "name": "CNN",
-       "url": "https://www.cnn.com/2026/11/20/investing/us-stocks-anthropic-ai"
+       "name": "Market data feed",
+       "url": "https://finance.yahoo.com/quote/%5EGSPC/"
       },
       {
-       "name": "CNBC",
-       "url": "https://www.cnbc.com/2026/11/19/stock-market-today-live-updates.html"
+       "name": "BBC News",
+       "url": "https://www.bbc.com/news/us"
       }
      ],
-     "action": "No household step; avoid selling long-term savings on a single day's drop.",
+     "action": "No household step needed; if you hold investments, avoid reacting to Monday's open and check retirement plan statements calmly.",
+     "when": "Mon open",
      "where": "US markets"
     },
     {
      "id": "usa-fbi-ncic",
      "tag": "WATCH",
      "severity": "watch",
-     "title": "FBI reportedly investigating suspected breach of NCIC database",
-     "detail": "CNN and NBC, citing two briefed people, say the bureau is probing the apparent hack of its national criminal-records database. The FBI has not confirmed scope or who is responsible; a separate FBI employee-data breach was reported in September.",
-     "trend": "new",
+     "title": "FBI reportedly investigating apparent hack of its criminal database",
+     "detail": "BBC reported Sunday that the bureau is probing an apparent breach of a criminal-records system; the FBI has not confirmed details. I could not find the original reporting, so treat the scope as unknown.",
+     "trend": "steady",
      "confidence": "likely",
      "topic": "cyber",
      "sources": [
       {
-       "name": "NBC News",
-       "url": "https://www.nbcnews.com/politics/justice-department/fbi-investigating-potential-breach-crime-database-rcna610536"
-      },
-      {
-       "name": "BBC",
-       "url": "https://www.bbc.co.uk/news/articles/cvze7de86pk3o"
+       "name": "BBC News",
+       "url": "https://www.bbc.com/news/world"
       }
      ],
-     "action": "No household step; watch for official statements.",
-     "where": "Washington, DC"
-    },
-    {
-     "id": "usa-cisa-kev",
-     "tag": "INFO",
-     "severity": "low",
-     "title": "CISA adds VMware vCenter, Cisco Expressway and SAP flaws to exploited list",
-     "detail": "CISA's catalog added four actively exploited vulnerabilities on Nov 20. They affect business software, not home devices.",
-     "trend": "new",
-     "confidence": "confirmed",
-     "topic": "cyber",
-     "sources": [
-      {
-       "name": "CISA KEV",
-       "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-      }
-     ],
-     "where": "United States"
+     "action": "Nothing to do; if you get unexpected notices about your records, report them to the FBI at ic3.gov.",
+     "where": "US"
     }
    ]
   },
   {
    "level": "west",
-   "summary": "Russian missiles fall in Poland; attacks on Ukraine continue.",
+   "summary": "Russia strikes Ukraine again; ship hit by drones off Finland; cartel boss captured in Mexico.",
    "items": [
-    {
-     "id": "west-poland-missiles",
-     "tag": "WATCH",
-     "severity": "elevated",
-     "title": "Russian missiles and a drone fall in southeast Poland",
-     "detail": "Poland's defence minister says two missiles and a jet drone landed Friday, one a Kh-101 about 50 km from the border; no injuries reported. Prime Minister Tusk called it an intentional provocation; Poland has not invoked NATO Article 4.",
-     "trend": "new",
-     "confidence": "confirmed",
-     "topic": "conflict",
-     "sources": [
-      {
-       "name": "Al Jazeera",
-       "url": "https://www.aljazeera.com/news/2026/11/21/russian-missiles-hit-poland-what-happened-and-could-nato-respond"
-      }
-     ],
-     "action": "No household step; watch for NATO consultations.",
-     "where": "Southeast Poland",
-     "lat": 50.3,
-     "lon": 22.4,
-     "area": 3
-    },
     {
      "id": "west-ukraine-strikes",
      "tag": "WATCH",
      "severity": "critical",
-     "title": "Russia strikes Ukraine again, including Zelenskyy's hometown",
-     "detail": "Al Jazeera reports more than 400 drones and 110 missiles overnight Friday, killing at least 8. AP via SFGate says a ballistic missile on Kryvyi Rih killed 2 and wounded 60 Saturday.",
+     "title": "Russian strikes on Ukraine continue; missiles also fell in Poland",
+     "detail": "Al Jazeera says a Russian strike on Kryvyi Rih killed two and wounded 60 on Saturday, and a Russian missile hit Lviv on Sunday. Missiles landed in southeast Poland on Friday; I found no report today of NATO consultations.",
      "trend": "steady",
      "confidence": "confirmed",
      "topic": "conflict",
      "sources": [
       {
-       "name": "SFGate/AP",
-       "url": "https://www.sfgate.com/news/world/article/ballistic-missile-attack-on-zelenskyys-hometown-in-central-ukraine-kills-2-and-wounds-scores"
+       "name": "Al Jazeera",
+       "url": "https://www.aljazeera.com/news/"
       },
       {
-       "name": "Al Jazeera",
-       "url": "https://www.aljazeera.com/news/2026/11/21/russian-missiles-hit-poland-what-happened-and-could-nato-respond"
+       "name": "BBC News",
+       "url": "https://www.bbc.com/news/world"
       }
      ],
-     "action": "No household step; watch energy and grain prices.",
-     "where": "Ukraine",
-     "lat": 48.0,
-     "lon": 33.4,
+     "action": "No household step; watch for any NATO Article 4 request.",
+     "when": "Nov 21–22",
+     "where": "Ukraine, SE Poland",
+     "lat": 49.8,
+     "lon": 24.0,
      "area": 4
+    },
+    {
+     "id": "west-finland-ship",
+     "tag": "INFO",
+     "severity": "watch",
+     "title": "Russia-bound cargo ship burning after drone strike off Finland",
+     "detail": "Finnish authorities say two drones hit a cargo ship linked to Russia's armed forces; the crew was evacuated and the fire was still burning Sunday. Who launched the drones has not been confirmed.",
+     "trend": "new",
+     "confidence": "likely",
+     "topic": "conflict",
+     "sources": [
+      {
+       "name": "Al Jazeera",
+       "url": "https://www.aljazeera.com/news/"
+      },
+      {
+       "name": "BBC News",
+       "url": "https://www.bbc.com/news/world"
+      }
+     ],
+     "when": "Sat–Sun",
+     "where": "Gulf of Finland",
+     "lat": 60.0,
+     "lon": 27.0,
+     "area": 2
+    },
+    {
+     "id": "west-mexico-capture",
+     "tag": "INFO",
+     "severity": "elevated",
+     "title": "Mexican cartel leader on FBI Ten Most Wanted list captured; 11 dead",
+     "detail": "NPR says the leader was captured in northern Mexico after a firefight; the Guardian identifies him as 'El Chapo Isidro'. Retaliatory violence is possible in Sinaloa.",
+     "trend": "new",
+     "confidence": "confirmed",
+     "topic": "public-safety",
+     "sources": [
+      {
+       "name": "NPR",
+       "url": "https://www.npr.org/sections/world/"
+      },
+      {
+       "name": "The Guardian",
+       "url": "https://www.theguardian.com/world"
+      }
+     ],
+     "when": "Sat Nov 21",
+     "where": "Northern Mexico",
+     "lat": 25.8,
+     "lon": -108.5,
+     "area": 3
     }
    ]
   },
   {
    "level": "asia",
-   "summary": "No major security news; strong quake near Timor-Leste.",
+   "summary": "No major security news; deadly factory fire in Indonesia.",
    "items": [
     {
-     "id": "asia-timor-quake",
-     "tag": "INFO",
-     "severity": "hazard",
-     "title": "M6.8 deep earthquake near Timor-Leste",
-     "detail": "USGS recorded the quake at 143 km depth Saturday 09:42 UTC; GDACS rates it green, about 70,000 people felt moderate shaking. No tsunami threat to California was reported.",
-     "trend": "new",
-     "confidence": "confirmed",
-     "topic": "environment",
-     "sources": [
-      {
-       "name": "USGS",
-       "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000ucij"
-      },
-      {
-       "name": "GDACS",
-       "url": "https://www.gdacs.org/"
-      }
-     ],
-     "where": "Timor-Leste",
-     "lat": -7.73,
-     "lon": 127.54,
-     "area": 3
-    },
-    {
-     "id": "asia-nepal-india",
+     "id": "asia-indonesia-fire",
      "tag": "INFO",
      "severity": "low",
-     "title": "Nepal's new prime minister visits India",
-     "detail": "BBC says trade, connectivity and regional cooperation top the agenda of Balendra Shah's first trip.",
+     "title": "Candy factory fire in Indonesia: 3 dead, dozens missing",
+     "detail": "BBC and the Guardian report the fire Sunday; the cause is not stated and rescue work continues.",
      "trend": "new",
-     "confidence": "likely",
-     "topic": "political",
+     "confidence": "confirmed",
+     "topic": "public-safety",
      "sources": [
       {
-       "name": "BBC",
-       "url": "https://www.bbc.co.uk/news/world/asia"
+       "name": "BBC News",
+       "url": "https://www.bbc.com/news/world"
       }
      ],
-     "where": "Nepal / India",
-     "lat": 28.6,
-     "lon": 77.2,
-     "area": 3
+     "when": "Sun Nov 22",
+     "where": "Indonesia",
+     "lat": -6.2,
+     "lon": 106.8,
+     "area": 2
     }
    ]
   },
   {
    "level": "world",
-   "summary": "Hormuz still disrupted; Iraq power plant fire.",
+   "summary": "Iran's attacks on Gulf shipping and states continue; no deal in sight.",
    "items": [
     {
      "id": "world-hormuz",
      "tag": "WATCH",
      "severity": "elevated",
-     "title": "Iran says it downed US drones over Hormuz; no deal to end the war",
-     "detail": "Al Jazeera says the Guard claimed an MQ-9 and an MQ-1 on Saturday, and Iran's foreign minister calls the situation 'no war, no peace'. The strait stays disrupted; Brent is about $92.6.",
-     "trend": "rising",
+     "title": "Iran escalates Gulf attacks: tankers hit near Oman, Bahrain fire",
+     "detail": "Al Jazeera reports two tanker incidents near Oman on Saturday (Iran says one hit a mine) and Bahrain blames an Iranian attack for an industrial fire. Talks to end the war remain stalled; oil is lower this week, so no price stress yet.",
+     "trend": "steady",
      "confidence": "confirmed",
      "topic": "conflict",
      "sources": [
       {
        "name": "Al Jazeera",
-       "url": "https://www.aljazeera.com/news/2026/11/21/irans-irgc-downs-us-drone-over-hormuz-as-efforts-to-end-war-remain-stalled"
+       "url": "https://www.aljazeera.com/news/"
       }
      ],
-     "action": "Keep the car's tank at least half full if fuel prices spike.",
-     "where": "Strait of Hormuz",
+     "action": "If gasoline or shipping prices jump, top off the tank and delay non-urgent travel.",
+     "when": "Nov 21–22",
+     "where": "Strait of Hormuz, Bahrain",
      "lat": 26.5,
      "lon": 56.3,
-     "area": 4
+     "area": 5
     },
     {
-     "id": "world-hartha-fire",
+     "id": "world-cop31",
      "tag": "INFO",
      "severity": "low",
-     "title": "Fire at Hartha power station in southern Iraq kills 4",
-     "detail": "Al Jazeera reports at least four dead and 30 injured; cause not stated.",
-     "trend": "new",
+     "title": "UN climate talks run into overtime; draft drops fossil-fuel language",
+     "detail": "AP via SFGate says negotiators are in a second day of overtime, with Turkey's final draft omitting fossil fuels.",
+     "trend": "steady",
      "confidence": "likely",
-     "topic": "infrastructure",
+     "topic": "political",
      "sources": [
       {
-       "name": "Al Jazeera",
-       "url": "https://www.aljazeera.com/"
+       "name": "SFGate (AP)",
+       "url": "https://www.sfgate.com/"
       }
      ],
-     "where": "Basra, Iraq",
-     "lat": 30.6,
-     "lon": 47.7,
-     "area": 2
-    },
-    {
-     "id": "world-peru-quake",
-     "tag": "INFO",
-     "severity": "hazard",
-     "title": "M6.7 earthquake in Peru's Andes",
-     "detail": "USGS and AP report no damage or casualties so far.",
-     "trend": "new",
-     "confidence": "confirmed",
-     "topic": "environment",
-     "sources": [
-      {
-       "name": "USGS",
-       "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000ucfm"
-      }
-     ],
-     "where": "Central Peru",
-     "lat": -10.85,
-     "lon": -75.98,
-     "area": 3
+     "when": "Sun Nov 22",
+     "where": "COP31, Antalya",
+     "lat": 36.9,
+     "lon": 30.7,
+     "area": 5
     }
    ]
   }
  ],
  "sources_used": [
   {
-   "name": "NWS San Francisco",
-   "url": "https://www.weather.gov/mtr/"
-  },
-  {
-   "name": "NWS forecast, Pacifica",
-   "url": "https://forecast.weather.gov/MapClick.php?lat=37.6138&lon=-122.4869"
+   "name": "NWS San Francisco forecast discussion",
+   "url": "https://forecast.weather.gov/product.php?site=MTR&issuedby=MTR&product=AFD"
   },
   {
    "name": "Caltrans QuickMap",
    "url": "https://quickmap.dot.ca.gov/"
   },
   {
+   "name": "NWS forecast, Pacifica",
+   "url": "https://forecast.weather.gov/MapClick.php?lat=37.6138&lon=-122.4869"
+  },
+  {
    "name": "KQED",
    "url": "https://www.kqed.org/news/12110854/another-storm-is-hitting-the-bay-area-heres-how-it-could-affect-thanksgiving-travel"
+  },
+  {
+   "name": "Al Jazeera",
+   "url": "https://www.aljazeera.com/news/"
+  },
+  {
+   "name": "BBC News",
+   "url": "https://www.bbc.com/news/world"
   },
   {
    "name": "USGS",
@@ -519,31 +475,7 @@
   },
   {
    "name": "DreamHost status",
-   "url": "https://www.dreamhoststatus.com/"
-  },
-  {
-   "name": "Al Jazeera",
-   "url": "https://www.aljazeera.com/"
-  },
-  {
-   "name": "CNN",
-   "url": "https://www.cnn.com/"
-  },
-  {
-   "name": "NBC News",
-   "url": "https://www.nbcnews.com/"
-  },
-  {
-   "name": "SFGate/AP",
-   "url": "https://www.sfgate.com/"
-  },
-  {
-   "name": "BBC",
-   "url": "https://www.bbc.co.uk/news/world"
-  },
-  {
-   "name": "CISA KEV",
-   "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+   "url": "https://status.dreamhost.com/"
   }
  ]
 }
