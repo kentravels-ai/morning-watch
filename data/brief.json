@@ -1,41 +1,42 @@
 {
  "schema": 1,
- "date": "2026-11-22",
- "generated_at": "2026-11-22T04:45:00-08:00",
+ "date": "2026-11-23",
+ "generated_at": "2026-11-23T04:50:00-08:00",
  "overall": {
   "level": "serious",
-  "headline": "Big surf and coastal flooding are forecast for Pacifica Tuesday to Thursday; the Gulf and Ukraine fronts stay hot.",
-  "bluf": "Prepare for the coast this weekend: NWS forecasts 14–24 ft surf and 'major to extreme' coastal flooding Tuesday through Thursday, with a storm and the highest tides of the year. Today and Monday look quiet and mostly dry. Abroad, Iran's attacks on Gulf shipping and states continue, and Russia struck Ukraine and Poland's border region on Friday."
+  "headline": "Pacifica's coast faces 20–30 ft surf and flooding Wednesday; Ukraine and Gulf shipping attacks continue.",
+  "bluf": "One ACTION today: prepare before Tuesday's storm. NWS now expects 20–30 ft waves at Pacific beaches Wednesday, with the year's highest tides Tue–Thu and rain from Tuesday afternoon. Monday is dry and no FEMA emergency alerts cover Pacifica. Abroad, Russia killed at least 15 near Kyiv, Ukraine struck Russian ships off Libya, and tankers near Oman keep getting hit."
  },
  "status": {
   "local": {
    "level": "strained",
-   "note": "Big surf and flooding forecast Tue–Thu."
+   "note": "20–30 ft surf, flooding Tue–Thu."
   },
   "regional": {
    "level": "strained",
-   "note": "Bay storm Tue; stocks in correction."
+   "note": "Bay flood warning; stocks sold off Friday; FBI probe."
   },
   "world": {
    "level": "serious",
-   "note": "Gulf shipping attacks; Ukraine war goes on."
+   "note": "Gulf tanker attacks; Russia–Ukraine strikes widen."
   }
  },
  "changes": [
-  "Upgraded: NWS's 3:56 AM forecast discussion now calls for 14–18 ft surf Tuesday and 18–24 ft Wednesday, with 'major to extreme' coastal flooding. Yesterday this was a WATCH; it is now an ACTION item.",
-  "New: Coastal Flood Warning for the San Francisco Bay shoreline starts Mon 6 AM and runs to Thu 4 PM (NWS).",
-  "New: A Russia-bound cargo ship hit by two drones is still burning off Finland; its crew was evacuated (Al Jazeera, BBC).",
-  "New: Bahrain blames an Iranian attack for an industrial fire; two tankers were reported hit near Oman Saturday (Al Jazeera).",
-  "New: A Mexican cartel leader on the FBI's Ten Most Wanted list was captured in a firefight that left 11 dead (NPR, BBC, Guardian).",
-  "Dropped as stale: Palisades verdict, Timor-Leste and Peru quakes, Nepal visit, Iraq power-plant fire, CISA additions, Naia sorbetto recall (older than 36 hours; no local effect)."
+  "Raised: NWS (3:26 AM Monday) now expects 20–30 ft waves at Pacific beaches Wednesday, up from 18–24 ft yesterday. Rain is now forecast to start Tuesday afternoon (about 4 PM for Pacifica).",
+  "New: Ukraine confirmed Monday it struck two Russian ships off Benghazi, Libya; Libyan officials say the corvette was heavily damaged. A Russian cargo ship was also hit Saturday in the Gulf of Finland.",
+  "New: Russian strikes killed at least 15 in Ukraine's Kyiv region, 11 of them in Dymer. Putin has promised a 'much more painful' response to Ukrainian attacks on the Kerch Bridge.",
+  "New: UN COP31 climate talks ended Monday with no deal (BBC).",
+  "New: DreamHost reports phpMyAdmin and its legacy API are unavailable (posted late Sunday).",
+  "Update: CNN, AP and NBC say the FBI is investigating an apparent breach of its NCIC criminal-records database; the FBI has not confirmed it.",
+  "Dropped as stale: Mexico cartel arrest, Poland missile reports, Finland ship fire follow-up, Hwy 1 Half Moon Bay paving (ends Tuesday, minor)."
  ],
  "coming_up": [
   {
    "when": "Mon 6 AM – Thu 4 PM",
    "date": "2026-11-23",
    "level": "california",
-   "title": "Coastal Flood Warning for SF Bay shoreline",
-   "detail": "NWS: major to extreme flooding possible around Thanksgiving week high tides; Pacific coast advisory runs through Thursday.",
+   "title": "Coastal Flood Warning for SF Bay shoreline; Advisory on Pacific coast",
+   "detail": "King tides plus up to 1.6 ft of storm surge push water levels near records.",
    "sources": [
     {
      "name": "NWS San Francisco forecast discussion",
@@ -47,8 +48,8 @@
    "when": "Mon–Tue",
    "date": "2026-11-23",
    "level": "pacifica",
-   "title": "Hwy 1 one-way work at Montara and Pescadero; paving at Half Moon Bay",
-   "detail": "Caltrans lists drainage work at Montara Nov 23–24, slide repair near Pescadero Nov 23–24, and paving at Half Moon Bay through Nov 25.",
+   "title": "Hwy 1 one-way work at Montara and Pescadero",
+   "detail": "Caltrans lists drainage work at Montara and slide repair near Pescadero Nov 23–24.",
    "sources": [
     {
      "name": "Caltrans QuickMap",
@@ -57,11 +58,11 @@
    ]
   },
   {
-   "when": "Tue, rain after ~10 AM",
+   "when": "Tue; rain from about 4 PM",
    "date": "2026-11-24",
    "level": "pacifica",
-   "title": "Storm arrives; 14–18 ft surf; SF high tide 10:05 AM",
-   "detail": "NWS: heavy rain and rough seas spread in Tuesday into Wednesday; timing could slip about 6 hours. Pacifica forecast: 90% rain, 0.75–1 inch.",
+   "title": "Storm arrives; SF high tide 10:05 AM (8.4 ft)",
+   "detail": "Pacifica forecast: rain after 4 PM, gusts to 31 mph, 0.25–0.5 in Tuesday and 0.75–1 in Tuesday night.",
    "sources": [
     {
      "name": "NWS San Francisco forecast discussion",
@@ -70,32 +71,36 @@
    ]
   },
   {
-   "when": "Wed, high tide 10:49 AM",
+   "when": "Wed 12 AM – Thu 12 AM",
    "date": "2026-11-25",
    "level": "pacifica",
-   "title": "High surf event: 18–24 ft waves",
-   "detail": "NWS expects the biggest waves Wednesday, 2.8 ft above normal tide at SF, with sneaker waves and rip currents.",
+   "title": "High Surf Warning; 20–30 ft waves; high tide 10:49 AM (8.6 ft)",
+   "detail": "The highest tide of the stretch, 2.8 ft above normal at the SF gauge, with sneaker waves and rip currents.",
    "sources": [
     {
      "name": "NWS San Francisco forecast discussion",
      "url": "https://forecast.weather.gov/product.php?site=MTR&issuedby=MTR&product=AFD"
+    },
+    {
+     "name": "NWS alerts, Pacifica",
+     "url": "https://alerts.weather.gov/search?point=37.6138,-122.4869"
     }
    ]
   },
   {
-   "when": "Thu Nov 26",
+   "when": "Thu",
    "date": "2026-11-26",
    "level": "california",
-   "title": "Thanksgiving: drizzle ends, coastal flood products expire 4 PM",
-   "detail": "KQED, citing NWS, says rain should taper by Thanksgiving; another westerly swell arrives Fri–Sat.",
+   "title": "Thanksgiving: drying; coastal flood products end 4 PM",
+   "detail": "NWS expects dry weather Thursday and Friday, but hazardous beach conditions last through at least Sunday from another westerly swell.",
    "sources": [
+    {
+     "name": "NWS San Francisco forecast discussion",
+     "url": "https://forecast.weather.gov/product.php?site=MTR&issuedby=MTR&product=AFD"
+    },
     {
      "name": "KQED",
      "url": "https://www.kqed.org/news/12110854/another-storm-is-hitting-the-bay-area-heres-how-it-could-affect-thanksgiving-travel"
-    },
-    {
-     "name": "NWS San Francisco forecast discussion",
-     "url": "https://forecast.weather.gov/product.php?site=MTR&issuedby=MTR&product=AFD"
     }
    ]
   }
@@ -104,14 +109,14 @@
   {
    "id": "alerts",
    "status": "action",
-   "summary": "Major surf and coastal flooding forecast Tue–Thu; prepare Monday.",
+   "summary": "20–30 ft surf and coastal flooding Tue–Thu; prepare today.",
    "items": [
     {
      "id": "alerts-surf-flood",
      "tag": "ACTION",
      "severity": "hazard",
-     "title": "Big surf and major coastal flooding forecast Tue–Thu",
-     "detail": "NWS says breaking waves of 14–18 ft Tuesday and 18–24 ft Wednesday, with sneaker waves, strong rip currents and a storm surge of up to 1.6 ft on the highest tides of the year. A Coastal Flood Advisory already covers the Peninsula coast through Thursday; NWS calls the flooding impacts 'major to extreme'. No FEMA emergency alerts cover Pacifica today.",
+     "title": "Big surf and coastal flooding Tue–Thu: prepare today",
+     "detail": "NWS (3:26 AM Monday) forecasts 20–30 ft waves at Pacific beaches Wednesday, king tides with up to 1.6 ft of storm surge, and rain from Tuesday afternoon. A Coastal Flood Advisory covers the Peninsula coast through Thursday 4 PM and a High Surf Warning runs Wed 12 AM to Thu 12 AM. No FEMA emergency alerts cover Pacifica today.",
      "trend": "rising",
      "confidence": "confirmed",
      "topic": "environment",
@@ -121,62 +126,82 @@
        "url": "https://forecast.weather.gov/product.php?site=MTR&issuedby=MTR&product=AFD"
       },
       {
-       "name": "KQED",
-       "url": "https://www.kqed.org/news/12110854/another-storm-is-hitting-the-bay-area-heres-how-it-could-affect-thanksgiving-travel"
+       "name": "NWS alerts, Pacifica",
+       "url": "https://alerts.weather.gov/search?point=37.6138,-122.4869"
       },
       {
        "name": "FEMA IPAWS",
        "url": "https://www.fema.gov/openfema-data-page/ipaws-archived-alerts-v1"
       }
      ],
-     "action": "By Monday night: move cars, bins and stored items away from the shoreline and low spots, clear storm drains, charge phones and power banks, and fill the gas tank. Stay off beaches, piers and bluff edges Tue–Thu; don't drive through water.",
-     "when": "Mon prep; hazard Tue–Thu (peak Tue–Wed ~10 AM high tides)",
+     "action": "Today: move cars, bins and stored items away from the shoreline and low spots, clear storm drains, charge phones and power banks, and fill the gas tank. Tue–Thu: stay off beaches, piers, jetties and bluff edges; don't drive through water.",
+     "when": "Prep Mon; high tides ~10 AM Tue–Thu; warning Wed",
      "where": "Pacifica coast, Rockaway, Sharp Park, Linda Mar, low-lying streets",
      "lat": 37.61,
-     "lon": -122.49,
+     "lon": -122.5,
      "area": 2
     }
    ]
   },
   {
    "id": "utilities",
-   "status": "clear",
-   "summary": "No Pacifica outage found; no DreamHost incident in the window.",
-   "items": []
+   "status": "watch",
+   "summary": "No Pacifica power or water outage found; DreamHost database tools down.",
+   "items": [
+    {
+     "id": "util-dreamhost-phpmyadmin",
+     "tag": "WATCH",
+     "severity": "low",
+     "title": "DreamHost: phpMyAdmin and legacy API unavailable",
+     "detail": "DreamHost posted late Sunday that phpMyAdmin and its legacy API are unavailable, with updates to follow. Websites themselves are not reported down; this affects managing databases for thetins.com sites from the panel.",
+     "trend": "new",
+     "confidence": "confirmed",
+     "topic": "infrastructure",
+     "sources": [
+      {
+       "name": "DreamHost status",
+       "url": "https://www.dreamhoststatus.com/"
+      }
+     ],
+     "action": "If a database must be changed before it is restored, use MySQL Workbench or SSH as DreamHost suggests; check the status page for updates.",
+     "when": "Posted Sun night; ongoing",
+     "where": "DreamHost shared hosting"
+    }
+   ]
   },
   {
    "id": "roads",
    "status": "watch",
-   "summary": "Hwy 1 work south of Pacifica; storm may close coastal roads Tue–Wed.",
+   "summary": "Hwy 1 work south of Pacifica; wave and flood closures possible Tue–Thu.",
    "items": [
     {
      "id": "roads-hwy1-work",
      "tag": "WATCH",
      "severity": "low",
-     "title": "Hwy 1 work at Montara, Pescadero and Half Moon Bay",
-     "detail": "Caltrans lists lane closures for paving at Half Moon Bay through Nov 25, drainage work at Montara and slide repair near Pescadero on Nov 23–24. No closure inside Pacifica is listed, but big surf and flooding could close low coastal roads Tue–Wed.",
+     "title": "Hwy 1 one-way work at Montara and Pescadero",
+     "detail": "Caltrans lists one-way traffic for drainage work at Montara and slide repair near Pescadero on Nov 23–24, plus paving at Half Moon Bay. Nothing is listed inside Pacifica.",
      "trend": "steady",
      "confidence": "confirmed",
-     "topic": "infrastructure",
+     "topic": "public-safety",
      "sources": [
       {
        "name": "Caltrans QuickMap",
        "url": "https://quickmap.dot.ca.gov/"
       }
      ],
-     "action": "Check QuickMap before driving south; if Hwy 1 floods or closes, use Hwy 35 or I-280 and allow extra time.",
-     "when": "Now – Wed Nov 25",
-     "where": "Hwy 1, Montara to Pescadero",
-     "lat": 37.54,
+     "action": "If the surf worsens, expect low-lying coastal roads (Beach Blvd, Hwy 1 near Rockaway) to close; check QuickMap before leaving and allow extra time.",
+     "when": "Mon–Tue",
+     "where": "Hwy 1, Montara to Half Moon Bay",
+     "lat": 37.55,
      "lon": -122.51,
-     "area": 2
+     "area": 1
     }
    ]
   },
   {
    "id": "health",
    "status": "clear",
-   "summary": "Air quality good (AQI 49); no local health advisories found.",
+   "summary": "Air quality good (AQI 47); no local health advisories found.",
    "items": []
   },
   {
@@ -188,8 +213,8 @@
  ],
  "readiness": {
   "default": {
-   "task": "Charge phones and power banks and check flashlight batteries before Tuesday's storm.",
-   "why": "Heavy rain, surf and wind from Tuesday can bring brief outages and road closures."
+   "task": "Charge phones and power banks and check flashlight batteries before Tuesday afternoon's storm.",
+   "why": "Heavy rain, wind gusts to 31 mph and big surf can bring short outages and road closures."
   },
   "3d": {
    "task": "Check you have three days of drinking water, about 1 gallon per person per day.",
@@ -199,20 +224,20 @@
  "ladder": [
   {
    "level": "pacifica",
-   "summary": "Quiet through Monday; the surf and storm are the story.",
+   "summary": "Dry Monday, then surf, tides and rain from Tuesday.",
    "items": []
   },
   {
    "level": "california",
-   "summary": "Bay storm Tuesday; Bay shoreline flood warning from Monday.",
+   "summary": "Bay shoreline flood warning from Monday; storm Tuesday.",
    "items": [
     {
      "id": "ca-bay-flood-warning",
      "tag": "WATCH",
      "severity": "hazard",
      "title": "Coastal Flood Warning for SF Bay shoreline Mon–Thu",
-     "detail": "NWS upgrades the Bay advisory to a warning at 6 AM Monday, with high tide about 2.6–2.8 ft above normal at the SF gauge Tue–Wed. KQED expects disruption at airports, roads, trains and ferries for Thanksgiving travelers.",
-     "trend": "rising",
+     "detail": "NWS has a Coastal Flood Warning for the Bay shoreline until Thursday 4 PM, with high tide 2.6–2.8 ft above normal at the SF gauge Tue–Wed. KQED says flooding could disrupt airports, roads, trains and ferries in the Thanksgiving rush.",
+     "trend": "steady",
      "confidence": "confirmed",
      "topic": "environment",
      "sources": [
@@ -225,10 +250,10 @@
        "url": "https://www.kqed.org/news/12110854/another-storm-is-hitting-the-bay-area-heres-how-it-could-affect-thanksgiving-travel"
       }
      ],
-     "action": "If you travel through SFO, Oakland or bayfront roads Tue–Wed, check flight and road status first and leave extra time.",
+     "action": "If you travel to SFO, the Bay shoreline or the East Bay Tue–Thu, allow extra time and check flight and road status first.",
      "when": "Mon 6 AM – Thu 4 PM",
      "where": "SF Bay shoreline",
-     "lat": 37.7,
+     "lat": 37.65,
      "lon": -122.3,
      "area": 3
     }
@@ -236,153 +261,155 @@
   },
   {
    "level": "usa",
-   "summary": "Stocks in correction; FBI database breach reported.",
+   "summary": "Stocks fell sharply Friday; FBI reportedly probing a records-database breach.",
    "items": [
     {
      "id": "usa-markets",
      "tag": "WATCH",
      "severity": "watch",
-     "title": "S&P 500 closed Friday in correction after 3.7% drop; VIX near 36",
-     "detail": "The index ended at 6,910, down 8.6% in five days, after an AI-stock sell-off; markets are closed until Monday. Oil is calmer: Brent fell 2.2% to about $90 and WTI is near $83.",
+     "title": "S&P 500 fell 3.7% Friday in an AI-stock sell-off",
+     "detail": "The S&P 500 closed near 6,910, down 8.6% in five days, and the Nasdaq erased its 2026 gains. The VIX reads about 30 in the latest data, and futures rose early Monday. Brent oil is near $89 and gold is up 3%.",
      "trend": "steady",
      "confidence": "confirmed",
      "topic": "economy",
      "sources": [
       {
-       "name": "Market data feed",
-       "url": "https://finance.yahoo.com/quote/%5EGSPC/"
+       "name": "BBC News",
+       "url": "https://www.bbc.co.uk/news/articles/c6808ym10vzgo"
       },
       {
-       "name": "BBC News",
-       "url": "https://www.bbc.com/news/us"
+       "name": "The Guardian",
+       "url": "https://www.theguardian.com/business/2026/nov/20/global-stock-markets-slump-anthropic-ipo-ai-sell-off"
       }
      ],
-     "action": "No household step needed; if you hold investments, avoid reacting to Monday's open and check retirement plan statements calmly.",
-     "when": "Mon open",
+     "action": "Nothing to do for the household; if you hold investments, avoid reacting to one day's move.",
+     "when": "Mon market open",
      "where": "US markets"
     },
     {
      "id": "usa-fbi-ncic",
      "tag": "WATCH",
      "severity": "watch",
-     "title": "FBI reportedly investigating apparent hack of its criminal database",
-     "detail": "BBC reported Sunday that the bureau is probing an apparent breach of a criminal-records system; the FBI has not confirmed details. I could not find the original reporting, so treat the scope as unknown.",
-     "trend": "steady",
+     "title": "FBI reportedly investigating breach of its NCIC criminal database",
+     "detail": "CNN, AP and NBC, citing people briefed on the probe, report an apparent intrusion into the database police use for warrant and records checks. The FBI has not confirmed it, and what was taken is unclear.",
+     "trend": "new",
      "confidence": "likely",
      "topic": "cyber",
      "sources": [
       {
-       "name": "BBC News",
-       "url": "https://www.bbc.com/news/world"
+       "name": "ABC News (Australia)",
+       "url": "https://www.abc.net.au/news/2026-11-22/fbi-database-hacked-according-to-media-outlets/107413682"
       }
      ],
-     "action": "Nothing to do; if you get unexpected notices about your records, report them to the FBI at ic3.gov.",
+     "action": "No household action; watch for an FBI statement or local police notices about delayed record checks.",
+     "when": "Reported Fri–Sun",
      "where": "US"
     }
    ]
   },
   {
    "level": "west",
-   "summary": "Russia strikes Ukraine again; ship hit by drones off Finland; cartel boss captured in Mexico.",
+   "summary": "Russia hits Kyiv region; Ukraine strikes Russian ships off Libya and Finland.",
    "items": [
     {
-     "id": "west-ukraine-strikes",
+     "id": "west-kyiv-strikes",
      "tag": "WATCH",
      "severity": "critical",
-     "title": "Russian strikes on Ukraine continue; missiles also fell in Poland",
-     "detail": "Al Jazeera says a Russian strike on Kryvyi Rih killed two and wounded 60 on Saturday, and a Russian missile hit Lviv on Sunday. Missiles landed in southeast Poland on Friday; I found no report today of NATO consultations.",
-     "trend": "steady",
+     "title": "Russian strikes kill at least 15 in Kyiv region",
+     "detail": "Al Jazeera reports 11 dead in Dymer, 3 at a Vyshneve supermarket and 1 in Bila Tserkva, with rescuers still searching rubble. Putin promised a 'much more painful' response on Thursday after Ukrainian strikes on the Kerch Bridge.",
+     "trend": "rising",
      "confidence": "confirmed",
      "topic": "conflict",
      "sources": [
       {
        "name": "Al Jazeera",
-       "url": "https://www.aljazeera.com/news/"
+       "url": "https://www.aljazeera.com/news/2026/11/23/death-toll-rises-after-deadly-russian-attacks-on-ukraine"
       },
-      {
-       "name": "BBC News",
-       "url": "https://www.bbc.com/news/world"
-      }
-     ],
-     "action": "No household step; watch for any NATO Article 4 request.",
-     "when": "Nov 21–22",
-     "where": "Ukraine, SE Poland",
-     "lat": 49.8,
-     "lon": 24.0,
-     "area": 4
-    },
-    {
-     "id": "west-finland-ship",
-     "tag": "INFO",
-     "severity": "watch",
-     "title": "Russia-bound cargo ship burning after drone strike off Finland",
-     "detail": "Finnish authorities say two drones hit a cargo ship linked to Russia's armed forces; the crew was evacuated and the fire was still burning Sunday. Who launched the drones has not been confirmed.",
-     "trend": "new",
-     "confidence": "likely",
-     "topic": "conflict",
-     "sources": [
-      {
-       "name": "Al Jazeera",
-       "url": "https://www.aljazeera.com/news/"
-      },
-      {
-       "name": "BBC News",
-       "url": "https://www.bbc.com/news/world"
-      }
-     ],
-     "when": "Sat–Sun",
-     "where": "Gulf of Finland",
-     "lat": 60.0,
-     "lon": 27.0,
-     "area": 2
-    },
-    {
-     "id": "west-mexico-capture",
-     "tag": "INFO",
-     "severity": "elevated",
-     "title": "Mexican cartel leader on FBI Ten Most Wanted list captured; 11 dead",
-     "detail": "NPR says the leader was captured in northern Mexico after a firefight; the Guardian identifies him as 'El Chapo Isidro'. Retaliatory violence is possible in Sinaloa.",
-     "trend": "new",
-     "confidence": "confirmed",
-     "topic": "public-safety",
-     "sources": [
       {
        "name": "NPR",
-       "url": "https://www.npr.org/sections/world/"
+       "url": "https://www.npr.org/2026/11/22/nx-s1-6050236/ukraine-war-spilling-into-nato-territory"
+      }
+     ],
+     "action": "No household action; watch for escalation in NATO countries (see NPR on the war spilling over).",
+     "when": "Sun–Mon",
+     "where": "Dymer, Kyiv region, Ukraine",
+     "lat": 50.8,
+     "lon": 30.3,
+     "area": 3
+    },
+    {
+     "id": "west-libya-ships",
+     "tag": "WATCH",
+     "severity": "elevated",
+     "title": "Ukraine says it struck two Russian ships off Libya",
+     "detail": "Zelenskyy confirmed Monday that Ukrainian naval drones hit the corvette Merkury and a cargo ship at Benghazi on Sunday; Libyan officials say the warship was heavily damaged, not sunk. A Russian cargo ship was also hit Saturday in the Gulf of Finland, which Finland says Ukraine likely did. Libya's east government and the UN mission called for an investigation.",
+     "trend": "new",
+     "confidence": "confirmed",
+     "topic": "conflict",
+     "sources": [
+      {
+       "name": "Al Jazeera",
+       "url": "https://www.aljazeera.com/news/2026/11/23/russian-ships-hit-by-drones-off-libya-coast-what-do-we-know"
       },
       {
        "name": "The Guardian",
-       "url": "https://www.theguardian.com/world"
+       "url": "https://www.theguardian.com/world/2026/nov/23/ukraine-naval-drones-strike-russian-warship-libya"
+      },
+      {
+       "name": "BBC News",
+       "url": "https://www.bbc.co.uk/news/articles/cj752ddve27ko"
       }
      ],
-     "when": "Sat Nov 21",
-     "where": "Northern Mexico",
-     "lat": 25.8,
-     "lon": -108.5,
-     "area": 3
+     "action": "No household action; watch for Russian retaliation or shipping disruptions in the Mediterranean and Baltic.",
+     "when": "Sat–Mon",
+     "where": "Benghazi, Libya; Gulf of Finland",
+     "lat": 32.12,
+     "lon": 20.07,
+     "area": 4
+    },
+    {
+     "id": "west-lebanon-pullback",
+     "tag": "INFO",
+     "severity": "low",
+     "title": "Israel pulls back from some south Lebanon villages",
+     "detail": "NPR reports the Lebanese army taking over a pilot village as Israeli forces leave; returning residents find homes wrecked.",
+     "trend": "easing",
+     "confidence": "confirmed",
+     "topic": "conflict",
+     "sources": [
+      {
+       "name": "NPR",
+       "url": "https://www.npr.org/2026/11/22/nx-s1-6050236/ukraine-war-spilling-into-nato-territory"
+      }
+     ],
+     "when": "Sat–Sun",
+     "where": "Southern Lebanon",
+     "lat": 33.37,
+     "lon": 35.48,
+     "area": 2
     }
    ]
   },
   {
    "level": "asia",
-   "summary": "No major security news; deadly factory fire in Indonesia.",
+   "summary": "No major security news; factory fire in Indonesia.",
    "items": [
     {
      "id": "asia-indonesia-fire",
      "tag": "INFO",
      "severity": "low",
-     "title": "Candy factory fire in Indonesia: 3 dead, dozens missing",
-     "detail": "BBC and the Guardian report the fire Sunday; the cause is not stated and rescue work continues.",
-     "trend": "new",
+     "title": "Confectionery factory fire in Indonesia: 3 dead, dozens missing",
+     "detail": "BBC reported Sunday that at least three died and many more are feared dead. No newer reports found; cause not stated.",
+     "trend": "steady",
      "confidence": "confirmed",
      "topic": "public-safety",
      "sources": [
       {
        "name": "BBC News",
-       "url": "https://www.bbc.com/news/world"
+       "url": "https://www.bbc.com/news/world/asia"
       }
      ],
-     "when": "Sun Nov 22",
+     "when": "Sun",
      "where": "Indonesia",
      "lat": -6.2,
      "lon": 106.8,
@@ -392,50 +419,50 @@
   },
   {
    "level": "world",
-   "summary": "Iran's attacks on Gulf shipping and states continue; no deal in sight.",
+   "summary": "Tankers keep getting hit near Oman; climate talks fail.",
    "items": [
     {
      "id": "world-hormuz",
      "tag": "WATCH",
      "severity": "elevated",
-     "title": "Iran escalates Gulf attacks: tankers hit near Oman, Bahrain fire",
-     "detail": "Al Jazeera reports two tanker incidents near Oman on Saturday (Iran says one hit a mine) and Bahrain blames an Iranian attack for an industrial fire. Talks to end the war remain stalled; oil is lower this week, so no price stress yet.",
+     "title": "Tanker attacks near Hormuz continue; Iran threatens Gulf oil sites",
+     "detail": "A maritime information centre counts seven tankers hit, including three near Oman on Nov 20–21, and Bahrain says it intercepted Iranian attacks. Iranian-linked media threaten Gulf oil facilities if a tanker convoy is blocked by the US naval blockade, which is a threat, not an event.",
      "trend": "steady",
      "confidence": "confirmed",
      "topic": "conflict",
      "sources": [
       {
-       "name": "Al Jazeera",
-       "url": "https://www.aljazeera.com/news/"
+       "name": "Gulf News",
+       "url": "https://gulfnews.com/world/mena/middle-east-conflict-bahrain-intercepts-iranian-attacks-as-tehran-prepares-14-oil-tankers-to-breach-us-naval-blockade-1.500756662"
       }
      ],
-     "action": "If gasoline or shipping prices jump, top off the tank and delay non-urgent travel.",
-     "when": "Nov 21–22",
-     "where": "Strait of Hormuz, Bahrain",
-     "lat": 26.5,
+     "action": "If it worsens, expect fuel and shipping cost swings; keep your car's tank above half.",
+     "when": "Nov 20–23",
+     "where": "Strait of Hormuz, off Oman",
+     "lat": 26.4,
      "lon": 56.3,
-     "area": 5
+     "area": 4
     },
     {
      "id": "world-cop31",
      "tag": "INFO",
      "severity": "low",
-     "title": "UN climate talks run into overtime; draft drops fossil-fuel language",
-     "detail": "AP via SFGate says negotiators are in a second day of overtime, with Turkey's final draft omitting fossil fuels.",
-     "trend": "steady",
-     "confidence": "likely",
+     "title": "UN COP31 climate talks end with no deal",
+     "detail": "BBC says the longest-ever UN climate talks closed Monday without agreement, with fossil-fuel language the main split.",
+     "trend": "new",
+     "confidence": "confirmed",
      "topic": "political",
      "sources": [
       {
-       "name": "SFGate (AP)",
-       "url": "https://www.sfgate.com/"
+       "name": "BBC News",
+       "url": "https://www.bbc.com/news/world"
       }
      ],
-     "when": "Sun Nov 22",
-     "where": "COP31, Antalya",
+     "when": "Mon",
+     "where": "Antalya, Turkey",
      "lat": 36.9,
      "lon": 30.7,
-     "area": 5
+     "area": 3
     }
    ]
   }
@@ -446,28 +473,16 @@
    "url": "https://forecast.weather.gov/product.php?site=MTR&issuedby=MTR&product=AFD"
   },
   {
-   "name": "Caltrans QuickMap",
-   "url": "https://quickmap.dot.ca.gov/"
-  },
-  {
-   "name": "NWS forecast, Pacifica",
-   "url": "https://forecast.weather.gov/MapClick.php?lat=37.6138&lon=-122.4869"
+   "name": "NWS alerts, Pacifica",
+   "url": "https://alerts.weather.gov/search?point=37.6138,-122.4869"
   },
   {
    "name": "KQED",
    "url": "https://www.kqed.org/news/12110854/another-storm-is-hitting-the-bay-area-heres-how-it-could-affect-thanksgiving-travel"
   },
   {
-   "name": "Al Jazeera",
-   "url": "https://www.aljazeera.com/news/"
-  },
-  {
-   "name": "BBC News",
-   "url": "https://www.bbc.com/news/world"
-  },
-  {
-   "name": "USGS",
-   "url": "https://earthquake.usgs.gov/"
+   "name": "Caltrans QuickMap",
+   "url": "https://quickmap.dot.ca.gov/"
   },
   {
    "name": "FEMA IPAWS",
@@ -475,7 +490,43 @@
   },
   {
    "name": "DreamHost status",
-   "url": "https://status.dreamhost.com/"
+   "url": "https://www.dreamhoststatus.com/"
+  },
+  {
+   "name": "Al Jazeera",
+   "url": "https://www.aljazeera.com/news/2026/11/23/russian-ships-hit-by-drones-off-libya-coast-what-do-we-know"
+  },
+  {
+   "name": "Al Jazeera",
+   "url": "https://www.aljazeera.com/news/2026/11/23/death-toll-rises-after-deadly-russian-attacks-on-ukraine"
+  },
+  {
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/world/2026/nov/23/ukraine-naval-drones-strike-russian-warship-libya"
+  },
+  {
+   "name": "BBC News",
+   "url": "https://www.bbc.co.uk/news/articles/c6808ym10vzgo"
+  },
+  {
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/business/2026/nov/20/global-stock-markets-slump-anthropic-ipo-ai-sell-off"
+  },
+  {
+   "name": "NPR",
+   "url": "https://www.npr.org/2026/11/22/nx-s1-6050236/ukraine-war-spilling-into-nato-territory"
+  },
+  {
+   "name": "ABC News (Australia)",
+   "url": "https://www.abc.net.au/news/2026-11-22/fbi-database-hacked-according-to-media-outlets/107413682"
+  },
+  {
+   "name": "Gulf News",
+   "url": "https://gulfnews.com/world/mena/middle-east-conflict-bahrain-intercepts-iranian-attacks-as-tehran-prepares-14-oil-tankers-to-breach-us-naval-blockade-1.500756662"
+  },
+  {
+   "name": "USGS",
+   "url": "https://earthquake.usgs.gov/"
   }
  ]
 }
