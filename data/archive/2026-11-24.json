@@ -1,0 +1,575 @@
+{
+ "schema": 1,
+ "date": "2026-11-24",
+ "generated_at": "2026-11-24T04:45:00-08:00",
+ "overall": {
+  "level": "serious",
+  "headline": "Storm and 20–30 ft surf reach Pacifica tonight and Wednesday; Russia–Ukraine war keeps widening.",
+  "bluf": "One ACTION today: finish storm and surf preparations before rain arrives this evening. NWS now has a High Surf Warning from midnight tonight through Wednesday night and a Coastal Flood Warning for the Pacific coast 6 AM–4 PM Wednesday. No FEMA emergency alerts cover Pacifica. Abroad, German media report Russia may launch a nuclear-armed satellite (unverified), and Gulf shipping stays tense."
+ },
+ "status": {
+  "local": {
+   "level": "strained",
+   "note": "Rain tonight; surf warning and coastal flood Wed."
+  },
+  "regional": {
+   "level": "strained",
+   "note": "Bay flood warning to Thu; Thanksgiving storms."
+  },
+  "world": {
+   "level": "serious",
+   "note": "Russia–Ukraine spillover; Hormuz blockade standoff."
+  }
+ },
+ "changes": [
+  "Updated: NWS (3:43 AM Tuesday) now says the High Surf Warning runs midnight Tuesday night to midnight Wednesday night, and the Pacific coast Coastal Flood Warning (6 AM–4 PM Wednesday) is new for Pacifica's coast. Rain now arrives Tuesday evening, later than the 4 PM expected yesterday, with gusts to 40 mph.",
+  "New: German media (Süddeutsche, WDR, NDR) report Russia plans to launch a nuclear-armed satellite within weeks; NATO's Rutte vowed to defend space. Unverified; Moscow denies it.",
+  "New: South Korea issued a brief air raid alert for Ulleung Island this morning when Russian aircraft entered its air defence zone; no airspace violation.",
+  "New: A gas-related blast at a Hanoi restaurant killed at least six; Iraq ordered a takeover of oilfields in Kurdish-held areas; a car bomb hurt more than 20 in a Colombian city (BBC).",
+  "Update: US stocks rebounded Monday (S&P 500 +4.7%) after Friday's 3.7% fall, with the VIX still near 28. Nvidia reinstated its CEO.",
+  "Update: Russian strike killed two in Zaporizhzhia Tuesday. Reports differ on the Russian ship hit off Libya: Ukraine and the Guardian say it sank; Libyan officials said it was heavily damaged.",
+  "Dropped as stale: Indonesia factory fire, Israel–Lebanon pullback, COP31 talks, Montara Monday work. The FBI database item has no new reports since Sunday."
+ ],
+ "coming_up": [
+  {
+   "when": "Tue evening – Wed late morning",
+   "date": "2026-11-24",
+   "level": "pacifica",
+   "title": "Rain arrives Tuesday evening; gusts to 40 mph",
+   "detail": "Front reaches the Bay Area after midnight; most rain ends by late Wednesday morning. Pacifica forecast: ½–¾ inch Tuesday night.",
+   "sources": [
+    {
+     "name": "NWS San Francisco forecast discussion",
+     "url": "https://forecast.weather.gov/product.php?site=MTR&issuedby=MTR&product=AFD"
+    }
+   ]
+  },
+  {
+   "when": "Wed 12 AM – Thu 12 AM",
+   "date": "2026-11-25",
+   "level": "pacifica",
+   "title": "High Surf Warning: 20–30 ft waves; Coastal Flood Warning 6 AM–4 PM",
+   "detail": "High tide about 10:49 AM, 2.7 ft above normal at the SF gauge, with sneaker waves and rip currents.",
+   "sources": [
+    {
+     "name": "NWS San Francisco forecast discussion",
+     "url": "https://forecast.weather.gov/product.php?site=MTR&issuedby=MTR&product=AFD"
+    },
+    {
+     "name": "NWS alerts, Pacifica",
+     "url": "https://alerts.weather.gov/search?point=37.6138,-122.4869"
+    }
+   ]
+  },
+  {
+   "when": "Tue–Thu",
+   "date": "2026-11-24",
+   "level": "california",
+   "title": "Coastal Flood Warning for SF and San Pablo Bay shoreline until Thu 4 PM",
+   "detail": "Daily king tides near 10–11:40 AM, up to 1.6 ft of surge included.",
+   "sources": [
+    {
+     "name": "NWS San Francisco forecast discussion",
+     "url": "https://forecast.weather.gov/product.php?site=MTR&issuedby=MTR&product=AFD"
+    }
+   ]
+  },
+  {
+   "when": "Thu",
+   "date": "2026-11-26",
+   "level": "usa",
+   "title": "Thanksgiving: dry in Pacifica, storms on both US coasts",
+   "detail": "BBC reports a major nor'easter on the East Coast and a West Coast storm threatening holiday travel. Beach hazards continue on the Pacific coast through at least Monday.",
+   "sources": [
+    {
+     "name": "NWS San Francisco forecast discussion",
+     "url": "https://forecast.weather.gov/product.php?site=MTR&issuedby=MTR&product=AFD"
+    },
+    {
+     "name": "BBC Weather",
+     "url": "https://www.bbc.co.uk/weather/articles/c5742nplemnno"
+    }
+   ]
+  }
+ ],
+ "home_front": [
+  {
+   "id": "alerts",
+   "status": "action",
+   "summary": "Rain tonight; surf warning and coastal flooding Wed; prepare today.",
+   "items": [
+    {
+     "id": "alerts-surf-flood",
+     "tag": "ACTION",
+     "severity": "hazard",
+     "title": "20–30 ft surf and coastal flooding Wednesday: finish preparing today",
+     "detail": "NWS (3:43 AM Tuesday) forecasts breaking waves of 20–30 ft at Pacific beaches Wednesday, a High Surf Warning from midnight tonight to midnight Wednesday night, and a Coastal Flood Warning for the Pacific coast 6 AM–4 PM Wednesday. Hazardous beach conditions continue through at least Monday. No FEMA emergency alerts cover Pacifica today.",
+     "action": "Today: move cars, bins and stored items away from the shoreline and low spots, clear storm drains, charge phones and power banks, and fill the gas tank. Wed–Thu: stay off beaches, piers, jetties and bluff edges and out of the water; don't drive through water or around barricades.",
+     "when": "Rain from Tue evening; warning Wed 12 AM; flood 6 AM–4 PM Wed",
+     "where": "Pacifica coast, Rockaway, Sharp Park, Linda Mar, low-lying streets",
+     "trend": "rising",
+     "confidence": "confirmed",
+     "topic": "environment",
+     "lat": 37.61,
+     "lon": -122.5,
+     "area": 2,
+     "sources": [
+      {
+       "name": "NWS San Francisco forecast discussion",
+       "url": "https://forecast.weather.gov/product.php?site=MTR&issuedby=MTR&product=AFD"
+      },
+      {
+       "name": "NWS alerts, Pacifica",
+       "url": "https://alerts.weather.gov/search?point=37.6138,-122.4869"
+      },
+      {
+       "name": "FEMA IPAWS",
+       "url": "https://www.fema.gov/openfema-data-page/ipaws-archived-alerts-v1"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "utilities",
+   "status": "watch",
+   "summary": "No Pacifica outage found; DreamHost database tools still listed down.",
+   "items": [
+    {
+     "id": "util-dreamhost-phpmyadmin",
+     "tag": "WATCH",
+     "severity": "low",
+     "title": "DreamHost: phpMyAdmin and legacy API still listed unavailable",
+     "detail": "DreamHost's incident, posted late Sunday night, lists phpMyAdmin and its legacy API as unavailable; the feed shows no resolution since. Websites are not reported down; this affects managing databases for thetins.com sites.",
+     "action": "If a database must be changed, use MySQL Workbench or SSH as DreamHost suggests; check the status page for the fix.",
+     "when": "Posted Sun night; ongoing",
+     "where": "DreamHost shared hosting",
+     "trend": "steady",
+     "confidence": "confirmed",
+     "topic": "infrastructure",
+     "sources": [
+      {
+       "name": "DreamHost status",
+       "url": "https://www.dreamhoststatus.com/"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "roads",
+   "status": "watch",
+   "summary": "Hwy 1 work south of Pacifica ends soon; wave closures possible Wed.",
+   "items": [
+    {
+     "id": "roads-coast-flood",
+     "tag": "WATCH",
+     "severity": "hazard",
+     "title": "Low coastal roads may close Wednesday; Hwy 1 work south of town",
+     "detail": "Caltrans lists Hwy 1 one-way work at Montara and Pescadero today and Half Moon Bay paving through Wednesday; nothing is listed inside Pacifica. Peninsula roads such as Hwy 82 flooded Monday in San Mateo and Millbrae.",
+     "action": "If waves or flooding worsen, expect Beach Blvd and Hwy 1 near Rockaway to close; check QuickMap before leaving and allow extra time on Wednesday morning.",
+     "when": "Today; Wed 6 AM–4 PM highest risk",
+     "where": "Hwy 1, Pacifica to Half Moon Bay",
+     "trend": "steady",
+     "confidence": "confirmed",
+     "topic": "public-safety",
+     "lat": 37.55,
+     "lon": -122.51,
+     "area": 1,
+     "sources": [
+      {
+       "name": "Caltrans QuickMap",
+       "url": "https://quickmap.dot.ca.gov/"
+      },
+      {
+       "name": "NWS San Francisco forecast discussion",
+       "url": "https://forecast.weather.gov/product.php?site=MTR&issuedby=MTR&product=AFD"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "health",
+   "status": "clear",
+   "summary": "Air quality moderate (AQI 57); no local health advisories found.",
+   "items": []
+  },
+  {
+   "id": "supplies",
+   "status": "clear",
+   "summary": "No verified local supply disruptions.",
+   "items": []
+  }
+ ],
+ "readiness": {
+  "default": {
+   "task": "Charge phones and power banks and check flashlight batteries before rain arrives this evening.",
+   "why": "Gusts to 40 mph and heavy surf can bring short outages and road closures."
+  },
+  "3d": {
+   "task": "Check you have three days of drinking water, about 1 gallon per person per day.",
+   "why": "Storm flooding can briefly disrupt services."
+  }
+ },
+ "ladder": [
+  {
+   "level": "pacifica",
+   "summary": "Quiet until rain this evening, then surf and flood warnings.",
+   "items": []
+  },
+  {
+   "level": "california",
+   "summary": "Bay flood warning to Thursday; measles cases highest in years.",
+   "items": [
+    {
+     "id": "ca-bay-flood-warning",
+     "tag": "WATCH",
+     "severity": "hazard",
+     "title": "Coastal Flood Warning for SF and San Pablo Bay shoreline until Thursday 4 PM",
+     "detail": "NWS lists daily king tides 2.0–2.7 ft above normal at the SF gauge, peaking Wednesday at 10:49 AM. Southern California beaches also have coastal flood warnings from Tuesday and Wednesday.",
+     "action": "If you travel to SFO, the Bay shoreline or the East Bay Wed–Thu, allow extra time and check flight and road status first.",
+     "when": "Through Thu 4 PM",
+     "where": "SF Bay shoreline",
+     "trend": "steady",
+     "confidence": "confirmed",
+     "topic": "environment",
+     "lat": 37.65,
+     "lon": -122.3,
+     "area": 3,
+     "sources": [
+      {
+       "name": "NWS San Francisco forecast discussion",
+       "url": "https://forecast.weather.gov/product.php?site=MTR&issuedby=MTR&product=AFD"
+      }
+     ]
+    },
+    {
+     "id": "ca-measles",
+     "tag": "INFO",
+     "severity": "low",
+     "title": "California confirms 60 measles cases this year",
+     "detail": "CalMatters (Monday) says this is more than the previous two years combined. Experts say Californians needn't panic, but vaccination matters before holiday gatherings.",
+     "when": "Reported Mon",
+     "where": "California",
+     "trend": "new",
+     "confidence": "likely",
+     "topic": "health",
+     "sources": [
+      {
+       "name": "CalMatters",
+       "url": "https://calmatters.org/health/2026/11/california-measles-after-elimination-status-loss/"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "level": "usa",
+   "summary": "Stocks rebounded Monday; storms on both coasts threaten Thanksgiving travel.",
+   "items": [
+    {
+     "id": "usa-markets",
+     "tag": "INFO",
+     "severity": "watch",
+     "title": "S&P 500 rebounds 4.7% after Friday's sell-off; VIX still elevated",
+     "detail": "The S&P 500 is near 7,237 after a 3.7% fall Friday, with the Nasdaq up 6.5% as Nvidia reinstated its CEO. The VIX is about 28, Brent oil near $87 and gold near $3,630.",
+     "when": "Mon market close",
+     "where": "US markets",
+     "trend": "easing",
+     "confidence": "confirmed",
+     "topic": "economy",
+     "sources": [
+      {
+       "name": "BBC News",
+       "url": "https://www.bbc.com/news/world/us_and_canada"
+      },
+      {
+       "name": "Market data feed",
+       "url": "https://finance.yahoo.com/quote/%5EGSPC/"
+      }
+     ]
+    },
+    {
+     "id": "usa-thanksgiving-storms",
+     "tag": "INFO",
+     "severity": "hazard",
+     "title": "Storms on both coasts threaten Thanksgiving travel",
+     "detail": "BBC reports a major nor'easter on the East Coast and a storm on the West Coast. Check flights and roads if you or family travel this week.",
+     "when": "Tue–Thu",
+     "where": "US East and West coasts",
+     "trend": "new",
+     "confidence": "likely",
+     "topic": "environment",
+     "sources": [
+      {
+       "name": "BBC Weather",
+       "url": "https://www.bbc.co.uk/weather/articles/c5742nplemnno"
+      }
+     ]
+    },
+    {
+     "id": "usa-fbi-ncic",
+     "tag": "INFO",
+     "severity": "watch",
+     "title": "FBI database breach reports: no new reports since Sunday",
+     "detail": "No new reports since Nov 22. CNN, AP and NBC had said the FBI was investigating an apparent NCIC intrusion; the FBI has not confirmed it, and I found no FBI statement.",
+     "when": "Reported Fri–Sun",
+     "where": "US",
+     "trend": "steady",
+     "confidence": "likely",
+     "topic": "cyber",
+     "sources": [
+      {
+       "name": "ABC News (Australia)",
+       "url": "https://www.abc.net.au/news/2026-11-22/fbi-database-hacked-according-to-media-outlets/107413682"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "level": "west",
+   "summary": "Reported Russian nuclear satellite plan; Ukraine war spreading.",
+   "items": [
+    {
+     "id": "west-nuclear-satellite",
+     "tag": "WATCH",
+     "severity": "elevated",
+     "title": "German media report Russia plans nuclear-armed satellite launch; NATO vows space defence",
+     "detail": "Süddeutsche Zeitung, WDR and NDR, citing German intelligence sources, report a launch within weeks. Rutte said NATO will defend its space assets; Moscow denies it, and the claim is unverified, so the launch itself is not confirmed.",
+     "action": "No household action; watch for official NATO or US statements on whether the claim is confirmed.",
+     "when": "Reported Mon–Tue",
+     "where": "Berlin / Russia",
+     "trend": "new",
+     "confidence": "likely",
+     "topic": "conflict",
+     "lat": 52.5,
+     "lon": 13.4,
+     "area": 5,
+     "sources": [
+      {
+       "name": "BBC News",
+       "url": "https://www.bbc.co.uk/news/articles/c9x2er1ry2mzo"
+      },
+      {
+       "name": "Asharq Al-Awsat",
+       "url": "https://english.aawsat.com/world/5344590-nato-vows-space-defense-after-russia-nuclear-satellite-report"
+      }
+     ]
+    },
+    {
+     "id": "west-ukraine-strikes",
+     "tag": "WATCH",
+     "severity": "critical",
+     "title": "Russian strikes continue; Ukraine hits Russian ships far from the front",
+     "detail": "A Russian strike killed two in Zaporizhzhia Tuesday, after at least 15 died in the Kyiv region Sunday–Monday. Ukraine says drones sank the Russian corvette Merkury at Benghazi; Libyan officials said it was heavily damaged, so reports differ.",
+     "action": "No household action; watch for Russian retaliation and shipping disruption in the Mediterranean and Baltic.",
+     "when": "Sun–Tue",
+     "where": "Ukraine; Benghazi, Libya",
+     "trend": "steady",
+     "confidence": "confirmed",
+     "topic": "conflict",
+     "lat": 47.84,
+     "lon": 35.14,
+     "area": 4,
+     "sources": [
+      {
+       "name": "Al Jazeera",
+       "url": "https://www.aljazeera.com/news/2026/11/24/russian-attack-kills-two-people-in-ukraines-zaporizhzhia"
+      },
+      {
+       "name": "The Guardian",
+       "url": "https://www.theguardian.com/world/2026/nov/23/ukraine-naval-drones-strike-russian-warship-libya"
+      },
+      {
+       "name": "NPR",
+       "url": "https://www.npr.org/2026/11/24/nx-s1-6051564/fighting-between-russia-and-ukraine-has-expanded-geographically-drawing-concerns"
+      }
+     ]
+    },
+    {
+     "id": "west-colombia-bomb",
+     "tag": "INFO",
+     "severity": "elevated",
+     "title": "Car bomb wounds more than 20 in a Colombian city",
+     "detail": "BBC reports the blast is the latest in a string of attacks on buildings housing security forces. Single-outlet report; casualty details may change.",
+     "when": "Tue",
+     "where": "Colombia",
+     "trend": "new",
+     "confidence": "likely",
+     "topic": "terrorism",
+     "lat": 4.6,
+     "lon": -74.1,
+     "area": 2,
+     "sources": [
+      {
+       "name": "BBC News",
+       "url": "https://www.bbc.co.uk/news/articles/cjqlq2n4np7do"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "level": "asia",
+   "summary": "Russian jets prompt Korean air raid alert; deadly Hanoi blast.",
+   "items": [
+    {
+     "id": "asia-korea-alert",
+     "tag": "INFO",
+     "severity": "watch",
+     "title": "South Korea issues air raid alert as Russian jets near its airspace",
+     "detail": "About five Russian aircraft briefly entered the air defence zone near Ulleung Island at 7:52 AM Tuesday; the alert lasted three minutes and no airspace was violated. Seoul summoned Russia's military attaché.",
+     "when": "Tue 7:52 AM KST",
+     "where": "Ulleung Island, South Korea",
+     "trend": "new",
+     "confidence": "confirmed",
+     "topic": "conflict",
+     "lat": 37.5,
+     "lon": 130.9,
+     "area": 3,
+     "sources": [
+      {
+       "name": "Al Jazeera",
+       "url": "https://www.aljazeera.com/news/2026/11/24/why-s-korea-issued-air-raid-alert-after-russian-jets-flew-near-its-airspace"
+      }
+     ]
+    },
+    {
+     "id": "asia-hanoi-blast",
+     "tag": "INFO",
+     "severity": "low",
+     "title": "Restaurant blast in Hanoi kills at least six",
+     "detail": "At least 10 were hurt in a crowded residential area, and people may be trapped. Vietnam's public security ministry links it to cooking gas.",
+     "when": "Tue 8 AM local",
+     "where": "Dong Da, Hanoi",
+     "trend": "new",
+     "confidence": "confirmed",
+     "topic": "public-safety",
+     "lat": 21.02,
+     "lon": 105.83,
+     "area": 1,
+     "sources": [
+      {
+       "name": "Al Jazeera",
+       "url": "https://www.aljazeera.com/news/2026/11/24/vietnam-restaurant-blast-kills-at-least-six"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "level": "world",
+   "summary": "Hormuz blockade standoff; Iraq moves on Kurdish oil.",
+   "items": [
+    {
+     "id": "world-hormuz",
+     "tag": "WATCH",
+     "severity": "elevated",
+     "title": "Iran vows 'every means' against US blockade; tanker attack near Hormuz confirmed",
+     "detail": "Britain's maritime monitor confirmed a tanker attack near Hormuz Monday. Iran denies sending a tanker convoy and says it will counter the blockade, after Trump threatened to sink tankers that try to breach it; those are threats, not events.",
+     "action": "If it worsens, expect fuel and shipping cost swings; keep your car's tank above half.",
+     "when": "Mon–Tue",
+     "where": "Strait of Hormuz",
+     "trend": "steady",
+     "confidence": "confirmed",
+     "topic": "conflict",
+     "lat": 26.4,
+     "lon": 56.3,
+     "area": 4,
+     "sources": [
+      {
+       "name": "Euronews",
+       "url": "https://www.euronews.com/2026/11/23/iran-vows-every-means-to-counter-us-blockade-of-hormuz-after-trump-threat"
+      },
+      {
+       "name": "The National",
+       "url": "https://www.thenationalnews.com/news/gulf/2026/11/24/is-iran-weighing-tanker-convoy-to-break-us-blockade/"
+      }
+     ]
+    },
+    {
+     "id": "world-iraq-kurdish-oil",
+     "tag": "INFO",
+     "severity": "watch",
+     "title": "Iraq orders takeover of oilfields and border crossings in Kurdish-held areas",
+     "detail": "The prime minister cited an oil-smuggling inquiry and suspended North Oil Company's leaders. Al Jazeera says it could revive disputes that once halted pipeline shipments to Turkey.",
+     "when": "Tue",
+     "where": "Kirkuk, Nineveh, Diyala, Iraq",
+     "trend": "new",
+     "confidence": "confirmed",
+     "topic": "energy",
+     "lat": 35.47,
+     "lon": 44.39,
+     "area": 3,
+     "sources": [
+      {
+       "name": "Al Jazeera",
+       "url": "https://www.aljazeera.com/news/2026/11/24/iraq-orders-takeover-of-oilfields-in-areas-under-kurdish-control"
+      }
+     ]
+    },
+    {
+     "id": "world-gaza-meningitis",
+     "tag": "INFO",
+     "severity": "elevated",
+     "title": "Israeli strikes kill 7 in Gaza; doctors warn of meningitis outbreak",
+     "detail": "Gaza health officials say meningitis cases reached 272 in October, over eight times the usual monthly count.",
+     "when": "Tue",
+     "where": "Gaza",
+     "trend": "steady",
+     "confidence": "likely",
+     "topic": "health",
+     "lat": 31.5,
+     "lon": 34.45,
+     "area": 2,
+     "sources": [
+      {
+       "name": "Al Jazeera",
+       "url": "https://www.aljazeera.com/news/2026/11/24/israeli-air-strikes-in-gaza-kill-7-as-doctors-warn-of-meningitis-outbreak"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "sources_used": [
+  {
+   "name": "NWS San Francisco forecast discussion",
+   "url": "https://forecast.weather.gov/product.php?site=MTR&issuedby=MTR&product=AFD"
+  },
+  {
+   "name": "NWS alerts, Pacifica",
+   "url": "https://alerts.weather.gov/search?point=37.6138,-122.4869"
+  },
+  {
+   "name": "FEMA IPAWS",
+   "url": "https://www.fema.gov/openfema-data-page/ipaws-archived-alerts-v1"
+  },
+  {
+   "name": "Caltrans QuickMap",
+   "url": "https://quickmap.dot.ca.gov/"
+  },
+  {
+   "name": "DreamHost status",
+   "url": "https://www.dreamhoststatus.com/"
+  },
+  {
+   "name": "USGS",
+   "url": "https://earthquake.usgs.gov/"
+  },
+  {
+   "name": "CalMatters",
+   "url": "https://calmatters.org/health/2026/11/california-measles-after-elimination-status-loss/"
+  },
+  {
+   "name": "Al Jazeera",
+   "url": "https://www.aljazeera.com/"
+  },
+  {
+   "name": "BBC News",
+   "url": "https://www.bbc.com/news/world"
+  }
+ ]
+}
