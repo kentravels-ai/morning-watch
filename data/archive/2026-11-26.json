@@ -1,0 +1,601 @@
+{
+ "schema": 1,
+ "date": "2026-11-26",
+ "generated_at": "2026-11-26T04:30:00-08:00",
+ "overall": {
+  "level": "serious",
+  "headline": "Thanksgiving: coast still hazardous after the pier collapse; Hormuz, Ukraine and Yemen fighting continue abroad.",
+  "bluf": "One ACTION today: stay off Pacifica's beaches, pier and bluff edges. Part of Pacifica Municipal Pier fell into the sea Wednesday, and NWS has a Coastal Flood Advisory until 4 PM (high tide near 11:38 AM) and a Beach Hazards Statement through Friday 10 PM. No FEMA emergency alerts cover Pacifica. Abroad, the Iran–US Hormuz standoff, Russia–Ukraine strikes and Saudi–Houthi fighting continue, and the US proposed new tariffs on 14 trading partners."
+ },
+ "status": {
+  "local": {
+   "level": "strained",
+   "note": "Pier damaged; flood advisory today, beach hazards Friday."
+  },
+  "regional": {
+   "level": "strained",
+   "note": "King tides ease; new tariffs proposed; VIX 27."
+  },
+  "world": {
+   "level": "serious",
+   "note": "Hormuz mines, Ukraine strikes, Yemen–Saudi fire."
+  }
+ },
+ "changes": [
+  "New: Part of Pacifica Municipal Pier collapsed into the ocean about 11 AM Wednesday (KQED). Waves also flooded homes and parts of Beach Blvd.",
+  "Downgraded: NWS no longer lists the High Surf and Coastal Flood Warnings for Pacifica. It now shows a Coastal Flood Advisory until 4 PM today and a Beach Hazards Statement until Friday 10 PM.",
+  "Update: DreamHost posted an update Wednesday 5 PM: the new DreamHost API has launched and legacy API keys no longer work.",
+  "New: The US trade representative proposed new Section 301 tariffs of up to 20–40% on China, the EU, India, Japan and others; AFP says start is likely January at the earliest.",
+  "New: Bangkok refinery explosion injured seven; Iraq's top court let Baghdad take over Kurdish oil fields and borders; a Cairo fuel-tanker crash killed 31.",
+  "Update: VIX 27 (down 4%); Brent oil about $91, down 4% on the day.",
+  "Dropped as stale: Colombia hostage siege, Chen Jining probe, Solomon Islands pact, Cambodia drills, Libya naval strike, Eurostar strike, Iran power cuts."
+ ],
+ "coming_up": [
+  {
+   "when": "Thu 11:38 AM high tide; advisory to 4 PM",
+   "date": "2026-11-26",
+   "level": "pacifica",
+   "title": "Coastal Flood Advisory; high tide about 2.2 ft above normal",
+   "detail": "Beach Blvd and low spots near the shore may flood again.",
+   "sources": [
+    {
+     "name": "NWS alerts, Pacifica",
+     "url": "https://alerts.weather.gov/search?point=37.6138,-122.4869"
+    },
+    {
+     "name": "NWS San Francisco forecast discussion",
+     "url": "https://forecast.weather.gov/product.php?site=MTR&issuedby=MTR&product=AFD"
+    }
+   ]
+  },
+  {
+   "when": "Thu–Fri 10 PM",
+   "date": "2026-11-26",
+   "level": "pacifica",
+   "title": "Beach Hazards Statement for the SF Peninsula coast",
+   "detail": "Stay out of the water and off jetties, piers and rocks.",
+   "sources": [
+    {
+     "name": "NWS alerts, Pacifica",
+     "url": "https://alerts.weather.gov/search?point=37.6138,-122.4869"
+    }
+   ]
+  },
+  {
+   "when": "Mon–Wed",
+   "date": "2026-11-30",
+   "level": "pacifica",
+   "title": "Caltrans one-way traffic on Hwy 1 near Montara and Pescadero; lane closures at Half Moon Bay",
+   "detail": "Drainage and slide-repair work Nov 30–Dec 2, paving Nov 30–Dec 3. Expect delays on the coast route south of Pacifica.",
+   "sources": [
+    {
+     "name": "Caltrans QuickMap",
+     "url": "https://quickmap.dot.ca.gov/"
+    }
+   ]
+  },
+  {
+   "when": "Sun–early next week",
+   "date": "2026-11-29",
+   "level": "california",
+   "title": "Another storm system possible Sunday; stronger one early next week",
+   "detail": "From Wednesday's NWS discussion; check the updated forecast Friday.",
+   "sources": [
+    {
+     "name": "NWS San Francisco forecast discussion",
+     "url": "https://forecast.weather.gov/product.php?site=MTR&issuedby=MTR&product=AFD"
+    }
+   ]
+  }
+ ],
+ "home_front": [
+  {
+   "id": "alerts",
+   "status": "action",
+   "summary": "Pier partly collapsed; stay off the shoreline today.",
+   "items": [
+    {
+     "id": "alerts-pier-surf",
+     "tag": "ACTION",
+     "severity": "hazard",
+     "title": "Pacifica Pier partly collapsed; stay away from the shoreline today",
+     "detail": "KQED reports the end of Pacifica Municipal Pier fell into the ocean about 11 AM Wednesday, and waves flooded homes and parts of Beach Blvd. NWS now has a Coastal Flood Advisory until 4 PM today and a Beach Hazards Statement until Friday 10 PM; highest tide today is near 11:38 AM. No FEMA emergency alerts cover Pacifica.",
+     "action": "Stay off the pier, beaches, jetties, rocks and bluff edges and out of the water through Friday; keep children and pets back. Avoid Beach Blvd and move cars from low spots near the shore around 11:38 AM; don't drive through water or around barricades.",
+     "when": "Thu 12 AM – Fri 10 PM; flood advisory to 4 PM",
+     "where": "Pacifica Pier, Beach Blvd, Rockaway, Sharp Park",
+     "trend": "rising",
+     "confidence": "confirmed",
+     "topic": "environment",
+     "lat": 37.6,
+     "lon": -122.5,
+     "area": 2,
+     "sources": [
+      {
+       "name": "KQED",
+       "url": "https://www.kqed.org/news/12111639/part-of-pacifica-pier-collapses-as-king-tides-and-strong-waves-batter-bay-area"
+      },
+      {
+       "name": "NWS alerts, Pacifica",
+       "url": "https://alerts.weather.gov/search?point=37.6138,-122.4869"
+      },
+      {
+       "name": "NWS San Francisco forecast discussion",
+       "url": "https://forecast.weather.gov/product.php?site=MTR&issuedby=MTR&product=AFD"
+      },
+      {
+       "name": "FEMA IPAWS",
+       "url": "https://www.fema.gov/openfema-data-page/ipaws-archived-alerts-v1"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "utilities",
+   "status": "watch",
+   "summary": "No Pacifica outage found; DreamHost API change and database tool outage.",
+   "items": [
+    {
+     "id": "util-dreamhost-api",
+     "tag": "WATCH",
+     "severity": "low",
+     "title": "DreamHost: phpMyAdmin and legacy API unavailable; legacy API keys stopped working",
+     "detail": "DreamHost's incident was last updated Wednesday 5 PM Pacific. The new DreamHost API has launched and legacy keys no longer work; phpMyAdmin is listed as unavailable (use MySQL Workbench or SSH). Websites are not reported down.",
+     "action": "If a script or app uses the DreamHost API, create a new key in the panel and update it; otherwise nothing to do.",
+     "when": "Updated Wed 5 PM; ongoing",
+     "where": "DreamHost shared hosting",
+     "trend": "steady",
+     "confidence": "confirmed",
+     "topic": "infrastructure",
+     "sources": [
+      {
+       "name": "DreamHost status",
+       "url": "https://www.dreamhoststatus.com/"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "roads",
+   "status": "watch",
+   "summary": "Beach Blvd may flood again at high tide; no Caltrans closures listed in Pacifica.",
+   "items": [
+    {
+     "id": "roads-coast-flood",
+     "tag": "WATCH",
+     "severity": "hazard",
+     "title": "Low coastal roads may flood again at high tide late this morning",
+     "detail": "Waves flooded parts of Beach Blvd on Wednesday (KQED). Caltrans lists no closure inside Pacifica today; its next Hwy 1 work is near Montara and Half Moon Bay starting Nov 30. I found no report of a Hwy 1 closure this morning.",
+     "action": "If water reaches the road, expect Beach Blvd and Hwy 1 near Rockaway to close; check QuickMap and use Sharp Park Rd or Hwy 35.",
+     "when": "Thu, highest risk near 11:38 AM",
+     "where": "Beach Blvd and Hwy 1, Pacifica",
+     "trend": "easing",
+     "confidence": "likely",
+     "topic": "public-safety",
+     "lat": 37.59,
+     "lon": -122.51,
+     "area": 1,
+     "sources": [
+      {
+       "name": "Caltrans QuickMap",
+       "url": "https://quickmap.dot.ca.gov/"
+      },
+      {
+       "name": "KQED",
+       "url": "https://www.kqed.org/news/12111639/part-of-pacifica-pier-collapses-as-king-tides-and-strong-waves-batter-bay-area"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "health",
+   "status": "clear",
+   "summary": "Air quality moderate (AQI 58); no local advisories.",
+   "items": []
+  },
+  {
+   "id": "supplies",
+   "status": "clear",
+   "summary": "No verified local supply disruptions.",
+   "items": []
+  }
+ ],
+ "readiness": {
+  "default": {
+   "task": "Charge phones and power banks and check flashlight batteries today.",
+   "why": "Another storm may arrive Sunday and a stronger one early next week."
+  },
+  "3d": {
+   "task": "Check you have three days of drinking water, about 1 gallon per person per day.",
+   "why": "Storms and flooding can briefly disrupt services."
+  }
+ },
+ "ladder": [
+  {
+   "level": "pacifica",
+   "summary": "Pier damage; see home front.",
+   "items": [
+    {
+     "id": "pac-pier-damage",
+     "tag": "WATCH",
+     "severity": "hazard",
+     "title": "Rest of the pier may be unstable after Wednesday's collapse",
+     "detail": "KQED says the pier's end, closed since June, fell into the sea; it did not report on the condition of the rest. The state has committed $2.25 million for repairs.",
+     "action": "Don't walk onto the pier or the rocks below it; watch the city site for updates.",
+     "when": "Since Wed",
+     "where": "Pacifica Municipal Pier",
+     "trend": "new",
+     "confidence": "likely",
+     "topic": "infrastructure",
+     "lat": 37.6,
+     "lon": -122.5,
+     "area": 1,
+     "sources": [
+      {
+       "name": "KQED",
+       "url": "https://www.kqed.org/news/12111639/part-of-pacifica-pier-collapses-as-king-tides-and-strong-waves-batter-bay-area"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "level": "california",
+   "summary": "King tides ease; more expected late December.",
+   "items": [
+    {
+     "id": "ca-king-tides",
+     "tag": "INFO",
+     "severity": "hazard",
+     "title": "King tides flooded the Bay shoreline; more expected in December and January",
+     "detail": "SF's tide peaked at 8.21 ft Wednesday, just under Tuesday's 8.23 ft record. Stinson Beach had a brief evacuation warning, and Mill Valley and Corte Madera roads flooded. NWS's flood advisory runs to 4 PM today.",
+     "when": "Thu",
+     "where": "SF Bay and North Bay",
+     "trend": "easing",
+     "confidence": "confirmed",
+     "topic": "environment",
+     "lat": 37.65,
+     "lon": -122.3,
+     "area": 3,
+     "sources": [
+      {
+       "name": "KQED",
+       "url": "https://www.kqed.org/news/12111639/part-of-pacifica-pier-collapses-as-king-tides-and-strong-waves-batter-bay-area"
+      },
+      {
+       "name": "NWS alerts, Pacifica",
+       "url": "https://alerts.weather.gov/search?point=37.6138,-122.4869"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "level": "usa",
+   "summary": "New tariffs proposed; stock volatility elevated.",
+   "items": [
+    {
+     "id": "usa-tariffs",
+     "tag": "WATCH",
+     "severity": "watch",
+     "title": "US proposes Section 301 tariffs on 14 trading partners",
+     "detail": "The USTR proposed new tariffs of up to 20–40% on China, the EU, India, Japan, South Korea, Vietnam and others over 'excess capacity'; some rates fall if trade deals are reached. A US official told AFP they would likely start in January at the earliest. China and the EU object.",
+     "action": "Expect possible price rises on imported goods in 2027; no action now.",
+     "when": "Announced Wed; start January",
+     "where": "United States",
+     "trend": "new",
+     "confidence": "confirmed",
+     "topic": "economy",
+     "sources": [
+      {
+       "name": "Al Jazeera",
+       "url": "https://www.aljazeera.com/news/2026/11/26/are-trumps-tariffs-aimed-at-securing-us-friendly-trade-deals"
+      },
+      {
+       "name": "BBC News",
+       "url": "https://www.bbc.co.uk/news/articles/c893r9ke5p97o"
+      }
+     ]
+    },
+    {
+     "id": "usa-markets",
+     "tag": "INFO",
+     "severity": "watch",
+     "title": "VIX at 27 and S&P 500 about 6% below a month ago",
+     "detail": "The S&P 500 is near 7,183 (down 0.25%) and the VIX is 27, above the 25 stress line. Brent oil is near $91, down 4% on the day; gold is near $3,595.",
+     "when": "Thu",
+     "where": "US markets",
+     "trend": "easing",
+     "confidence": "confirmed",
+     "topic": "economy",
+     "sources": [
+      {
+       "name": "Market data feed",
+       "url": "https://finance.yahoo.com/quote/%5EGSPC/"
+      }
+     ]
+    },
+    {
+     "id": "usa-iowa-blast",
+     "tag": "INFO",
+     "severity": "low",
+     "title": "Army says Iowa lead azide detonation went well",
+     "detail": "BBC says the US Army reported its controlled explosion of stored lead azide a 'huge success', with no lead detected so far in the surrounding area, which is still being tested. A 5-mile radius had been evacuated.",
+     "when": "Wed–Thu",
+     "where": "Iowa",
+     "trend": "easing",
+     "confidence": "likely",
+     "topic": "public-safety",
+     "lat": 41.6,
+     "lon": -91.0,
+     "area": 2,
+     "sources": [
+      {
+       "name": "BBC News",
+       "url": "https://www.bbc.co.uk/news/articles/cwg7l5ve251ko"
+      },
+      {
+       "name": "NPR",
+       "url": "https://www.npr.org/2026/11/25/nx-s1-6051564/"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "level": "west",
+   "summary": "Ukraine and Russia trade strikes; Serbia sets election.",
+   "items": [
+    {
+     "id": "west-ukraine-strikes",
+     "tag": "WATCH",
+     "severity": "critical",
+     "title": "Russian missiles hit a Kyiv shopping centre; Ukrainian drone strike kills five in Zaporizhia",
+     "detail": "Al Jazeera reports at least seven injured in Kyiv; Russia says it struck military-industrial sites. In occupied Zaporizhia, Russian-installed officials say a Ukrainian drone strike killed five.",
+     "action": "No household action; watch for further strikes on cities and energy sites.",
+     "when": "Wed night–Thu",
+     "where": "Kyiv; Zaporizhia",
+     "trend": "steady",
+     "confidence": "likely",
+     "topic": "conflict",
+     "lat": 50.45,
+     "lon": 30.52,
+     "area": 4,
+     "sources": [
+      {
+       "name": "Al Jazeera",
+       "url": "https://www.aljazeera.com/news/2026/11/26/ukraine-drone-attack-kills-five-in-russian-occupied-zaporizhia"
+      }
+     ]
+    },
+    {
+     "id": "west-serbia",
+     "tag": "INFO",
+     "severity": "low",
+     "title": "Serbia sets presidential election for Dec 27",
+     "detail": "AP says Parliament's speaker called the early vote after students won the parliamentary election.",
+     "when": "Thu",
+     "where": "Serbia",
+     "trend": "new",
+     "confidence": "confirmed",
+     "topic": "political",
+     "lat": 44.8,
+     "lon": 20.5,
+     "area": 2,
+     "sources": [
+      {
+       "name": "AP via SFGate",
+       "url": "https://www.sfgate.com/news/world/article/serbia-sets-presidential-election-for-dec-27-22551217.php"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "level": "asia",
+   "summary": "Bangkok refinery blast; Myanmar defies court.",
+   "items": [
+    {
+     "id": "asia-bangkok-refinery",
+     "tag": "WATCH",
+     "severity": "elevated",
+     "title": "Bangkok oil refinery explosion injures seven; all units shut",
+     "detail": "Bangchak shut all units at its 120,000 barrel-per-day Phra Khanong refinery, which Al Jazeera says supplies much of central Thailand. Officials urged people nearby to leave; the fire is under control and the cause is unknown.",
+     "action": "If you have travel plans to Thailand, check local fuel and air-quality notices; nothing needed at home.",
+     "when": "Thu",
+     "where": "Bangkok, Thailand",
+     "trend": "new",
+     "confidence": "confirmed",
+     "topic": "energy",
+     "lat": 13.68,
+     "lon": 100.6,
+     "area": 2,
+     "sources": [
+      {
+       "name": "Al Jazeera",
+       "url": "https://www.aljazeera.com/news/2026/11/26/explosion-occurs-at-oil-facility-in-thailands-bangkok"
+      },
+      {
+       "name": "BBC News",
+       "url": "https://www.bbc.co.uk/news/articles/crx209kwk4kzo"
+      }
+     ]
+    },
+    {
+     "id": "asia-myanmar-icj",
+     "tag": "INFO",
+     "severity": "watch",
+     "title": "Myanmar says it won't fully comply with ICJ genocide ruling",
+     "detail": "AP reports the military-backed government may refuse some parts of the court's ruling on the Rohingya.",
+     "when": "Thu",
+     "where": "Myanmar",
+     "trend": "new",
+     "confidence": "confirmed",
+     "topic": "political",
+     "lat": 19.8,
+     "lon": 96.1,
+     "area": 3,
+     "sources": [
+      {
+       "name": "AP via SFGate",
+       "url": "https://www.sfgate.com/news/world/article/myanmar-s-leader-says-country-will-refuse-to-22551218.php"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "level": "world",
+   "summary": "Hormuz mines, Saudi–Houthi fire, Gaza strikes, Iraq Kurdistan tension.",
+   "items": [
+    {
+     "id": "world-hormuz",
+     "tag": "WATCH",
+     "severity": "elevated",
+     "title": "Iran says two tankers hit mines in Hormuz; Israel reportedly ready to strike Iran alone",
+     "detail": "Al Jazeera cites the IRGC for the tanker mine strikes, with no independent confirmation found. It also relays a report that Israel's military says it could attack Iran without US participation. The US blockade of Iranian ports continues.",
+     "action": "If it worsens, expect fuel price swings; keep the car's tank above half.",
+     "when": "Thu",
+     "where": "Strait of Hormuz",
+     "trend": "steady",
+     "confidence": "unconfirmed",
+     "topic": "conflict",
+     "lat": 26.4,
+     "lon": 56.3,
+     "area": 4,
+     "sources": [
+      {
+       "name": "Al Jazeera Middle East",
+       "url": "https://www.aljazeera.com/middle-east/"
+      }
+     ]
+    },
+    {
+     "id": "world-yemen-saudi",
+     "tag": "WATCH",
+     "severity": "elevated",
+     "title": "Saudi air defences intercept missiles over Riyadh; explosion reported in Sanaa",
+     "detail": "Al Jazeera's Thursday headlines report both, after Houthi threats to Saudi Red Sea ports Wednesday. Details and casualties were not available to me.",
+     "action": "If Red Sea shipping is hit, expect delays on Asia–Europe goods.",
+     "when": "Wed–Thu",
+     "where": "Riyadh; Sanaa, Yemen",
+     "trend": "rising",
+     "confidence": "likely",
+     "topic": "conflict",
+     "lat": 24.7,
+     "lon": 46.7,
+     "area": 4,
+     "sources": [
+      {
+       "name": "Al Jazeera Middle East",
+       "url": "https://www.aljazeera.com/middle-east/"
+      }
+     ]
+    },
+    {
+     "id": "world-gaza",
+     "tag": "INFO",
+     "severity": "elevated",
+     "title": "Israeli strikes kill eight in Gaza, including a senior education official",
+     "detail": "Netanyahu confirmed the killing of Ministry undersecretary Khaled Abu Nada; BBC and AP report eight dead. Gaza officials also warn of a rise in meningitis and rain threatening shelters.",
+     "when": "Thu",
+     "where": "Gaza",
+     "trend": "steady",
+     "confidence": "confirmed",
+     "topic": "conflict",
+     "lat": 31.5,
+     "lon": 34.45,
+     "area": 2,
+     "sources": [
+      {
+       "name": "Al Jazeera",
+       "url": "https://www.aljazeera.com/middle-east/"
+      },
+      {
+       "name": "AP via SFGate",
+       "url": "https://www.sfgate.com/news/world/article/israeli-strikes-kill-8-in-gaza-and-other-mideast-news"
+      }
+     ]
+    },
+    {
+     "id": "world-iraq-kurdistan",
+     "tag": "INFO",
+     "severity": "watch",
+     "title": "Thousands protest in Irbil as Baghdad moves to take Kurdish oil and borders",
+     "detail": "Iraq's top court ruled Wednesday that Baghdad can take over Kurdish borders and oil fields, and Iraq began closing unofficial crossings. Iraq denies reports of troop movements toward the region.",
+     "when": "Wed–Thu",
+     "where": "Irbil, Iraq",
+     "trend": "new",
+     "confidence": "confirmed",
+     "topic": "political",
+     "lat": 36.2,
+     "lon": 44.0,
+     "area": 3,
+     "sources": [
+      {
+       "name": "AP via SFGate",
+       "url": "https://www.sfgate.com/news/world/article/thousands-protest-in-irbil-as-baghdad-moves-to-22551221.php"
+      }
+     ]
+    },
+    {
+     "id": "world-cairo-tanker",
+     "tag": "INFO",
+     "severity": "low",
+     "title": "Fuel-tanker crash on Cairo ring road kills 31",
+     "detail": "The Guardian says at least 31 died and 21 were hurt; Egypt detained the driver.",
+     "when": "Thu",
+     "where": "Cairo, Egypt",
+     "trend": "new",
+     "confidence": "confirmed",
+     "topic": "public-safety",
+     "lat": 30.0,
+     "lon": 31.3,
+     "area": 1,
+     "sources": [
+      {
+       "name": "The Guardian",
+       "url": "https://www.theguardian.com/world/2026/nov/26/at-least-31-killed-as-fuel-tanker-crash-ignites-large-fire-on-cairo-highway"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "sources_used": [
+  {
+   "name": "NWS alerts, Pacifica",
+   "url": "https://alerts.weather.gov/search?point=37.6138,-122.4869"
+  },
+  {
+   "name": "NWS San Francisco forecast discussion",
+   "url": "https://forecast.weather.gov/product.php?site=MTR&issuedby=MTR&product=AFD"
+  },
+  {
+   "name": "KQED",
+   "url": "https://www.kqed.org/news/12111639/part-of-pacifica-pier-collapses-as-king-tides-and-strong-waves-batter-bay-area"
+  },
+  {
+   "name": "FEMA IPAWS",
+   "url": "https://www.fema.gov/openfema-data-page/ipaws-archived-alerts-v1"
+  },
+  {
+   "name": "Caltrans QuickMap",
+   "url": "https://quickmap.dot.ca.gov/"
+  },
+  {
+   "name": "DreamHost status",
+   "url": "https://www.dreamhoststatus.com/"
+  },
+  {
+   "name": "Al Jazeera",
+   "url": "https://www.aljazeera.com/"
+  },
+  {
+   "name": "BBC News",
+   "url": "https://www.bbc.com/news/world"
+  }
+ ]
+}
