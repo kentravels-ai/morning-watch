@@ -1,90 +1,85 @@
 {
  "schema": 1,
- "date": "2026-11-27",
- "generated_at": "2026-11-27T04:40:00-08:00",
+ "date": "2026-11-28",
+ "generated_at": "2026-11-28T04:45:00-08:00",
  "overall": {
-  "level": "serious",
-  "headline": "Coast still hazardous through Saturday; Iran-linked Gulf attacks, Ukraine and Yemen fighting continue.",
-  "bluf": "One ACTION today: stay off Pacifica's beaches, pier and shoreline. NWS has extended the Coastal Flood Advisory to 4 PM Saturday (high tides near 12:30 PM Friday and 1:30 PM Saturday) and a Beach Hazards Statement to 7 AM Saturday, with waves of 13 to 19 feet. No FEMA emergency alerts cover Pacifica. Abroad, two Italian technicians died in a drone attack on Kuwait that Iran denies, and Ebola in eastern Congo has reached about 12,000 cases."
+  "level": "strained",
+  "headline": "Nothing needs action today; coast still rough until 4 PM, then a rainy Sunday.",
+  "bluf": "NWS keeps a Coastal Flood Advisory for Pacifica until 4 PM today, with high tide near 1:30 PM, so keep clear of the shore and pier. Waves have eased and the Beach Hazards Statement ended at 6 AM; no FEMA alerts cover Pacifica. Rain and 30 mph gusts arrive Sunday. Abroad, the Kuwait drone killings, Gaza strikes and Ebola in Congo continue, and Spain votes Sunday."
  },
  "status": {
   "local": {
-   "level": "strained",
-   "note": "Flood advisory to Sat 4 PM; pier damaged; beaches unsafe."
+   "level": "steady",
+   "note": "Flood advisory to 4 PM; waves easing; rain Sunday."
   },
   "regional": {
-   "level": "strained",
-   "note": "Weak storm Sunday; US storm outages; VIX 25."
+   "level": "steady",
+   "note": "No state alerts; storm outages in the East."
   },
   "world": {
    "level": "serious",
-   "note": "Gulf drone strikes, Ukraine, Yemen, Ebola."
+   "note": "Gulf drone attack, Gaza, Yemen, Ebola."
   }
  },
  "changes": [
-  "Extended: NWS Coastal Flood Advisory now runs to 4 PM Saturday; Beach Hazards Statement to 7 AM Saturday (13 to 19 ft breaking waves).",
-  "Eased: the forecast for next Tuesday and Wednesday trimmed; a weak system Sunday into Monday brings up to a quarter inch of rain to Pacifica (NWS).",
-  "Resolved: DreamHost shared-hosting connectivity problem fixed Thursday 10:19 AM; legacy API keys still stopped.",
-  "New: Two Italian technicians were killed in a drone attack on Kuwait Thursday; Kuwait and Italy blame Iran, Iran denies it (Al Jazeera).",
-  "New: Houthis report 11 killed in an airstrike on a cinema building in Turbah, Taiz, early Friday; they blame Saudi Arabia (unverified).",
-  "New: Ebola in eastern Congo reported at 12,000 cases as some responders evacuate (NPR); Kim Jong Un vows more nuclear weapons.",
-  "Update: Hundreds of thousands in Pennsylvania and nearby states without power after Thanksgiving storms (BBC).",
-  "Dropped as stale: Bangkok refinery blast, Iraq oil-fields ruling, Cairo tanker crash, new tariff proposal details."
+  "Eased: waves are smaller (about 8 ft forecast) and the Beach Hazards Statement ended 6 AM; the Coastal Flood Advisory still runs to 4 PM (NWS).",
+  "Firmer: Sunday brings rain, a quarter to half inch, and gusts to 31 mph in Pacifica (NWS).",
+  "Update: Kuwait drone attack has no new reporting since Thursday evening; Iran offers a joint investigation (Al Jazeera).",
+  "New: MSF says two staff were killed in an Israeli strike near a Gaza clinic; Israel says it targeted Hamas (BBC).",
+  "New: a blast beside a school in eastern Afghanistan killed at least 7 to 10 students, with 90 or more hurt; officials blame a nearby explosives depot (NPR, BBC).",
+  "New: Israel's unity-government talks stalled; deadline December 6 (Al Jazeera). Spain votes Sunday.",
+  "Dropped as stale: DreamHost incident (resolved Thursday), tariff proposal, Zelensky interview, Kim Jong Un nuclear vow."
  ],
  "coming_up": [
   {
-   "when": "Fri high tide 12:31 PM; Sat 1:28 PM",
-   "date": "2026-11-27",
+   "when": "Sat high tide about 1:30 PM; advisory to 4 PM",
+   "date": "2026-11-28",
    "level": "pacifica",
-   "title": "King tides with surge: Coastal Flood Advisory to Sat 4 PM",
-   "detail": "Tides 1.6 to 1.7 ft above normal at San Francisco; low spots near Beach Blvd may flood.",
+   "title": "King tide: Coastal Flood Advisory until 4 PM",
+   "detail": "Low spots near Beach Blvd may flood; stay off the pier and rocks.",
    "sources": [
     {
      "name": "NWS alerts, Pacifica",
      "url": "https://alerts.weather.gov/search?point=37.6138,-122.4869"
     },
     {
-     "name": "NWS San Francisco forecast discussion",
+     "name": "NWS San Francisco forecast",
      "url": "https://forecast.weather.gov/product.php?site=MTR&issuedby=MTR&product=AFD"
     }
    ]
   },
   {
-   "when": "Fri–Sat 7 AM",
-   "date": "2026-11-27",
-   "level": "pacifica",
-   "title": "Beach Hazards Statement: sneaker waves, rip currents, 13–19 ft surf",
-   "detail": "Stay out of the water and off jetties, piers and rocks.",
-   "sources": [
-    {
-     "name": "NWS alerts, Pacifica",
-     "url": "https://alerts.weather.gov/search?point=37.6138,-122.4869"
-    },
-    {
-     "name": "NWS San Francisco forecast discussion",
-     "url": "https://forecast.weather.gov/product.php?site=MTR&issuedby=MTR&product=AFD"
-    }
-   ]
-  },
-  {
-   "when": "Sun–Mon",
+   "when": "Sun",
    "date": "2026-11-29",
-   "level": "california",
-   "title": "Weak storm: light rain, gusts 25–35 mph",
-   "detail": "Up to about a quarter inch on the Peninsula; more in the North Bay.",
+   "level": "pacifica",
+   "title": "Rain and gusty south wind",
+   "detail": "A quarter to half inch of rain, gusts to 31 mph; more light rain Monday.",
    "sources": [
     {
-     "name": "NWS San Francisco forecast discussion",
+     "name": "NWS San Francisco forecast",
      "url": "https://forecast.weather.gov/product.php?site=MTR&issuedby=MTR&product=AFD"
     }
    ]
   },
   {
-   "when": "Mon–Thu",
+   "when": "Sun 9 AM\u20138 PM Madrid time",
+   "date": "2026-11-29",
+   "level": "west",
+   "title": "Spain general election",
+   "detail": "Polls suggest the conservative PP wins most seats but needs far-right Vox for a majority.",
+   "sources": [
+    {
+     "name": "Al Jazeera",
+     "url": "https://www.aljazeera.com/news/2026/11/28/two-visions-of-spain-collide-as-voters-weigh-sanchez-record"
+    }
+   ]
+  },
+  {
+   "when": "Mon\u2013Fri",
    "date": "2026-11-30",
    "level": "pacifica",
-   "title": "Caltrans one-way traffic on Hwy 1 near Montara and Pescadero",
-   "detail": "Drainage and slide-repair work Nov 30 to Dec 3; expect delays south of Pacifica.",
+   "title": "Caltrans one-way traffic on Hwy 1 near Montara, Pescadero and Half Moon Bay",
+   "detail": "Drainage, slide repair and paving; expect delays south of Pacifica.",
    "sources": [
     {
      "name": "Caltrans QuickMap",
@@ -93,15 +88,15 @@
    ]
   },
   {
-   "when": "Tue–Wed",
-   "date": "2026-12-01",
-   "level": "california",
-   "title": "Second, southerly storm; rain 0.25–0.75 in around the Bay",
-   "detail": "Track may shift; check the forecast Monday.",
+   "when": "By Sun Dec 6",
+   "date": "2026-12-06",
+   "level": "west",
+   "title": "Deadline for Israeli coalition talks",
+   "detail": "Eisenkot's deadline to form a government; extendable by 14 days.",
    "sources": [
     {
-     "name": "NWS San Francisco forecast discussion",
-     "url": "https://forecast.weather.gov/product.php?site=MTR&issuedby=MTR&product=AFD"
+     "name": "Al Jazeera",
+     "url": "https://www.aljazeera.com/news/2026/11/28/israel-unity-government-talks-stall-what-happens-now"
     }
    ]
   }
@@ -109,85 +104,67 @@
  "home_front": [
   {
    "id": "alerts",
-   "status": "action",
-   "summary": "Coast hazardous through Saturday; no FEMA alerts.",
+   "status": "watch",
+   "summary": "Coastal flood advisory to 4 PM; no FEMA alerts.",
    "items": [
     {
      "id": "alerts-coast-flood",
-     "tag": "ACTION",
+     "tag": "WATCH",
      "severity": "hazard",
-     "title": "Stay off Pacifica's shoreline through Saturday: king tides and 13–19 ft waves",
-     "detail": "NWS extended the Coastal Flood Advisory to 4 PM Saturday and the Beach Hazards Statement to 7 AM Saturday for the San Francisco Peninsula coast. Part of the pier fell into the sea Wednesday, and the rest is closed. No FEMA emergency alerts cover Pacifica.",
-     "trend": "steady",
+     "title": "Coastal Flood Advisory until 4 PM; king tide near 1:30 PM",
+     "detail": "NWS keeps the advisory for the San Francisco Peninsula coast until 4 PM. The Beach Hazards Statement ended at 6 AM and forecast surf is smaller, but the pier is closed and shoreline rocks stay dangerous. No FEMA emergency alerts cover Pacifica.",
+     "action": "Stay off the pier, jetties, rocks and bluff edges today; move cars from low shoreline spots before 1:30 PM. If water covers a road, don't drive through it.",
+     "when": "Now to Sat 4 PM",
+     "where": "Pacifica Pier, Beach Blvd, Rockaway, Sharp Park",
+     "trend": "easing",
      "confidence": "confirmed",
      "topic": "environment",
+     "lat": 37.6,
+     "lon": -122.5,
+     "area": 2,
      "sources": [
       {
        "name": "NWS alerts, Pacifica",
        "url": "https://alerts.weather.gov/search?point=37.6138,-122.4869"
       },
       {
-       "name": "NWS San Francisco forecast discussion",
+       "name": "NWS San Francisco forecast",
        "url": "https://forecast.weather.gov/product.php?site=MTR&issuedby=MTR&product=AFD"
-      },
-      {
-       "name": "KQED",
-       "url": "https://ww2.kqed.org/news/2026/11/25/part-of-pacifica-pier-collapses-as-king-tides-and-strong-waves-batter-bay-area/"
       },
       {
        "name": "FEMA IPAWS",
        "url": "https://www.fema.gov/openfema-data-page/ipaws-archived-alerts-v1"
       }
-     ],
-     "action": "Stay off the pier, beaches, jetties, rocks and bluff edges and out of the water; keep children and pets back. Move cars from low spots near the shore before about 12:30 PM Friday and 1:30 PM Saturday; don't drive through water or around barricades.",
-     "when": "Now through Sat 4 PM",
-     "where": "Pacifica Pier, Beach Blvd, Rockaway, Sharp Park",
-     "lat": 37.6,
-     "lon": -122.5,
-     "area": 2
+     ]
     }
    ]
   },
   {
    "id": "utilities",
    "status": "clear",
-   "summary": "No Pacifica outage found; DreamHost issue resolved.",
-   "items": [
-    {
-     "id": "util-dreamhost",
-     "tag": "INFO",
-     "severity": "low",
-     "title": "DreamHost: connectivity issue resolved; legacy API keys no longer work",
-     "detail": "DreamHost fixed a shared-hosting connectivity problem Thursday 10:19 AM Pacific. Its Wednesday notice still stands: legacy API keys stopped working and phpMyAdmin is unavailable.",
-     "trend": "easing",
-     "confidence": "confirmed",
-     "topic": "infrastructure",
-     "sources": [
-      {
-       "name": "DreamHost status",
-       "url": "https://www.dreamhoststatus.com/"
-      }
-     ],
-     "action": "If a script uses the DreamHost API, make a new key in the panel.",
-     "when": "Resolved Thu 10:19 AM",
-     "where": "DreamHost shared hosting"
-    }
-   ]
+   "summary": "No Pacifica outage or hosting incident found.",
+   "items": []
   },
   {
    "id": "roads",
    "status": "watch",
-   "summary": "Beach Blvd may flood at high tide; no Caltrans closure in Pacifica.",
+   "summary": "Beach Blvd may flood at midday high tide.",
    "items": [
     {
      "id": "roads-beach-blvd",
      "tag": "WATCH",
      "severity": "hazard",
-     "title": "Beach Blvd and low coastal roads may flood at high tide midday",
-     "detail": "Waves flooded parts of Beach Blvd Wednesday (KQED). I found no closure notice for Hwy 1 or Beach Blvd this morning; NWS warns some roads may close.",
-     "trend": "steady",
+     "title": "Beach Blvd and low coastal roads may flood near 1:30 PM",
+     "detail": "NWS warns some roads may close at high tide. I found no Caltrans closure for Hwy 1 or Beach Blvd this morning; Hwy 1 work near Montara starts Monday.",
+     "action": "If water reaches the road, use Sharp Park Rd or Hwy 35 and check QuickMap.",
+     "when": "Sat about 1:30 PM",
+     "where": "Beach Blvd, Pacifica",
+     "trend": "easing",
      "confidence": "likely",
      "topic": "public-safety",
+     "lat": 37.59,
+     "lon": -122.51,
+     "area": 1,
      "sources": [
       {
        "name": "NWS alerts, Pacifica",
@@ -196,25 +173,15 @@
       {
        "name": "Caltrans QuickMap",
        "url": "https://quickmap.dot.ca.gov/"
-      },
-      {
-       "name": "KQED",
-       "url": "https://ww2.kqed.org/news/2026/11/25/part-of-pacifica-pier-collapses-as-king-tides-and-strong-waves-batter-bay-area/"
       }
-     ],
-     "action": "If water reaches the road, use Sharp Park Rd or Hwy 35 and check QuickMap.",
-     "when": "Fri ~12:30 PM, Sat ~1:30 PM",
-     "where": "Beach Blvd, Pacifica",
-     "lat": 37.59,
-     "lon": -122.51,
-     "area": 1
+     ]
     }
    ]
   },
   {
    "id": "health",
    "status": "clear",
-   "summary": "Air quality moderate (AQI 66); no local advisories.",
+   "summary": "Air quality moderate (AQI 65); no local advisories.",
    "items": []
   },
   {
@@ -227,7 +194,7 @@
  "readiness": {
   "default": {
    "task": "Charge phones and power banks and check flashlight batteries.",
-   "why": "Rain and gusts arrive Sunday and a second storm Tuesday."
+   "why": "Rain and gusts arrive Sunday, and PG&E outages are more likely in wind."
   },
   "3d": {
    "task": "Check you have three days of drinking water, about 1 gallon per person per day.",
@@ -237,226 +204,236 @@
  "ladder": [
   {
    "level": "pacifica",
-   "summary": "Pier closed after Wednesday's collapse.",
+   "summary": "Pier closed after last week's collapse.",
    "items": [
     {
      "id": "pac-pier",
      "tag": "INFO",
      "severity": "hazard",
-     "title": "Pacifica Pier remains closed after part of it collapsed Wednesday",
-     "detail": "KQED reported the pier's end fell into the ocean Wednesday. The pier has been closed since June under a local emergency. No new city notice found this morning.",
+     "title": "Pacifica Pier stays closed after part of it collapsed Wednesday",
+     "detail": "No new reports since Nov 27. KQED reported the end of the pier fell into the sea on Nov 25; the pier has been closed under a local emergency.",
+     "when": "Ongoing",
+     "where": "Pacifica Pier",
      "trend": "steady",
      "confidence": "confirmed",
      "topic": "infrastructure",
+     "lat": 37.6,
+     "lon": -122.5,
+     "area": 1,
      "sources": [
       {
        "name": "KQED",
        "url": "https://ww2.kqed.org/news/2026/11/25/part-of-pacifica-pier-collapses-as-king-tides-and-strong-waves-batter-bay-area/"
       }
-     ],
-     "when": "Ongoing",
-     "where": "Pacifica Pier",
-     "lat": 37.6,
-     "lon": -122.5,
-     "area": 1
+     ]
     }
    ]
   },
   {
    "level": "california",
-   "summary": "King tides continue; weak storm Sunday.",
+   "summary": "Coast flooding eases; no state alerts.",
    "items": [
     {
      "id": "ca-coast-flood",
-     "tag": "WATCH",
+     "tag": "INFO",
      "severity": "hazard",
-     "title": "Coastal flooding continues along the California coast",
-     "detail": "NWS has Coastal Flood Warnings in Orange and San Diego counties today and advisories around the Bay through Sunday. El Niño warm water is adding to the king tides.",
-     "trend": "steady",
+     "title": "King-tide advisories continue around the Bay through today",
+     "detail": "NWS has no severe alerts for California this morning besides the coastal advisories. Weaker rain is forecast Sunday.",
+     "when": "Through Sat 4 PM",
+     "where": "Bay Area coast",
+     "trend": "easing",
      "confidence": "confirmed",
      "topic": "environment",
+     "lat": 37.8,
+     "lon": -122.5,
+     "area": 3,
      "sources": [
-      {
-       "name": "NWS San Francisco forecast discussion",
-       "url": "https://forecast.weather.gov/product.php?site=MTR&issuedby=MTR&product=AFD"
-      },
       {
        "name": "NWS alerts, Pacifica",
        "url": "https://alerts.weather.gov/search?point=37.6138,-122.4869"
+      },
+      {
+       "name": "NWS San Francisco forecast",
+       "url": "https://forecast.weather.gov/product.php?site=MTR&issuedby=MTR&product=AFD"
       }
-     ],
-     "action": "If you plan coast or bayshore travel, check tide times and road status.",
-     "when": "Through Sun",
-     "where": "California coast",
-     "lat": 34.0,
-     "lon": -118.5,
-     "area": 3
+     ]
     }
    ]
   },
   {
    "level": "usa",
-   "summary": "Storm outages in the Northeast; new tariffs proposed.",
+   "summary": "Storm outages in the East; markets calm.",
    "items": [
     {
      "id": "us-storm-power",
      "tag": "INFO",
      "severity": "hazard",
      "title": "Hundreds of thousands still without power after Thanksgiving storms",
-     "detail": "BBC reports Pennsylvania and neighbouring states are worst hit on Friday after storms on both coasts. Travel delays may continue.",
+     "detail": "BBC reported Friday that Pennsylvania and neighbouring states were worst hit. No newer count found; the S&P 500 rose 1.6% and the VIX fell to 23.8, below the stress level.",
+     "where": "Pennsylvania and neighbours",
      "trend": "easing",
      "confidence": "confirmed",
      "topic": "infrastructure",
+     "lat": 40.9,
+     "lon": -77.8,
+     "area": 3,
      "sources": [
       {
        "name": "BBC",
        "url": "https://www.bbc.co.uk/news/articles/cre3dj5n7dpwo"
       }
-     ],
-     "where": "Pennsylvania and neighbours",
-     "lat": 40.9,
-     "lon": -77.8,
-     "area": 3
-    },
-    {
-     "id": "us-tariffs",
-     "tag": "INFO",
-     "severity": "watch",
-     "title": "US trade office proposes new tariffs on China, the EU and others",
-     "detail": "The new levies would hit many large US trading partners; start is likely no earlier than January (BBC, AFP). No effect on shop prices yet.",
-     "trend": "steady",
-     "confidence": "confirmed",
-     "topic": "economy",
-     "sources": [
-      {
-       "name": "BBC",
-       "url": "https://www.bbc.co.uk/news/articles/c893r9ke5p97o"
-      }
-     ],
-     "where": "United States",
-     "lat": 38.9,
-     "lon": -77.0,
-     "area": 5
+     ]
     }
    ]
   },
   {
    "level": "west",
-   "summary": "Zelensky presses the US on Russia; Spain votes soon.",
+   "summary": "Spain votes Sunday; Israel coalition talks stall.",
    "items": [
     {
-     "id": "west-ukraine",
-     "tag": "WATCH",
-     "severity": "elevated",
-     "title": "Zelensky calls Trump's 'my friend' remark about Putin strange",
-     "detail": "In a BBC interview Friday, Ukraine's president said the US is not pushing Russia hard enough in peace talks. The war and Russian strikes continue.",
-     "trend": "steady",
+     "id": "west-spain",
+     "tag": "INFO",
+     "severity": "watch",
+     "title": "Spain votes Sunday; far right may enter government",
+     "detail": "Polls suggest the PP wins most seats but needs Vox. Results are expected Sunday night.",
+     "trend": "new",
      "confidence": "confirmed",
-     "topic": "conflict",
+     "topic": "political",
+     "where": "Spain",
+     "lat": 40.4,
+     "lon": -3.7,
+     "area": 3,
      "sources": [
       {
-       "name": "BBC",
-       "url": "https://www.bbc.co.uk/news/articles/c820q9wgrpyyo"
+       "name": "Al Jazeera",
+       "url": "https://www.aljazeera.com/news/2026/11/28/two-visions-of-spain-collide-as-voters-weigh-sanchez-record"
       }
-     ],
-     "action": "Nothing to do; watch for a stalled peace process.",
-     "where": "Ukraine",
-     "lat": 50.45,
-     "lon": 30.52,
-     "area": 4
+     ]
+    },
+    {
+     "id": "west-israel-talks",
+     "tag": "INFO",
+     "severity": "watch",
+     "title": "Israel has no government; unity talks stall",
+     "detail": "The Oct 27 election gave neither side a majority; talks ended Sunday without a deal. Eisenkot's deadline is Dec 6.",
+     "trend": "new",
+     "confidence": "confirmed",
+     "topic": "political",
+     "where": "Israel",
+     "lat": 31.77,
+     "lon": 35.21,
+     "area": 3,
+     "sources": [
+      {
+       "name": "Al Jazeera",
+       "url": "https://www.aljazeera.com/news/2026/11/28/israel-unity-government-talks-stall-what-happens-now"
+      }
+     ]
     }
    ]
   },
   {
    "level": "asia",
-   "summary": "North Korea vows more nuclear weapons.",
+   "summary": "Afghan school blast; Taiwan counts votes.",
    "items": [
     {
-     "id": "asia-nk",
+     "id": "asia-afghan-blast",
      "tag": "INFO",
-     "severity": "watch",
-     "title": "Kim Jong Un vows to build more nuclear weapons",
-     "detail": "State media say Kim visited nuclear-material facilities after ignoring a US overture (NPR). No test reported.",
-     "trend": "steady",
-     "confidence": "likely",
-     "topic": "conflict",
+     "severity": "elevated",
+     "title": "Blast beside a school in eastern Afghanistan kills students",
+     "detail": "NPR reports 7 dead and more than 90 hurt; BBC reports 10 dead and over 100 hurt. Officials say it began at a nearby explosives depot; the toll is rising.",
+     "trend": "new",
+     "confidence": "confirmed",
+     "topic": "public-safety",
+     "where": "Eastern Afghanistan",
+     "lat": 34.4,
+     "lon": 70.4,
+     "area": 2,
      "sources": [
       {
        "name": "NPR",
-       "url": "https://www.npr.org/2026/11/26/g-s1-155955/north-korea-kim-nuclear-weapons-trump"
+       "url": "https://www.npr.org/2026/11/28/nx-s1-6056284/explosion-school-eastern-afghanistan"
+      },
+      {
+       "name": "BBC",
+       "url": "https://www.bbc.co.uk/news/articles/ckp80jyz6dl8o"
       }
-     ],
-     "where": "North Korea",
-     "lat": 39.0,
-     "lon": 125.75,
-     "area": 4
+     ]
     }
    ]
   },
   {
    "level": "world",
-   "summary": "Gulf drone attack, Yemen strikes, Ebola.",
+   "summary": "Kuwait drone deaths, Gaza strike, Ebola.",
    "items": [
     {
      "id": "w-kuwait",
      "tag": "WATCH",
      "severity": "elevated",
-     "title": "Two Italians killed in drone attack on Kuwait; Iran denies it",
-     "detail": "Italy and Kuwait say Iranian-made drones hit military sites Thursday; Iran calls it a false flag. Qatar reportedly warned the attack endangers talks.",
-     "trend": "new",
+     "title": "Italy and Kuwait blame Iranian-made drones for two deaths; Iran denies",
+     "detail": "Two Italian technicians died from shrapnel Thursday. Iran calls it a false flag and offers a joint inquiry; no newer reporting since Thursday evening. Qatar reportedly warns it threatens talks.",
+     "action": "If Gulf travel is planned, check State Department advisories.",
+     "trend": "steady",
      "confidence": "likely",
      "topic": "conflict",
+     "where": "Kuwait",
+     "lat": 29.37,
+     "lon": 47.98,
+     "area": 4,
      "sources": [
       {
        "name": "Al Jazeera",
        "url": "https://www.aljazeera.com/news/2026/11/27/italians-killed-in-kuwait-why-is-iran-denying-responsibility"
       }
-     ],
-     "action": "If Gulf travel is planned, check State Department advisories.",
-     "where": "Kuwait",
-     "lat": 29.37,
-     "lon": 47.98,
-     "area": 4
+     ]
     },
     {
-     "id": "w-yemen",
+     "id": "w-gaza-msf",
      "tag": "INFO",
-     "severity": "critical",
-     "title": "Houthis report 11 killed in airstrike on a cinema in Taiz",
-     "detail": "The Houthi health ministry blames Saudi Arabia; the claim is unverified. Saudi-Houthi fighting has continued since early November.",
+     "severity": "elevated",
+     "title": "MSF says two staff killed in Israeli strike on Gaza clinic",
+     "detail": "Israel says it targeted Hamas members; the WHO condemned the strike. The ceasefire has held only loosely.",
      "trend": "new",
-     "confidence": "unconfirmed",
+     "confidence": "likely",
      "topic": "conflict",
+     "where": "Gaza",
+     "lat": 31.5,
+     "lon": 34.45,
+     "area": 3,
      "sources": [
       {
+       "name": "BBC",
+       "url": "https://www.bbc.co.uk/news/articles/cm5y10yydln3o"
+      },
+      {
        "name": "AP via SFGate",
-       "url": "https://www.sfgate.com/news/article/houthis-report-11-killed-including-children-in-22552039.php"
+       "url": "https://www.sfgate.com/news/article/houthis-report-airstrikes-in-yemen-israeli-22553550.php"
       }
-     ],
-     "where": "Turbah, Taiz, Yemen",
-     "lat": 13.3,
-     "lon": 44.1,
-     "area": 3
+     ]
     },
     {
      "id": "w-ebola",
      "tag": "INFO",
      "severity": "hazard",
-     "title": "Ebola in eastern Congo reaches about 12,000 cases",
-     "detail": "NPR reports the outbreak is spreading and fighting between rebels and the army is disrupting response; some responders left. No US case reported in these sources.",
+     "title": "Ebola in eastern Congo: about 12,000 cases",
+     "detail": "NPR (Nov 26) said fighting is hampering response; Al Jazeera calls it Congo's deadliest outbreak. No US case reported in these sources.",
      "trend": "rising",
      "confidence": "confirmed",
      "topic": "health",
+     "where": "Eastern Congo",
+     "lat": 1.5,
+     "lon": 29.0,
+     "area": 4,
      "sources": [
       {
        "name": "NPR",
        "url": "https://www.npr.org/2026/11/26/g-s1-155957/congo-ebola-responders"
+      },
+      {
+       "name": "Al Jazeera",
+       "url": "https://www.aljazeera.com/features/longform/2026/11/28/the-perfect-storm-behind-congos-deadliest-ebola-outbreak"
       }
-     ],
-     "where": "Eastern Congo",
-     "lat": 1.5,
-     "lon": 29.0,
-     "area": 4
+     ]
     }
    ]
   }
@@ -467,12 +444,8 @@
    "url": "https://alerts.weather.gov/search?point=37.6138,-122.4869"
   },
   {
-   "name": "NWS San Francisco forecast discussion",
+   "name": "NWS San Francisco forecast",
    "url": "https://forecast.weather.gov/product.php?site=MTR&issuedby=MTR&product=AFD"
-  },
-  {
-   "name": "KQED",
-   "url": "https://ww2.kqed.org/news/2026/11/25/part-of-pacifica-pier-collapses-as-king-tides-and-strong-waves-batter-bay-area/"
   },
   {
    "name": "Caltrans QuickMap",
@@ -483,20 +456,24 @@
    "url": "https://www.fema.gov/openfema-data-page/ipaws-archived-alerts-v1"
   },
   {
+   "name": "KQED",
+   "url": "https://ww2.kqed.org/news/2026/11/25/part-of-pacifica-pier-collapses-as-king-tides-and-strong-waves-batter-bay-area/"
+  },
+  {
    "name": "Al Jazeera",
    "url": "https://www.aljazeera.com/news/2026/11/27/italians-killed-in-kuwait-why-is-iran-denying-responsibility"
+  },
+  {
+   "name": "BBC",
+   "url": "https://www.bbc.co.uk/news/articles/cm5y10yydln3o"
   },
   {
    "name": "DreamHost status",
    "url": "https://www.dreamhoststatus.com/"
   },
   {
-   "name": "BBC",
-   "url": "https://www.bbc.co.uk/news/articles/cre3dj5n7dpwo"
-  },
-  {
    "name": "NPR",
-   "url": "https://www.npr.org/2026/11/26/g-s1-155957/congo-ebola-responders"
+   "url": "https://www.npr.org/2026/11/28/nx-s1-6056284/explosion-school-eastern-afghanistan"
   }
  ]
 }
